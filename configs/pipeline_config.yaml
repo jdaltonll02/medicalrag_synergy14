@@ -1,133 +1,123 @@
-# This is the pipeline Configuration for a Robust Medical RAG System
-# In this file, you will find all the configurations needed for the setup. 
+bioasq:
+  cache_pubmed: true
+  data_dir: data/bioasq
+  pubmed_cache_dir: data/pubmed_cache
+  pubmed_email: jgibson2@andrew.cmu.edu
+  question_types:
+  - yesno
+  - factoid
+  - list
+  - summary
+  rounds:
+  - 1
+  - 2
+  - 3
+  - 4
+bm25:
+  b: 0.75
+  elasticsearch_host: localhost
+  elasticsearch_port: 9200
+  index_name: medical_docs
+  k1: 2.0
+  min_score: 0.1
+data:
+  docs_path: data/processed/bioasq_round_1_docs.jsonl
+  embeddings_manifest: runs/embeddings_manifest.json
+  embeddings_path: runs/embeddings.npy
+  results_path: runs/results.jsonl
+  run_manifest: runs/run_manifest.json
+encoder:
+  backend: medcpt
+  batch_size: 32
+  device: cpu
+  embedding_dim: 768
+  model: ncbi/MedCPT-Query-Encoder
+evaluation:
+  llm_judge:
+    aspects:
+    - factuality
+    - completeness
+    - relevance
+    - evidence_support
+    enabled: true
+    model: gpt-4o-mini-2024-07-18
+    temperature: 0.0
+  metrics:
+  - recall@5
+  - recall@10
+  - recall@20
+  - recall@50
+  - precision@5
+  - precision@10
+  - mrr
+  - rouge1
+  - rouge2
+  - rougeL
+  - f1@5
+  - f1@10
+  - f1@20
+  - f1@50
+faiss:
+  index_type: IndexFlatIP
+  nprobe: 32
+  save_path: runs/faiss.index
+fallback:
+  use_elasticsearch: false
+  use_faiss_only: true
+llm:
+  max_tokens: 1024
+  model: gpt-4o-mini-2024-07-18
+  provider: openai
+  system_prompt: 'You are a scientific medical assistant designed to synthesize responses
+    from specific medical documents. Only use the information provided in the documents
+    to answer questions. The first documents should be the most relevant. Do not use
+    any other information except for the documents provided. When answering questions,
+    always format your response as a JSON object with fields for ''response'', ''used
+    PMIDs''. Cite all PMIDs your response is based on in the ''used PMIDs'' field.
+    Please think step-by-step before answering questions and provide the most accurate
+    response possible. Provide your answer to the question in the ''response'' field.
 
-# Pipeline metadata
-pipeline:
-  name: "Medical RAG Pipeline"
-  version: "1.0.0"
-  seed: 42
-
-# NER configuration
+    '
+  temperature: 0.7
+logging:
+  format: json
+  level: INFO
+  output_dir: runs/logs
+mmr:
+  lambda_param: 0.7
+  recency_weight: 0.3
+  top_k: 10
 ner:
-  model: "hf:d4data/biomedical-ner-all"  # Hugging Face biomedical NER model
   confidence_threshold: 0.7
   enabled: true
-
-# PubMed configuration
-pubmed:
-  api_base: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
-  max_results: 100
-  cache_ttl: 86400  # 24 hours in seconds
-  retry_attempts: 3
-  retry_delay: 1.0
-
-# Encoder configuration
-encoder:
-  backend: "medcpt"  # Options: "medcpt" or "biobert"
-  model: "ncbi/MedCPT-Query-Encoder"
-  embedding_dim: 768
-  batch_size: 32
-  device: "cuda"  # or "cpu"
-
-# FAISS index configuration
-faiss:
-  index_type: "IndexFlatIP"  # Inner Product (cosine similarity)
-  nprobe: 32
-  save_path: "runs/faiss.index"
-
-# BM25 configuration
-bm25:
-  elasticsearch_host: "localhost"
-  elasticsearch_port: 9200
-  index_name: "medical_docs"
-  k1: 1.2
-  b: 0.75
-
-# Retrieval configuration
-retrieval:
-  top_k_dense: 100
-  top_k_sparse: 100
-  top_k_final: 50
-
-# Reranker configuration
-reranker:
-  model: "pritamdeka/S-PubMedBert-MS-MARCO"
-  batch_size: 16
-  top_k: 20
-
-# MMR configuration
-mmr:
-  lambda_param: 0.7  # Trade-off between relevance and diversity (0-1)
-  top_k: 10
-  recency_weight: 0.3  # Weight for temporal boosting
-
-# LLM configuration
-llm:
-  provider: "openai"  # or "stub" for testing
-  model: "gpt-4o-mini-2024-07-18"
-  temperature: 0.7
-  max_tokens: 1024
-  system_prompt: |
-    You are a scientific medical assistant designed to synthesize responses from specific medical documents. Only use the information provided in the documents to answer questions. The first documents should be the most relevant. Do not use any other information except for the documents provided. When answering questions, always format your response as a JSON object with fields for 'response', 'used PMIDs'. Cite all PMIDs your response is based on in the 'used PMIDs' field. Please think step-by-step before answering questions and provide the most accurate response possible. Provide your answer to the question in the 'response' field.
-
-# Prompt configuration
+  model: hf:d4data/biomedical-ner-all
+pipeline:
+  name: Medical RAG Pipeline
+  seed: 42
+  version: 1.0.0
 prompt:
-  max_context_tokens: 3000
   include_citations: true
   include_pub_dates: true
-
-# Evaluation configuration
-evaluation:
-  metrics:
-    - "recall@5"
-    - "recall@10"
-    - "recall@20"
-    - "recall@50"
-    - "precision@5"
-    - "precision@10"
-    - "mrr"
-    - "rouge1"
-    - "rouge2"
-    - "rougeL"
-    - "f1@5"
-    - "f1@10"
-    - "f1@20"
-    - "f1@50"
-  llm_judge:
-    enabled: true  # Enable LLM-as-a-judge evaluation (NEW)
-    model: "gpt-4o-mini-2024-07-18"
-    temperature: 0.0  # Deterministic for evaluation
-    aspects:
-      - "factuality"
-      - "completeness"
-      - "relevance"
-      - "evidence_support"
-
-# BioASQ-specific configuration (NEW)
-bioasq:
-  data_dir: "data/bioasq"
-  rounds: [1, 2, 3, 4]
-  question_types: ["yesno", "factoid", "list", "summary"]
-  pubmed_email: "jgibson2@andrew.cmu.edu"  # Required for NCBI Entrez
-  cache_pubmed: true
-  pubmed_cache_dir: "data/pubmed_cache"
-
-# Temporal strategy
+  max_context_tokens: 3000
+pubmed:
+  api_base: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/
+  cache_ttl: 86400
+  max_results: 100
+  retry_attempts: 3
+  retry_delay: 1.0
+reranker:
+  batch_size: 16
+  device: cpu
+  model: pritamdeka/S-PubMedBert-MS-MARCO
+  top_k: 20
+retrieval:
+  top_k_dense: 100
+  top_k_final: 50
+  top_k_sparse: 100
 temporal:
-  strategy: "recency_boost"  # or "time_bucket"
   recency_decay: 0.1
-  time_bucket_windows: ["2020-2025", "2015-2019", "2010-2014"]
-
-# Logging configuration
-logging:
-  level: "INFO"
-  format: "json"
-  output_dir: "runs/logs"
-
-# Data paths
-data:
-  docs_path: "data/processed/bioasq_round_1_docs.jsonl"
-  embeddings_path: "runs/embeddings.npy"
-  embeddings_manifest: "runs/embeddings_manifest.json"
-  results_path: "runs/results.jsonl"
-  run_manifest: "runs/run_manifest.json"
+  strategy: recency_boost
+  time_bucket_windows:
+  - 2020-2025
+  - 2015-2019
+  - 2010-2014

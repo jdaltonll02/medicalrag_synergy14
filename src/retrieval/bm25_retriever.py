@@ -1,5 +1,5 @@
 """
-BM25 retriever using Elasticsearch
+BM25 retriever using Elasticsearch with fallback to pure Python BM25
 """
 
 from typing import List, Dict, Any, Optional
@@ -7,10 +7,80 @@ from elasticsearch import Elasticsearch
 from elasticsearch.helpers import bulk
 
 
-class BM25Retriever:
-    """BM25 lexical retriever using Elasticsearch"""
+class SimpleBM25:
+    """Simple Python-based BM25 implementation for fallback (when Elasticsearch unavailable)"""
     
-    def __init__(self, host: str = "localhost", port: int = 9200, index_name: str = "medical_docs"):
+    def __init__(self, k1: float = 1.2, b: float = 0.75):
+        self.k1 = k1
+        self.b = b
+        self.doc_index = []
+        self.idf = {}
+        self.avgdl = 0
+        self.corpus_size = 0
+    
+    def index_documents(self, documents: List[Dict[str, Any]]):
+        """Index documents for BM25 retrieval"""
+        import math
+        from collections import Counter
+        
+        self.doc_index = []
+        term_doc_freq = {}
+        
+        for doc in documents:
+            doc_id = str(doc.get("doc_id"))
+            text = (doc.get("title", "") + " " + doc.get("abstract", "")).lower().split()
+            self.doc_index.append({
+                "doc_id": doc_id,
+                "terms": text,
+                "length": len(text),
+                "doc": doc
+            })
+            
+            for term in set(text):
+                term_doc_freq[term] = term_doc_freq.get(term, 0) + 1
+        
+        self.corpus_size = len(self.doc_index)
+        self.avgdl = sum(d["length"] for d in self.doc_index) / max(1, self.corpus_size)
+        
+        # Calculate IDF
+        for term, df in term_doc_freq.items():
+            self.idf[term] = math.log((self.corpus_size - df + 0.5) / (df + 0.5) + 1)
+    
+    def search(self, query: str, top_k: int = 10) -> List[Dict[str, Any]]:
+        """Search using BM25 algorithm"""
+        from collections import Counter
+        
+        query_terms = query.lower().split()
+        scores = {}
+        
+        for doc in self.doc_index:
+            doc_id = doc["doc_id"]
+            score = 0
+            term_freq = Counter(doc["terms"])
+            
+            for term in query_terms:
+                if term in term_freq:
+                    idf = self.idf.get(term, 0)
+                    tf = term_freq[term]
+                    numerator = idf * tf * (self.k1 + 1)
+                    denominator = tf + self.k1 * (1 - self.b + self.b * (doc["length"] / self.avgdl))
+                    score += numerator / denominator
+            
+            if score > 0:
+                scores[doc_id] = {"score": score, "doc": doc["doc"]}
+        
+        # Return top-k results
+        results = sorted(scores.items(), key=lambda x: x[1]["score"], reverse=True)[:top_k]
+        return [
+            {"doc_id": doc_id, "score": data["score"], "source": data["doc"]}
+            for doc_id, data in results
+        ]
+
+
+class BM25Retriever:
+    """BM25 lexical retriever using Elasticsearch with Python fallback"""
+    
+    def __init__(self, host: str = "localhost", port: int = 9200, index_name: str = "medical_docs", k1: float = 1.2, b: float = 0.75):
         """
         Initialize BM25 retriever
         
@@ -18,11 +88,16 @@ class BM25Retriever:
             host: Elasticsearch host
             port: Elasticsearch port
             index_name: Name of the index
+            k1: BM25 k1 parameter
+            b: BM25 b parameter
         """
         self.host = host
         self.port = port
         self.index_name = index_name
+        self.k1 = k1
+        self.b = b
         self.es = None
+        self.fallback_bm25 = SimpleBM25(k1=k1, b=b)
         self._connect()
     
     def _connect(self):
@@ -55,10 +130,47 @@ class BM25Retriever:
         Returns:
             List of search results with doc_id and score
         """
+        # Use Elasticsearch if available, otherwise fallback
+        if self.es is not None:
+            return self._search_elasticsearch(query, top_k, entities, entity_boost, max_entities)
+        else:
+            return self._search_fallback(query, top_k)
+    
+    def _search_elasticsearch(
+        self,
+        query: str,
+        top_k: int,
+        entities: Optional[List[Dict[str, Any]]] = None,
+        entity_boost: float = 2.0,
+        max_entities: int = 5,
+    ) -> List[Dict[str, Any]]:
+        """Search using Elasticsearch BM25"""
         if self.es is None:
             return []
         
-        # BM25 query on title and abstract fields with optional entity boosts
+        # Build must clauses for main query
+        must_clauses = [
+            {
+                "match": {
+                    "title": {
+                        "query": query,
+                        "boost": 3.0,
+                        "operator": "or"
+                    }
+                }
+            },
+            {
+                "match": {
+                    "abstract": {
+                        "query": query,
+                        "boost": 2.0,
+                        "operator": "or"
+                    }
+                }
+            }
+        ]
+        
+        # Build should clauses for entity boosts
         should_clauses: List[Dict[str, Any]] = []
         if entities:
             for ent in entities[: max(0, max_entities)]:
@@ -68,11 +180,23 @@ class BM25Retriever:
                     continue
                 should_clauses.append(
                     {
-                        "multi_match": {
-                            "query": ent_text,
-                            "fields": ["title^3", "abstract^2"],
-                            "type": "best_fields",
-                            "boost": float(entity_boost),
+                        "match": {
+                            "title": {
+                                "query": ent_text,
+                                "boost": float(entity_boost) * 3.0,
+                                "operator": "and"
+                            }
+                        }
+                    }
+                )
+                should_clauses.append(
+                    {
+                        "match": {
+                            "abstract": {
+                                "query": ent_text,
+                                "boost": float(entity_boost) * 2.0,
+                                "operator": "and"
+                            }
                         }
                     }
                 )
@@ -80,15 +204,8 @@ class BM25Retriever:
         search_body = {
             "query": {
                 "bool": {
-                    "must": {
-                        "multi_match": {
-                            "query": query,
-                            "fields": ["title^2", "abstract"],
-                            "type": "best_fields",
-                        }
-                    },
-                    "should": should_clauses,
-                    "minimum_should_match": 0,
+                    "should": must_clauses + should_clauses,
+                    "minimum_should_match": 1,
                 }
             },
             "size": top_k,
@@ -106,16 +223,12 @@ class BM25Retriever:
                 except Exception:
                     pmid = None
                 doc_id_val = pmid if pmid else hit.get("_id")
+                score = hit.get("_score", 0.0)
                 item = {
                     "doc_id": str(doc_id_val),
-                    "score": hit.get("_score", 0.0),
+                    "score": float(score),
                     "source": src
                 }
-                # Debug logging: raw BM25 _score per hit
-                try:
-                    print(f"BM25 raw _score doc_id={item['doc_id']}: {item['score']}")
-                except Exception:
-                    pass
                 results.append(item)
             
             return results
@@ -123,6 +236,10 @@ class BM25Retriever:
         except Exception as e:
             print(f"Elasticsearch search error: {e}")
             return []
+    
+    def _search_fallback(self, query: str, top_k: int) -> List[Dict[str, Any]]:
+        """Fallback search using Python BM25 implementation"""
+        return self.fallback_bm25.search(query, top_k)
     
     def index_exists(self) -> bool:
         """Check if the index exists"""
@@ -179,9 +296,18 @@ class BM25Retriever:
         return self.create_index()
 
     def index_documents(self, documents: List[Dict[str, Any]]):
-        """Bulk index documents into Elasticsearch"""
-        if self.es is None or not documents:
+        """Bulk index documents into Elasticsearch (or fallback)"""
+        if not documents:
             return False
+        
+        # Always index in fallback BM25 for hybrid retrieval
+        self.fallback_bm25.index_documents(documents)
+        
+        # Try to index in Elasticsearch if available
+        if self.es is None:
+            print("Note: Using Python-based BM25 (Elasticsearch not available)")
+            return True
+        
         self.create_index()
         actions = []
         for doc in documents:

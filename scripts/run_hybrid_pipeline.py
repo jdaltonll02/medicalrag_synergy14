@@ -126,15 +126,15 @@ def prepare_documents(articles: Dict[str, Any]) -> List[Dict[str, Any]]:
     
     return documents
 
-# Ensure OpenAI API key is set
-if "OPENAI_API_KEY" not in os.environ:
-    raise RuntimeError(
-        "Environment variable OPENAI_API_KEY is not set. "
-        "Please export your key: export OPENAI_API_KEY='sk-xxxx'"
-    )
+# Ensure OpenAI API key is set (or use stub LLM)
+if "OPENAI_API_KEY" not in os.environ and os.getenv("LLM_PROVIDER") != "stub":
+    print("Warning: OPENAI_API_KEY not set. Using stub LLM for testing.")
+    os.environ["LLM_PROVIDER"] = "stub"
 
-# Optional: initialize OpenAIClient globally
-openai_client = OpenAIClient()
+# Optional: initialize OpenAIClient globally (if key is set)
+openai_client = None
+if "OPENAI_API_KEY" in os.environ and os.getenv("LLM_PROVIDER") != "stub":
+    openai_client = OpenAIClient()
 
 def run_pipeline(
     questions: List[Dict[str, Any]],
