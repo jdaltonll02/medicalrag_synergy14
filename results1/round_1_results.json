@@ -1,0 +1,445 @@
+{
+  "questions": [
+    {
+      "id": "6940eb0d4afd1e2b0400000d",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "69528a024afd1e2b04000013",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6953f46a4afd1e2b0400002c",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695bd8c44afd1e2b0400002e",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695289334afd1e2b0400000f",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "69528af74afd1e2b04000014",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "6952a96b4afd1e2b04000029",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695291374afd1e2b04000023",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6936c720f9d177840e00000b",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695290854afd1e2b0400001e",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6952896f4afd1e2b04000010",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "695289c94afd1e2b04000011",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "6940eaa74afd1e2b04000007",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "6940ea834afd1e2b04000006",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695290364afd1e2b0400001a",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "695bd9654afd1e2b04000031",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "6952ad1f4afd1e2b0400002a",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695290a94afd1e2b04000020",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695290954afd1e2b0400001f",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6940eb1a4afd1e2b0400000e",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695290284afd1e2b04000019",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6936c690f9d177840e000009",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6936c667f9d177840e000008",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "6952a8a84afd1e2b04000028",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "695291464afd1e2b04000024",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "69528fd84afd1e2b04000016",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6936c6ddf9d177840e00000a",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695289e94afd1e2b04000012",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "6936c5c0f9d177840e000005",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695290cc4afd1e2b04000022",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "695290754afd1e2b0400001d",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "6940eaf44afd1e2b0400000b",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6936c584f9d177840e000004",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695291704afd1e2b04000025",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6940eadc4afd1e2b0400000a",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "6936c616f9d177840e000007",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "695bdadb4afd1e2b04000034",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "695bdb514afd1e2b04000035",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "69529ea84afd1e2b04000026",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6940ea534afd1e2b04000003",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "69528ff24afd1e2b04000017",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "69529f094afd1e2b04000027",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "67d2ca3e592fa48873000032",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "69528fb04afd1e2b04000015",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695bd9c94afd1e2b04000032",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "695bdaa54afd1e2b04000033",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695bd9284afd1e2b04000030",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6940ea5f4afd1e2b04000004",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6940eac64afd1e2b04000009",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6940ea404afd1e2b04000002",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695bd85c4afd1e2b0400002d",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6953f4354afd1e2b0400002b",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695290194afd1e2b04000018",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695290bb4afd1e2b04000021",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "695bd8f44afd1e2b0400002f",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6940ea764afd1e2b04000005",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "695290534afd1e2b0400001c",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6936c5eef9d177840e000006",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6936c55cf9d177840e000003",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "6952903e4afd1e2b0400001b",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6936c53bf9d177840e000002",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    },
+    {
+      "id": "6940eab84afd1e2b04000008",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": null,
+      "ideal_answer": "Error: OpenAI client not initialized"
+    },
+    {
+      "id": "6940eafe4afd1e2b0400000c",
+      "documents": [],
+      "snippets": [],
+      "exact_answer": "Error: OpenAI client not initialized",
+      "ideal_answer": null
+    }
+  ]
+}
