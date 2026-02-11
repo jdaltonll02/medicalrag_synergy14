@@ -6,7 +6,8 @@ from typing import List, Dict, Any, Optional
 import os
 import sys
 import json
-
+# from dotenv import load_dotenv
+import httpx
 
 class OpenAIClient:
     """OpenAI API client for LLM generation"""
@@ -16,7 +17,7 @@ class OpenAIClient:
         model: str = "gpt-4",
         api_key: Optional[str] = None,
         base_url: Optional[str] = None,
-        organization: Optional[str] = None,
+        project_id: Optional[str] = None,
         temperature: float = 0.7,
         max_tokens: int = 1024,
         prompt_for_key: bool = True,
@@ -29,103 +30,153 @@ class OpenAIClient:
         Args:
             model: Model name (e.g., gpt-4, gpt-3.5-turbo)
             api_key: OpenAI API key (or use OPENAI_API_KEY env var)
+            base_url: API base URL (or use OPENAI_BASE_URL env var)
+            project_id: OpenAI project ID (or use OPENAI_PROJECT_ID env var)
             temperature: Sampling temperature
             max_tokens: Maximum tokens to generate
         """
         self.model = model
-        # Resolve API key via explicit arg -> env -> keyring -> optional interactive prompt
-        resolved_key = api_key or os.getenv("OPENAI_API_KEY")
-        if not resolved_key and use_keyring:
-            try:
-                import keyring  # type: ignore
-                resolved_key = keyring.get_password("medical_rag_system", "openai_api_key")
-            except Exception:
-                pass
-        self.api_key = resolved_key
-        # Resolve optional base URL and organization for gateways (e.g., CMU AI Gateway)
-        self.base_url = base_url or os.getenv("OPENAI_BASE_URL")
-        self.organization = organization or os.getenv("OPENAI_ORGANIZATION")
+        self.api_key = api_key
+        self.base_url = base_url
+        self.project_id = project_id
         self.temperature = temperature
         self.max_tokens = max_tokens
         self.client = None
         self._initialize_client(prompt_for_key=prompt_for_key, use_keyring=use_keyring, save_to_keyring=save_to_keyring)
     
-    def _initialize_client(self, prompt_for_key: bool = True, use_keyring: bool = True, save_to_keyring: bool = False):
-        """Initialize OpenAI client"""
-        if not self.api_key:
-            # Optionally prompt the user for a key if running interactively
-            if prompt_for_key and sys.stdin and sys.stdin.isatty():
-                try:
-                    import getpass
-                    print("OpenAI API key is required. It will not be printed.")
-                    entered = getpass.getpass("Paste OpenAI API key: ")
-                    if entered:
-                        self.api_key = entered.strip()
-                        if save_to_keyring:
-                            try:
-                                import keyring  # type: ignore
-                                keyring.set_password("medical_rag_system", "openai_api_key", self.api_key)
-                            except Exception:
-                                pass
-                except Exception:
-                    pass
-            if not self.api_key:
-                print("Warning: No OpenAI API key provided")
-                return
+    # def _initialize_client(self, prompt_for_key: bool = True, use_keyring: bool = True, save_to_keyring: bool = False):
+    #     """Initialize OpenAI client"""
+    #     if not self.api_key:
+    #         # Optionally prompt the user for a key if running interactively
+    #         if prompt_for_key and sys.stdin and sys.stdin.isatty():
+    #             try:
+    #                 import getpass
+    #                 print("OpenAI API key is required. It will not be printed.")
+    #                 entered = getpass.getpass("Paste OpenAI API key: ")
+    #                 if entered:
+    #                     self.api_key = entered.strip()
+    #                     if save_to_keyring:
+    #                         try:
+    #                             import keyring  # type: ignore
+    #                             keyring.set_password("medical_rag_system", "openai_api_key", self.api_key)
+    #                         except Exception:
+    #                             pass
+    #             except Exception:
+    #                 pass
+    #         if not self.api_key:
+    #             raise RuntimeError("OPENAI_API_KEY is not set — cannot initialize OpenAI client")
         
+    #     try:
+    #         from openai import OpenAI
+    #         # Initialize basic client; avoid unsupported kwargs
+    #         # if self.base_url and self.organization:
+    #         #     self.client = OpenAI(api_key=self.api_key, base_url=self.base_url, organization=self.organization)
+    #         # elif self.base_url:
+    #         #     self.client = OpenAI(api_key=self.api_key, base_url=self.base_url)
+    #         # elif self.organization:
+    #         #     self.client = OpenAI(api_key=self.api_key, organization=self.organization)
+    #         # else:
+    #         #     self.client = OpenAI(api_key=self.api_key)
+    #         self.client = OpenAI(api_key=self.api_key)
+    #     except Exception as e:
+    #         print("FATAL: OpenAI client initialization failed", file=sys.stderr)
+    #         raise
+
+    def _initialize_client(self, *_, **__):
+        from openai import OpenAI
+        import sys
+
+        # Get API key from environment, fall back to keyring if enabled
+        if not self.api_key:
+            self.api_key = os.getenv("OPENAI_API_KEY")
+        
+        if not self.api_key:
+            raise RuntimeError("OPENAI_API_KEY environment variable not set")
+
+        # Get base URL from environment (for CMU AI Gateway or custom endpoints)
+        base_url = os.getenv("OPENAI_BASE_URL")
+        project_id = os.getenv("OPENAI_PROJECT_ID")
+
+        # Handle CMU AI Gateway URL normalization
+        # CMU gateway: https://ai-gateway.andrew.cmu.edu/chat -> needs /v1 appended
+        if base_url and "ai-gateway.andrew.cmu.edu" in base_url:
+            # Remove any trailing slashes and /chat suffix
+            base_url = base_url.rstrip("/")
+            if base_url.endswith("/chat"):
+                base_url = base_url[:-5]  # Remove "/chat"
+            # Append /v1 for OpenAI compatibility
+            if not base_url.endswith("/v1"):
+                base_url = base_url + "/v1"
+            sys.stderr.write(f"[OPENAI] Detected CMU AI Gateway, normalized URL: {base_url}\n")
+            sys.stderr.flush()
+
+        sys.stderr.write(f"[OPENAI] Initializing with:\n")
+        sys.stderr.write(f"  - Model: {self.model}\n")
+        sys.stderr.write(f"  - Base URL: {base_url or 'default (api.openai.com)'}\n")
+        sys.stderr.write(f"  - Project ID: {project_id or 'none'}\n")
+        sys.stderr.flush()
+
+        # Initialize OpenAI client
         try:
-            from openai import OpenAI
-            # Initialize basic client; avoid unsupported kwargs
-            if self.base_url and self.organization:
-                self.client = OpenAI(api_key=self.api_key, base_url=self.base_url, organization=self.organization)
-            elif self.base_url:
-                self.client = OpenAI(api_key=self.api_key, base_url=self.base_url)
-            elif self.organization:
-                self.client = OpenAI(api_key=self.api_key, organization=self.organization)
+            if base_url and project_id:
+                self.client = OpenAI(
+                    api_key=self.api_key,
+                    base_url=base_url,
+                    project=project_id
+                )
+            elif base_url:
+                self.client = OpenAI(
+                    api_key=self.api_key,
+                    base_url=base_url
+                )
+            elif project_id:
+                self.client = OpenAI(
+                    api_key=self.api_key,
+                    project=project_id
+                )
             else:
                 self.client = OpenAI(api_key=self.api_key)
+            
+            sys.stderr.write("[OPENAI] Client initialized successfully\n")
+            sys.stderr.flush()
         except Exception as e:
-            print(f"Warning: Could not initialize OpenAI client: {e}")
+            sys.stderr.write(f"[OPENAI] Failed to initialize: {e}\n")
+            sys.stderr.flush()
+            raise
+
     
     def generate(
-        self,
-        prompt: str,
-        system_prompt: Optional[str] = None,
-        temperature: Optional[float] = None,
-        max_tokens: Optional[int] = None
+    self,
+    prompt: str,
+    system_prompt: Optional[str] = None,
+    temperature: Optional[float] = None,
+    max_tokens: Optional[int] = None
     ) -> str:
         """
-        Generate response from LLM
-        
-        Args:
-            prompt: User prompt
-            system_prompt: Optional system prompt
-            temperature: Override default temperature
-            max_tokens: Override default max tokens
-        
-        Returns:
-            Generated text
+        Generate response from LLM using chat completions API.
         """
         if self.client is None:
             return "Error: OpenAI client not initialized"
-        
+
         messages = []
         if system_prompt:
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": prompt})
-        
+
         try:
+            # Use chat.completions.create() instead of responses.create()
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=messages,
                 temperature=temperature or self.temperature,
                 max_tokens=max_tokens or self.max_tokens
             )
-            
+            # Extract generated text
             return response.choices[0].message.content
-        
+
         except Exception as e:
             return f"Error generating response: {e}"
+
     
     def generate_with_context(
         self,

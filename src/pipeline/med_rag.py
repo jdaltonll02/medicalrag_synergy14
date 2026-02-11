@@ -3,6 +3,7 @@ Medical RAG Pipeline - Main orchestration
 """
 
 import os
+import logging
 from datetime import datetime
 from typing import Dict, Any, List
 import uuid
@@ -75,7 +76,7 @@ class MedicalRAGPipeline:
         self.bm25_retriever = BM25Retriever(
             host=bm25_config.get("elasticsearch_host", "localhost"),
             port=bm25_config.get("elasticsearch_port", 9200),
-            index_name=bm25_config.get("index_name", "medical_docs")
+            index_name=bm25_config.get("index_name", "medical_docs_2")
         )
         
         # Hybrid Retriever
@@ -94,15 +95,27 @@ class MedicalRAGPipeline:
         )
         
         # LLM
+        from src.llm.gemini_client import GeminiClient
+        
         llm_config = self.config.get("llm", {})
         llm_provider = llm_config.get("provider", "openai")
         
         if llm_provider == "stub" or os.getenv("LLM_PROVIDER") == "stub":
             self.llm = StubLLM()
-        else:
+        elif llm_provider == "gemini":
+            self.llm = GeminiClient(
+                model=llm_config.get("model", "gemini-2.0-flash"),
+                api_key=llm_config.get("api_key"),
+                project_id=llm_config.get("project_id"),
+                temperature=llm_config.get("temperature", 0.7),
+                max_tokens=llm_config.get("max_tokens", 1024)
+            )
+        else:  # openai (default)
             self.llm = OpenAIClient(
                 model=llm_config.get("model", "gpt-4"),
                 api_key=llm_config.get("api_key"),
+                base_url=llm_config.get("base_url"),
+                project_id=llm_config.get("project_id"),
                 temperature=llm_config.get("temperature", 0.7),
                 max_tokens=llm_config.get("max_tokens", 1024),
                 prompt_for_key=llm_config.get("prompt_for_key", True),
@@ -110,31 +123,59 @@ class MedicalRAGPipeline:
                 save_to_keyring=llm_config.get("save_to_keyring", False)
             )
 
-    def index_documents(self, documents: List[Dict[str, Any]]):
+
+    def index_documents(
+        self,
+        documents: List[Dict[str, Any]],
+        reset_index: bool = True,
+        index_fallback: bool = True
+    ):
         """Build indices for dense (FAISS) and sparse (BM25) retrieval"""
+        import sys
+        import logging
+        logger = logging.getLogger(__name__)
+        sys.stderr.write(f"[STDERR index_documents] ENTRY with {len(documents)} docs\n")
+        sys.stderr.flush()
         if not documents:
             return
         # Keep an in-memory store to enrich retrieval results later
-        self._doc_store = documents
+        if reset_index or not hasattr(self, "_doc_store"):
+            self._doc_store = []
+        self._doc_store.extend(documents)
         # Encode abstracts for FAISS
+        sys.stderr.write(f"[STDERR] About to extract abstracts from {len(documents)} docs\n")
+        sys.stderr.flush()
         abstracts = [doc.get("abstract", "") for doc in documents]
+        sys.stderr.write(f"[STDERR] About to encode {len(abstracts)} abstracts\n")
+        sys.stderr.flush()
+        logger.info(f"[INDEX] Encoding {len(documents)} documents...")
         embeddings = self.encoder.encode(abstracts)
+        sys.stderr.write(f"[STDERR] Encoding complete, got {len(embeddings)} embeddings\n")
+        sys.stderr.flush()
+        logger.info(f"[INDEX] Adding {len(embeddings)} vectors to FAISS...")
         self.faiss_index.add_vectors(embeddings)
         # Provide FAISS with external doc_id mapping aligned to insertion order
         try:
-            self.faiss_index.set_doc_ids([doc.get("doc_id") for doc in documents])
+            doc_ids = [doc.get("doc_id") for doc in documents]
+            if reset_index or not getattr(self.faiss_index, "doc_ids", None):
+                self.faiss_index.set_doc_ids(doc_ids)
+            else:
+                self.faiss_index.doc_ids.extend(doc_ids)
         except Exception:
             pass
         # Index documents into Elasticsearch
         try:
             # Reset ES index to avoid stale docs from previous runs
-            try:
-                self.bm25_retriever.reset_index()
-            except Exception:
-                pass
-            self.bm25_retriever.index_documents(documents)
+            if reset_index:
+                try:
+                    self.bm25_retriever.reset_index()
+                except Exception:
+                    pass
+            logger.info(f"[INDEX] Indexing {len(documents)} documents into Elasticsearch...")
+            self.bm25_retriever.index_documents(documents, index_fallback=index_fallback)
+            logger.info(f"[INDEX] Batch complete.")
         except Exception as e:
-            print(f"Warning: BM25 indexing failed: {e}")
+            logger.warning(f"BM25 indexing failed: {e}")
     
     def process_query(
         self,

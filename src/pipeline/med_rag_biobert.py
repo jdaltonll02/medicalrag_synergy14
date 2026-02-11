@@ -62,6 +62,8 @@ class MedicalRAGPipelineBioBERT:
             self.llm = OpenAIClient(
                 model=llm_config.get("model", "gpt-4"),
                 api_key=llm_config.get("api_key"),
+                base_url=llm_config.get("base_url"),
+                project_id=llm_config.get("project_id"),
                 temperature=llm_config.get("temperature", 0.7),
                 max_tokens=llm_config.get("max_tokens", 1024),
                 prompt_for_key=llm_config.get("prompt_for_key", True),

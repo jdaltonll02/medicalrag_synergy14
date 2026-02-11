@@ -295,16 +295,20 @@ class BM25Retriever:
             pass
         return self.create_index()
 
-    def index_documents(self, documents: List[Dict[str, Any]]):
+    def index_documents(self, documents: List[Dict[str, Any]], index_fallback: bool = True):
         """Bulk index documents into Elasticsearch (or fallback)"""
         if not documents:
             return False
         
-        # Always index in fallback BM25 for hybrid retrieval
-        self.fallback_bm25.index_documents(documents)
+        # Optionally index in fallback BM25 for hybrid retrieval
+        if index_fallback:
+            self.fallback_bm25.index_documents(documents)
         
         # Try to index in Elasticsearch if available
         if self.es is None:
+            if not index_fallback:
+                print("Warning: Elasticsearch not available and fallback BM25 disabled")
+                return False
             print("Note: Using Python-based BM25 (Elasticsearch not available)")
             return True
         

@@ -29,7 +29,7 @@ data:
 encoder:
   backend: medcpt
   batch_size: 32
-  device: cpu
+  device: cuda
   embedding_dim: 768
   model: ncbi/MedCPT-Query-Encoder
 evaluation:
@@ -64,14 +64,46 @@ faiss:
 fallback:
   use_elasticsearch: false
   use_faiss_only: true
+
+# LLM Configuration
+# Provider options: "openai", "gemini", "stub"
+# For OpenAI:
+#   - Set OPENAI_API_KEY environment variable
+#   - Optionally set OPENAI_BASE_URL and OPENAI_PROJECT_ID for custom endpoints
+# For Gemini:
+#   - Set GOOGLE_API_KEY environment variable  
+#   - Optionally set GOOGLE_CLOUD_PROJECT for GCP integration
 llm:
+  enabled: true
+  provider: openai  # Change to "gemini" to use Google Gemini instead
+  model: gpt-4o-mini-2024-07-18  # Full model name required for CMU gateway
+  temperature: 0.7
+  api_key: null  # Will use OPENAI_API_KEY environment variable
+  base_url: null  # Will use OPENAI_BASE_URL if set (e.g., CMU AI Gateway)
+  project_id: null  # Will use OPENAI_PROJECT_ID if set
   system_prompt: |
     You are a biomedical expert answering BioASQ questions.
     Use ONLY the provided documents.
     Produce a concise, factual answer suitable for BioASQ.
     Do NOT include citations or JSON formatting.
 
-  temperature: 0.7
+    The following are the types of questions and the answers required: 
+
+    Yes/no questions: These are questions that, strictly speaking, require "yes" or "no" answers, though of course in practice longer answers will often be desirable. For example, "Do CpG islands colocalise with transcription start sites?" is a yes/no question.
+    Factoid questions: These are questions that, strictly speaking, require a particular entity name (e.g., of a disease, drug, or gene), a number, or a similar short expression as an answer, though again a longer answer may be desirable in practice. For example, "Which virus is best known as the cause of infectious mononucleosis?" is a factoid question.
+    List questions: These are questions that, strictly speaking, require a list of entity names (e.g., a list of gene names), numbers, or similar short expressions as an answer; again, in practice additional information may be desirable. For example, "Which are the Raf kinase inhibitors?" is a list question.
+    Summary questions: These are questions that do not belong in any of the previous categories and can only be answered by producing a short text summarizing the most prominent relevant information. For example, "What is the treatment of infectious mononucleosis?" is a summary question.
+
+    Further instructions for answers: 
+
+    For each yes/no question , the exact answer of each participating system will have to be either "yes" or "no". Although the value "" will be used in the feedback files for yes/no questions to indicate that they do not have a golden answer yet, in the submission files the value "" is not axcepted.
+    For each factoid question , each participating system will have to return a list* of up to 5 entity names (e.g., up to 5 names of drugs), numbers, or similar short expressions, ordered by decreasing confidence.
+    For each list question , each participating system will have to return a single list* of entity names, numbers, or similar short expressions, jointly taken to constitute a single answer (e.g., the most common symptoms of a disease). The returned list will have to contain no more than 100 entries of no more than 100 characters each.
+    No exact answers will be returned for summary questions .
+    Ideal Answers
+    For each question (yes/no, factoid, list, summary), each participating system may also return an ideal answer , i.e., a single paragraph-sized text ideally summarizing the most relevant information from articles and snippets. Each returned "ideal" answer is intended to approximate a short text that a biomedical expert would write to answer the corresponding question (e.g., including prominent supportive information), whereas the "exact" answers are only "yes"/"no" responses, entity names or similar short expressions, or lists of entity names and similar short expressions; and there are no "exact" answers in the case of summary questions. The maximum allowed length of each "ideal" answer is 200 words.
+
+
 logging:
   format: json
   level: INFO

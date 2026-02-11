@@ -24,6 +24,7 @@ import logging
 from pathlib import Path
 from datetime import datetime
 from typing import Tuple
+from tqdm import tqdm
 from elasticsearch import Elasticsearch
 from elasticsearch.helpers import streaming_bulk
 
@@ -179,7 +180,7 @@ def ingest_corpus(
     chunk_size: int = 1000
 ) -> Tuple[int, int]:
     """
-    Ingest corpus into Elasticsearch
+    Ingest corpus into Elasticsearch with progress bar
     
     Args:
         es: Elasticsearch client
@@ -196,14 +197,22 @@ def ingest_corpus(
     
     success = 0
     failed = 0
-    last_reported = 0
     
-    for ok, result in streaming_bulk(
-        es,
-        generate_actions(docs_path, index_name, snapshot_date),
-        chunk_size=chunk_size,
-        raise_on_error=False
-    ):
+    # Progress bar with tqdm
+    pbar = tqdm(
+        streaming_bulk(
+            es,
+            generate_actions(docs_path, index_name, snapshot_date),
+            chunk_size=chunk_size,
+            raise_on_error=False
+        ),
+        desc="Ingesting documents",
+        unit="docs",
+        total=200000,  # Total documents expected
+        bar_format='{l_bar}{bar:50}{r_bar}{bar_format}'
+    )
+    
+    for ok, result in pbar:
         if ok:
             success += 1
         else:
@@ -212,11 +221,11 @@ def ingest_corpus(
                 error_info = result.get('index', {})
                 logger.warning(f"Failed to ingest: {error_info}")
         
-        # Log progress every 10K documents
-        if success + failed - last_reported >= 10000:
-            logger.info(f"Progress: {success + failed:,} documents processed ({success:,} successful, {failed:,} failed)")
-            last_reported = success + failed
+        # Update progress bar description with stats
+        pbar.set_description(f"Ingesting documents ({success:,} ok, {failed:,} failed)")
     
+    pbar.close()
+    logger.info(f"Ingest complete: {success:,} successful, {failed:,} failed")
     return success, failed
 
 

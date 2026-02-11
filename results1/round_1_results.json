@@ -2,443 +2,1136 @@
   "questions": [
     {
       "id": "6940eb0d4afd1e2b0400000d",
-      "documents": [],
+      "documents": [
+        "6252506",
+        "38112312",
+        "16291357",
+        "21760815",
+        "8175270",
+        "32636884",
+        "33116774",
+        "35956052",
+        "6252234",
+        "28386850"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "69528a024afd1e2b04000013",
-      "documents": [],
+      "documents": [
+        "27109355",
+        "22153492",
+        "21732557",
+        "16152657",
+        "40953753",
+        "24474891",
+        "21606878",
+        "21968631",
+        "30778824",
+        "21137039"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6953f46a4afd1e2b0400002c",
-      "documents": [],
+      "documents": [
+        "16829806",
+        "3766659",
+        "2438040",
+        "11450388",
+        "2403344",
+        "11594989",
+        "15301103",
+        "2727527",
+        "41128940",
+        "18979189"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695bd8c44afd1e2b0400002e",
-      "documents": [],
+      "documents": [
+        "32006517",
+        "40432061",
+        "36968192",
+        "32752150",
+        "2035749",
+        "28479064",
+        "26276026",
+        "20544633",
+        "34197539",
+        "27020712"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695289334afd1e2b0400000f",
-      "documents": [],
+      "documents": [
+        "17219248",
+        "7476999",
+        "17910952",
+        "11985722",
+        "18562239",
+        "8649380",
+        "12931193",
+        "8520577",
+        "15213240",
+        "23941207"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "69528af74afd1e2b04000014",
-      "documents": [],
+      "documents": [
+        "30828333",
+        "30514386",
+        "38123592",
+        "33898630",
+        "40246258",
+        "29163850",
+        "41277117",
+        "41084874",
+        "40940995",
+        "40066440"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "6952a96b4afd1e2b04000029",
-      "documents": [],
+      "documents": [
+        "2455024",
+        "33882746",
+        "29450725",
+        "26845459",
+        "3061563",
+        "35600077",
+        "2452232",
+        "11234622",
+        "16360292",
+        "28052712"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695291374afd1e2b04000023",
-      "documents": [],
+      "documents": [
+        "38471757",
+        "27826916",
+        "40001950",
+        "35189798",
+        "39697985",
+        "29099035",
+        "39708327",
+        "12222875",
+        "31212754",
+        "23874726"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6936c720f9d177840e00000b",
-      "documents": [],
+      "documents": [
+        "31050774",
+        "41429922",
+        "40620486",
+        "35079791",
+        "28662869",
+        "29317703",
+        "24335700",
+        "34644155",
+        "41002423",
+        "39721752"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695290854afd1e2b0400001e",
-      "documents": [],
+      "documents": [
+        "41080475",
+        "20001959",
+        "26358579",
+        "1908014",
+        "23959979",
+        "12752658",
+        "22595663",
+        "11707930",
+        "6429152",
+        "34097280"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6952896f4afd1e2b04000010",
-      "documents": [],
+      "documents": [
+        "38101080",
+        "33029209",
+        "18092935",
+        "29659620",
+        "35265534",
+        "31213185",
+        "10093709",
+        "38064190",
+        "7913067",
+        "16469783"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "695289c94afd1e2b04000011",
-      "documents": [],
+      "documents": [
+        "2612373",
+        "33029209",
+        "23035784",
+        "31213185",
+        "34904654",
+        "18092935",
+        "9039911",
+        "2056495",
+        "36981026",
+        "31353395"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "6940eaa74afd1e2b04000007",
-      "documents": [],
+      "documents": [
+        "10876062",
+        "11798083",
+        "7021008",
+        "25102258",
+        "16151537",
+        "17535998",
+        "36801587",
+        "23041673",
+        "8524984",
+        "39107355"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "6940ea834afd1e2b04000006",
-      "documents": [],
+      "documents": [
+        "8175270",
+        "8469589",
+        "35956052",
+        "17333054",
+        "21760815",
+        "5483322",
+        "1570744",
+        "20399314",
+        "3034758",
+        "2512782"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695290364afd1e2b0400001a",
-      "documents": [],
+      "documents": [
+        "23540950",
+        "35946725",
+        "17046518",
+        "8841810",
+        "6136028",
+        "12040770",
+        "9634289",
+        "32567181",
+        "9181907",
+        "41556621"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "695bd9654afd1e2b04000031",
-      "documents": [],
+      "documents": [
+        "28690714",
+        "16943649",
+        "15788717",
+        "19855857",
+        "34267158",
+        "38964809",
+        "17075913",
+        "19919208",
+        "40249755",
+        "33979250"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "6952ad1f4afd1e2b0400002a",
-      "documents": [],
+      "documents": [
+        "12609869",
+        "40149890",
+        "27055825",
+        "20363038",
+        "9106352",
+        "35222082",
+        "38856898",
+        "39830126",
+        "14551702",
+        "38456626"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695290a94afd1e2b04000020",
-      "documents": [],
+      "documents": [
+        "15483045",
+        "25937627",
+        "22804340",
+        "17248945",
+        "12902161",
+        "20551312",
+        "10797485",
+        "25171416",
+        "26940497",
+        "7997135"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695290954afd1e2b0400001f",
-      "documents": [],
+      "documents": [
+        "37612512",
+        "16551715",
+        "15727259",
+        "12902161",
+        "32621020",
+        "34304589",
+        "34898071",
+        "10192397",
+        "20004767",
+        "38032818"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6940eb1a4afd1e2b0400000e",
-      "documents": [],
+      "documents": [
+        "8175270",
+        "31495976",
+        "39943185",
+        "17333054",
+        "23686187",
+        "8193975",
+        "31166899",
+        "1570744",
+        "35739843",
+        "3034758"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695290284afd1e2b04000019",
-      "documents": [],
+      "documents": [
+        "6584863",
+        "28329910",
+        "23644598",
+        "7397359",
+        "569293",
+        "8098530",
+        "16809769",
+        "25271716",
+        "8662257",
+        "18723689"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6936c690f9d177840e000009",
-      "documents": [],
+      "documents": [
+        "38474922",
+        "32760629",
+        "23545981",
+        "39805894",
+        "39325696",
+        "19906685",
+        "18259690",
+        "23469968",
+        "12243110",
+        "32175016"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6936c667f9d177840e000008",
-      "documents": [],
+      "documents": [
+        "33245019",
+        "35057108",
+        "32760629",
+        "36296409",
+        "39466121",
+        "22688757",
+        "14981586",
+        "22875613",
+        "38801833",
+        "40260297"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "6952a8a84afd1e2b04000028",
-      "documents": [],
+      "documents": [
+        "18259690",
+        "27688613",
+        "37752992",
+        "15337524",
+        "20446909",
+        "27365368",
+        "17259558",
+        "34572912",
+        "19269105",
+        "18706412"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "695291464afd1e2b04000024",
-      "documents": [],
+      "documents": [
+        "35398094",
+        "20458446",
+        "16801391",
+        "26572969",
+        "16857062",
+        "15777268",
+        "35874607",
+        "19061244",
+        "27711871",
+        "19880740"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "69528fd84afd1e2b04000016",
-      "documents": [],
+      "documents": [
+        "8957691",
+        "22153492",
+        "32178589",
+        "28490193",
+        "7932382",
+        "2159459",
+        "2306251",
+        "20052998",
+        "25814448",
+        "9652109"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6936c6ddf9d177840e00000a",
-      "documents": [],
+      "documents": [
+        "38581561",
+        "27381617",
+        "2731092",
+        "39244441",
+        "31058688",
+        "35869739",
+        "28712206",
+        "16181912",
+        "37908210",
+        "33623515"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695289e94afd1e2b04000012",
-      "documents": [],
+      "documents": [
+        "7729505",
+        "10675126",
+        "27731423",
+        "2888205",
+        "4049162",
+        "38064190",
+        "10093709",
+        "6464482",
+        "20103742",
+        "31213185"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "6936c5c0f9d177840e000005",
-      "documents": [],
+      "documents": [
+        "24186148",
+        "34724407",
+        "32839491",
+        "22143142",
+        "34762770",
+        "40955932",
+        "39246664",
+        "15534562",
+        "11362649",
+        "35101471"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695290cc4afd1e2b04000022",
-      "documents": [],
+      "documents": [
+        "19425119",
+        "40367766",
+        "19273125",
+        "7603641",
+        "21712067",
+        "9106635",
+        "7571010",
+        "9750445",
+        "1310974",
+        "22260683"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "695290754afd1e2b0400001d",
-      "documents": [],
+      "documents": [
+        "39122983",
+        "26000846",
+        "27619166",
+        "40857838",
+        "40670350",
+        "39929803",
+        "31028641",
+        "40543500",
+        "36981026",
+        "30687561"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "6940eaf44afd1e2b0400000b",
-      "documents": [],
+      "documents": [
+        "6252506",
+        "637638",
+        "35956052",
+        "8175270",
+        "2512782",
+        "26239451",
+        "17333054",
+        "23686187",
+        "31543864",
+        "6252234"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6936c584f9d177840e000004",
-      "documents": [],
+      "documents": [
+        "25263092",
+        "28849161",
+        "39986236",
+        "39702579",
+        "29990979",
+        "8388222",
+        "26781426",
+        "35079791",
+        "24064197",
+        "24730272"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695291704afd1e2b04000025",
-      "documents": [],
+      "documents": [
+        "37710966",
+        "34570653",
+        "20464220",
+        "19466208",
+        "2552964",
+        "18078243",
+        "19733596",
+        "25144530",
+        "37764217",
+        "31191534"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6940eadc4afd1e2b0400000a",
-      "documents": [],
+      "documents": [
+        "35956052",
+        "8175270",
+        "3034758",
+        "2512782",
+        "5483322",
+        "17333054",
+        "31543864",
+        "1570744",
+        "8193975",
+        "24554936"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "6936c616f9d177840e000007",
-      "documents": [],
+      "documents": [
+        "26069061",
+        "39256110",
+        "39445563",
+        "26472939",
+        "25794638",
+        "39986236",
+        "39889712",
+        "26848407",
+        "24064197",
+        "37625928"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "695bdadb4afd1e2b04000034",
-      "documents": [],
+      "documents": [
+        "2147155",
+        "24669502",
+        "10959319",
+        "20377312",
+        "29774246",
+        "18510093",
+        "32356276",
+        "19358700",
+        "28534014",
+        "39721153"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "695bdb514afd1e2b04000035",
-      "documents": [],
+      "documents": [
+        "443306",
+        "26753262",
+        "32475479",
+        "8214180",
+        "16302056",
+        "2040120",
+        "23713020",
+        "16626876",
+        "8271232",
+        "32801026"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "69529ea84afd1e2b04000026",
-      "documents": [],
+      "documents": [
+        "19733596",
+        "20380624",
+        "12922087",
+        "25394603",
+        "18324892",
+        "16096017",
+        "6254287",
+        "24715286",
+        "12687155",
+        "34582315"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6940ea534afd1e2b04000003",
-      "documents": [],
+      "documents": [
+        "31543864",
+        "8175270",
+        "2512782",
+        "26239451",
+        "8469589",
+        "1570744",
+        "5483322",
+        "8193975",
+        "19571588",
+        "31166899"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "69528ff24afd1e2b04000017",
-      "documents": [],
+      "documents": [
+        "6656993",
+        "11692671",
+        "37321900",
+        "7832500",
+        "5289364",
+        "2782388",
+        "501748",
+        "12082171",
+        "26951521",
+        "39284669"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "69529f094afd1e2b04000027",
-      "documents": [],
+      "documents": [
+        "19263705",
+        "23760186",
+        "37606666",
+        "8941224",
+        "40758340",
+        "10854993",
+        "17403860",
+        "14660143",
+        "2488292",
+        "8435532"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "67d2ca3e592fa48873000032",
-      "documents": [],
+      "documents": [
+        "1058753",
+        "39883465",
+        "15085255",
+        "22466323",
+        "29871467",
+        "10485633",
+        "33498694",
+        "20589566",
+        "7525014",
+        "11069442"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "69528fb04afd1e2b04000015",
-      "documents": [],
+      "documents": [
+        "22675501",
+        "39973202",
+        "38405291",
+        "22153492",
+        "18259690",
+        "1965067",
+        "38966977",
+        "2306251",
+        "7759516",
+        "26546517"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695bd9c94afd1e2b04000032",
-      "documents": [],
+      "documents": [
+        "39056334",
+        "607100",
+        "2284388",
+        "35915383",
+        "12785648",
+        "7151313",
+        "26603624",
+        "31243752",
+        "6106389",
+        "15881620"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "695bdaa54afd1e2b04000033",
-      "documents": [],
+      "documents": [
+        "38063893",
+        "40257283",
+        "32198902",
+        "2147155",
+        "20377312",
+        "19358700",
+        "10428168",
+        "30238446",
+        "3159599",
+        "39721153"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695bd9284afd1e2b04000030",
-      "documents": [],
+      "documents": [
+        "31361312",
+        "24064563",
+        "39347811",
+        "12857774",
+        "26312591",
+        "28671974",
+        "27534956",
+        "11965479",
+        "40965868",
+        "15885539"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6940ea5f4afd1e2b04000004",
-      "documents": [],
+      "documents": [
+        "35956052",
+        "8175270",
+        "2512782",
+        "31543864",
+        "1570744",
+        "8193975",
+        "3034758",
+        "31166899",
+        "5483322",
+        "33749819"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6940eac64afd1e2b04000009",
-      "documents": [],
+      "documents": [
+        "637638",
+        "35956052",
+        "8175270",
+        "31543864",
+        "31166899",
+        "6252234",
+        "2512782",
+        "1570744",
+        "8193975",
+        "41503047"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6940ea404afd1e2b04000002",
-      "documents": [],
+      "documents": [
+        "8175270",
+        "2512782",
+        "35956052",
+        "26239451",
+        "31543864",
+        "19571588",
+        "637638",
+        "1570744",
+        "31166899",
+        "8193975"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695bd85c4afd1e2b0400002d",
-      "documents": [],
+      "documents": [
+        "36618746",
+        "23483070",
+        "16574611",
+        "21618767",
+        "31391637",
+        "25673818",
+        "27004166",
+        "39857484",
+        "8682421",
+        "29349806"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6953f4354afd1e2b0400002b",
-      "documents": [],
+      "documents": [
+        "36077326",
+        "38288611",
+        "8168690",
+        "12635175",
+        "37183463",
+        "16162405",
+        "35681760",
+        "41390072",
+        "29064423",
+        "23074489"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695290194afd1e2b04000018",
-      "documents": [],
+      "documents": [
+        "18855305",
+        "18562239",
+        "40759604",
+        "11782500",
+        "28254784",
+        "18682241",
+        "17619016",
+        "26399336",
+        "39629521",
+        "31513343"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695290bb4afd1e2b04000021",
-      "documents": [],
+      "documents": [
+        "16936740",
+        "25049091",
+        "10753787",
+        "7997135",
+        "23443494",
+        "15476891",
+        "30245011",
+        "32001312",
+        "30097675",
+        "28381656"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "695bd8f44afd1e2b0400002f",
-      "documents": [],
+      "documents": [
+        "27605468",
+        "15035063",
+        "1577355",
+        "23131313",
+        "25432816",
+        "10405540",
+        "23932433",
+        "5314019",
+        "25259401",
+        "7334779"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6940ea764afd1e2b04000005",
-      "documents": [],
+      "documents": [
+        "27934145",
+        "8175270",
+        "21783254",
+        "26330109",
+        "27711823",
+        "2791202",
+        "2512782",
+        "26239451",
+        "31166899",
+        "5483322"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "695290534afd1e2b0400001c",
-      "documents": [],
+      "documents": [
+        "17148345",
+        "34756292",
+        "27109577",
+        "7121503",
+        "36482823",
+        "25465894",
+        "26346057",
+        "8625735",
+        "35887284",
+        "11932769"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6936c5eef9d177840e000006",
-      "documents": [],
+      "documents": [
+        "38819189",
+        "41335448",
+        "24625898",
+        "37340553",
+        "23877412",
+        "38143757",
+        "14556431",
+        "9416774",
+        "8834959",
+        "40077855"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6936c55cf9d177840e000003",
-      "documents": [],
+      "documents": [
+        "6426961",
+        "39445563",
+        "16573426",
+        "25794638",
+        "39728678",
+        "26069061",
+        "391257",
+        "23036022",
+        "39986236",
+        "24064197"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "6952903e4afd1e2b0400001b",
-      "documents": [],
+      "documents": [
+        "19277045",
+        "38358888",
+        "29995558",
+        "36156116",
+        "17551730",
+        "12122203",
+        "16954148",
+        "40016183",
+        "31327097",
+        "24675420"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6936c53bf9d177840e000002",
-      "documents": [],
+      "documents": [
+        "40656472",
+        "26069061",
+        "31865175",
+        "17934521",
+        "40048040",
+        "35159804",
+        "24730272",
+        "25468223",
+        "25794638",
+        "26848407"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     },
     {
       "id": "6940eab84afd1e2b04000008",
-      "documents": [],
+      "documents": [
+        "40271032",
+        "39251589",
+        "40712981",
+        "29764284",
+        "17535998",
+        "25102258",
+        "19571588",
+        "23041673",
+        "16151537",
+        "7021008"
+      ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error: OpenAI client not initialized"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
     },
     {
       "id": "6940eafe4afd1e2b0400000c",
-      "documents": [],
+      "documents": [
+        "17642425",
+        "2512782",
+        "40062147",
+        "8175270",
+        "8446292",
+        "1570744",
+        "35956052",
+        "6252506",
+        "33116774",
+        "31543864"
+      ],
       "snippets": [],
-      "exact_answer": "Error: OpenAI client not initialized",
+      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
       "ideal_answer": null
     }
   ]
