@@ -17,7 +17,7 @@ bm25:
   b: 0.75
   elasticsearch_host: localhost
   elasticsearch_port: 9200
-  index_name: medical_docs_3
+  index_name: medical_docs_4
   k1: 2.0
   min_score: 0.1
 data:
@@ -28,7 +28,7 @@ data:
   run_manifest: /data/user_data/jgibson2/bioask_pubmed_dataset/round4_data/runs/run_manifest.json
 encoder:
   backend: medcpt
-  batch_size: 32
+  batch_size: 512
   device: cuda
   embedding_dim: 768
   model: ncbi/MedCPT-Query-Encoder
@@ -40,7 +40,7 @@ evaluation:
     - relevance
     - evidence_support
     enabled: false
-    model: gpt-4o-mini-2024-07-18
+    model: gpt-4o-2024-08-06
     temperature: 0.0
   metrics:
   - recall@5
@@ -76,7 +76,7 @@ fallback:
 llm:
   enabled: true
   provider: openai  # Change to "gemini" to use Google Gemini instead
-  model: gpt-4o-mini-2024-07-18  # Full model name required for CMU gateway
+  model: gpt-4o-2024-08-06  # Full model name required for CMU gateway
   temperature: 0.7
   api_key: null  # Will use OPENAI_API_KEY environment variable
   base_url: null  # Will use OPENAI_BASE_URL if set (e.g., CMU AI Gateway)

@@ -79,10 +79,12 @@ def stream_pubmed_corpus(jsonl_path: Path) -> Iterator[Dict[str, Any]]:
 def index_pubmed_stream(
     pipeline: MedicalRAGPipeline,
     corpus_stream: Iterator[Dict[str, Any]],
-    batch_size: int = 5_000,   # Reduced for more frequent progress updates
+    batch_size: int = 50000,   # Increased for faster bulk indexing (tune as needed)
 ):
     import sys
     import time
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    import threading
     
     bm25 = pipeline.bm25_retriever
     es = bm25.es if bm25 is not None else None
@@ -109,32 +111,49 @@ def index_pubmed_stream(
         logger.warning("Elasticsearch not available; skipping ES tuning for bulk indexing")
 
     logger.info("Indexing PubMed documents (streaming + bulk mode)")
+
+    import queue
     batch = []
     total = 0
+    lock = threading.Lock()
+    max_workers = 4  # Tune based on CPU/network/ES capacity
+    batch_queue = queue.Queue(maxsize=2)  # Allow one batch to be encoded while one is indexed
+    stop_token = object()
 
-    for doc in tqdm(corpus_stream, desc="Indexing documents", unit=" docs", unit_scale=True, mininterval=1.0, file=sys.stderr):
-        batch.append(doc)
+    def encoder_worker():
+        for doc in tqdm(corpus_stream, desc="Indexing documents", unit=" docs", unit_scale=True, mininterval=1.0, file=sys.stderr):
+            batch.append(doc)
+            if len(batch) >= batch_size:
+                logger.info(f"Processing batch: {total} -> {total + len(batch)} documents")
+                sys.stderr.write(f"[STDERR] About to call index_documents with {len(batch)} docs\n")
+                sys.stderr.flush()
+                batch_queue.put(batch.copy())
+                batch.clear()
+        if batch:
+            logger.info(f"Processing final batch: {total} -> {total + len(batch)} documents")
+            batch_queue.put(batch.copy())
+        batch_queue.put(stop_token)
 
-        if len(batch) >= batch_size:
-            logger.info(f"Processing batch: {total} -> {total + len(batch)} documents")
-            sys.stderr.write(f"[STDERR] About to call index_documents with {len(batch)} docs\n")
-            sys.stderr.flush()
+    def indexer_worker():
+        nonlocal total
+        while True:
+            batch_docs = batch_queue.get()
+            if batch_docs is stop_token:
+                break
             start = time.time()
-            # Reduced batch + disabled fallback BM25 indexing during ingestion
-            pipeline.index_documents(batch, reset_index=False, index_fallback=False)
+            pipeline.index_documents(batch_docs, reset_index=False, index_fallback=False)
             elapsed = time.time() - start
-            total += len(batch)
-            logger.info(f"Completed batch in {elapsed:.1f}s. Total indexed: {total}")
-            sys.stderr.write(f"[STDERR] Batch complete in {elapsed:.1f}s\n")
-            sys.stderr.flush()
-            batch.clear()
+            with lock:
+                total += len(batch_docs)
+                logger.info(f"Completed batch in {elapsed:.1f}s. Total indexed: {total}")
 
-    if batch:
-        logger.info(f"Processing final batch: {total} -> {total + len(batch)} documents")
-        pipeline.index_documents(batch, reset_index=False, index_fallback=False)
-        total += len(batch)
-        logger.info(f"Completed final batch. Total indexed: {total}")
-
+    # Start encoder and indexer threads
+    encoder_thread = threading.Thread(target=encoder_worker)
+    indexer_thread = threading.Thread(target=indexer_worker)
+    encoder_thread.start()
+    indexer_thread.start()
+    encoder_thread.join()
+    indexer_thread.join()
     logger.info(f"Finished indexing {total} PubMed documents")
 
     # Restore ES settings
@@ -347,7 +366,7 @@ def main():
         / f"testset_round_{args.round}.json"
     )
 
-    pubmed_path = args.dataset_root / "pubmed_round3_corpus.jsonl"
+    pubmed_path = args.dataset_root / "pubmed_round4_corpus.jsonl"
 
     questions = load_bioasq_testset(testset_path)
 

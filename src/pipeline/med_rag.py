@@ -130,9 +130,10 @@ class MedicalRAGPipeline:
         reset_index: bool = True,
         index_fallback: bool = True
     ):
-        """Build indices for dense (FAISS) and sparse (BM25) retrieval"""
+        """Build indices for dense (FAISS) and sparse (BM25) retrieval, with parallel preprocessing"""
         import sys
         import logging
+        from concurrent.futures import ThreadPoolExecutor
         logger = logging.getLogger(__name__)
         sys.stderr.write(f"[STDERR index_documents] ENTRY with {len(documents)} docs\n")
         sys.stderr.flush()
@@ -142,10 +143,13 @@ class MedicalRAGPipeline:
         if reset_index or not hasattr(self, "_doc_store"):
             self._doc_store = []
         self._doc_store.extend(documents)
-        # Encode abstracts for FAISS
+        # Parallel extract abstracts
         sys.stderr.write(f"[STDERR] About to extract abstracts from {len(documents)} docs\n")
         sys.stderr.flush()
-        abstracts = [doc.get("abstract", "") for doc in documents]
+        def extract_abstract(doc):
+            return doc.get("abstract", "")
+        with ThreadPoolExecutor() as executor:
+            abstracts = list(executor.map(extract_abstract, documents))
         sys.stderr.write(f"[STDERR] About to encode {len(abstracts)} abstracts\n")
         sys.stderr.flush()
         logger.info(f"[INDEX] Encoding {len(documents)} documents...")

@@ -43,23 +43,28 @@ class MedCPTEncoder:
         self._load_model()
     
     def _load_model(self):
-        """Load MedCPT model and tokenizer"""
+        """Load MedCPT model and tokenizer, with multi-GPU support"""
         import sys
-        sys.stderr.write(f"[ENCODER] Loading MedCPT model: {self.model_name} on {self.device}\\n")
+        sys.stderr.write(f"[ENCODER] Loading MedCPT model: {self.model_name} on {self.device}\n")
         sys.stderr.flush()
         try:
             from transformers import AutoTokenizer, AutoModel
             import torch
-            
-            sys.stderr.write(f"[ENCODER] Loading tokenizer...\\n")
+            sys.stderr.write(f"[ENCODER] Loading tokenizer...\n")
             sys.stderr.flush()
             self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-            sys.stderr.write(f"[ENCODER] Loading model...\\n")
+            sys.stderr.write(f"[ENCODER] Loading model...\n")
             sys.stderr.flush()
-            self.model = AutoModel.from_pretrained(self.model_name)
+            model = AutoModel.from_pretrained(self.model_name)
             sys.stderr.write(f"[ENCODER] Moving model to {self.device}...\n")
             sys.stderr.flush()
-            self.model.to(self.device)
+            model.to(self.device)
+            # Multi-GPU support
+            if self.device == "cuda" and torch.cuda.device_count() > 1:
+                sys.stderr.write(f"[ENCODER] Using DataParallel on {torch.cuda.device_count()} GPUs\n")
+                sys.stderr.flush()
+                model = torch.nn.DataParallel(model)
+            self.model = model
             self.model.eval()
             sys.stderr.write(f"[ENCODER] Model loaded successfully\n")
             sys.stderr.flush()
@@ -114,21 +119,18 @@ class MedCPTEncoder:
         return embeddings
     
     def _encode_batch(self, texts: List[str], batch_size: int) -> np.ndarray:
-        """Encode texts in batches"""
+        """Encode texts in batches, using mixed precision if on CUDA"""
         import torch
         import logging
         logger = logging.getLogger(__name__)
-        
+        use_fp16 = self.device == "cuda"
         all_embeddings = []
         num_batches = (len(texts) + batch_size - 1) // batch_size
-        
         for i in range(0, len(texts), batch_size):
             batch_texts = texts[i:i + batch_size]
             batch_num = i // batch_size + 1
-            
             if batch_num % 50 == 0 or batch_num == num_batches:
                 logger.info(f"[ENCODER] Processing batch {batch_num}/{num_batches} ({len(all_embeddings) * batch_size}/{len(texts)} texts)")
-            
             # Tokenize
             inputs = self.tokenizer(
                 batch_texts,
@@ -137,15 +139,16 @@ class MedCPTEncoder:
                 max_length=512,
                 return_tensors="pt"
             ).to(self.device)
-            
-            # Encode
+            # Encode with mixed precision if CUDA
             with torch.no_grad():
-                outputs = self.model(**inputs)
+                if use_fp16:
+                    with torch.cuda.amp.autocast():
+                        outputs = self.model(**inputs)
+                else:
+                    outputs = self.model(**inputs)
                 # Use CLS token embedding
                 embeddings = outputs.last_hidden_state[:, 0, :].cpu().numpy()
-            
             all_embeddings.append(embeddings)
-        
         return np.vstack(all_embeddings)
     
     def encode_query(self, query: str, normalize: bool = True) -> np.ndarray:

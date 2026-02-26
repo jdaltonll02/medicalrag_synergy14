@@ -328,7 +328,8 @@ class BM25Retriever:
                 "_source": source
             })
         try:
-            bulk(self.es, actions)
+            # Use chunk_size for very large batches (tune as needed)
+            bulk(self.es, actions, chunk_size=5000)
             return True
         except Exception as e:
             print(f"Elasticsearch bulk index error: {e}")

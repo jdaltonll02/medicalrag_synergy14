@@ -58,7 +58,7 @@ mmr:
 
 llm:
   provider: "openai"
-  model: "gpt-4o-mini-2024-07-18"
+  model: "gpt-4o-2024-08-06"
   temperature: 0.7
   max_tokens: 1024
   system_prompt: |
@@ -87,7 +87,7 @@ evaluation:
     - "f1@50"
   llm_judge:
     enabled: true
-    model: "gpt-4o-mini-2024-07-18"
+    model: "gpt-4o-2024-08-06"
     temperature: 0.0
     aspects:
       - "factuality"

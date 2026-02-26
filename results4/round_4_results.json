@@ -1,0 +1,3926 @@
+{
+  "questions": [
+    {
+      "id": "6940eb0d4afd1e2b0400000d",
+      "body": "What are the symptoms of glucocorticoid withdrawal syndrome after surgical remission of Cushing Syndrome?",
+      "type": "list",
+      "documents": [
+        "23092037",
+        "7070680",
+        "170703",
+        "12476932",
+        "8725498",
+        "39710834",
+        "24735400",
+        "6308036",
+        "8706282",
+        "1424208"
+      ],
+      "snippets": [
+        {
+          "text": "Cushing's syndrome results from inappropriate exposure to excessive glucocorticoids.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 84,
+          "document": "23092037",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The 2 Ss manifesting evident symptoms of withdrawal and starting the therapeutic program respectively at the 20th and 32nd hour had their syndrome stopped and suppressed respectively within the 24th and 48th hour.",
+          "offsetInBeginSection": 501,
+          "offsetInEndSection": 714,
+          "document": "7070680",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "They all showed benefit by transfer to depot tetracosactrin, though steroid withdrawal symptoms could be troublesome.",
+          "offsetInBeginSection": 248,
+          "offsetInEndSection": 365,
+          "document": "170703",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The aim of the present study was to assess serum leptin during and four days after withdrawal of short-term treatment with prednisolone.",
+          "offsetInBeginSection": 145,
+          "offsetInEndSection": 281,
+          "document": "12476932",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "She was suspected of having primary glucocorticoid resistance on the basis of high plasma ACTH and serum cortisol levels without the features of Cushing's syndrome.",
+          "offsetInBeginSection": 95,
+          "offsetInEndSection": 259,
+          "document": "8725498",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "On the other hand sudden abrupt of antidepressants or antipsychotics may cause discontinuation symptoms including movement or sensory disturbances, sleep disturbances, and hyperarousal but generally of less severity comparing to withdrawal syndrome.",
+          "offsetInBeginSection": 478,
+          "offsetInEndSection": 727,
+          "document": "39710834",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The glucocorticoid hormone cortisol is released in pulses resulting in a complex and dynamic ultradian rhythm of plasma cortisol that underlies the classical circadian rhythm.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 175,
+          "document": "24735400",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Peak plasma cortisol concentrations during a 30-min ACTH test performed 2 days after stopping injection of ACTH depot increased in all seven subjects (they were normal in five subjects) compared to the initial subnormal responses.",
+          "offsetInBeginSection": 182,
+          "offsetInEndSection": 412,
+          "document": "6308036",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "However, after surgical removal of the adrenal tumour, the patient developed acute adrenal insufficiency.",
+          "offsetInBeginSection": 238,
+          "offsetInEndSection": 343,
+          "document": "8706282",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We assessed pituitary histology in patients with Cushing's disease.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 67,
+          "document": "1424208",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: Azu"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6936c616f9d177840e000007",
+      "body": "What is the role of ketogenic diet for treatment of glioblastoma?",
+      "type": "summary",
+      "documents": [
+        "12671955",
+        "30125556",
+        "28941398",
+        "36305994",
+        "20687616",
+        "35884385",
+        "32642649",
+        "21740400",
+        "29456734",
+        "34413288"
+      ],
+      "snippets": [
+        {
+          "text": "The ketogenic diet (KD) is increasingly being used to treat patients with intractable epilepsy.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 95,
+          "document": "28941398",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The new \"Congress of Neurological Surgeons Systematic Review and Evidence-Based Guidelines Update on the Role of Neuropathology in the Management of Progressive Glioblastoma in Adults\" was recently published in this journal.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 224,
+          "document": "36305994",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This article reviews evidence and data on chemotherapy and immunotherapy for a personalized medicine approach in order to enable physicians to select the appropriate treatment for glioma patients.",
+          "offsetInBeginSection": 352,
+          "offsetInEndSection": 548,
+          "document": "20687616",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The specific tumor uptake ratio and photodynamic therapy (PDT) threshold of the rat glioblastoma and normal brain were determined, survival and CD8 A significantly lower absorbed energy was sufficient to achieve LD Rutherrin-PDT was well tolerated pr...",
+          "offsetInBeginSection": 311,
+          "offsetInEndSection": 564,
+          "document": "32642649",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "GBM (glioblastoma multiforme) is a highly aggressive brain tumour with very poor prognosis despite multi-modalities of treatment.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 129,
+          "document": "21740400",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Despite advances achieved in treatment and research, the median survival for patients with GBM remains <1.5 years.",
+          "offsetInBeginSection": 97,
+          "offsetInEndSection": 211,
+          "document": "29456734",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "69528a024afd1e2b04000013",
+      "body": "How many members of the serine/threonine kinase family group are present in \nthe human proteome?",
+      "type": "factoid",
+      "documents": [
+        "25175928",
+        "20839100",
+        "20940630",
+        "32555458",
+        "2833073",
+        "35596435",
+        "38927711",
+        "15188412",
+        "19241012",
+        "19274099"
+      ],
+      "snippets": [
+        {
+          "text": "Here we present a detailed protocol to enrich phosphopeptides from total cell lysates in a form amenable to downstream analysis by mass spectrometry.",
+          "offsetInBeginSection": 297,
+          "offsetInEndSection": 446,
+          "document": "20839100",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Members of each subgroup appeared to be originated from each single ancestral gene during evolutionary process even within the protein kinase super family.",
+          "offsetInBeginSection": 492,
+          "offsetInEndSection": 647,
+          "document": "2833073",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We applied this technique to probe signal-induced changes in the phosphoproteome of human U937 cells, and found that the pools of two cancer-related phosphoproteins implicated in intracellular hormones signaling are dramatically altered in the course...",
+          "offsetInBeginSection": 947,
+          "offsetInEndSection": 1200,
+          "document": "15188412",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "In the quest for the origin and evolution of protein phosphorylation, the major regulatory post-translational modification in eukaryotes, the members of archaea, the \"third domain of life\", play a protagonistic role.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 216,
+          "document": "19274099",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ],
+        [
+          "Try again in 5 seconds"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "695bdb514afd1e2b04000035",
+      "body": "Are women underdiagnosed with alcoholic disorders?",
+      "type": "yesno",
+      "documents": [
+        "2319339",
+        "3710649",
+        "10198664",
+        "26894525",
+        "23820325",
+        "39675100",
+        "22338756",
+        "1560669",
+        "24729946",
+        "25802797"
+      ],
+      "snippets": [
+        {
+          "text": "Results of a qualitative study that explored reasons why women chose to drink alcohol or to not drink alcohol during pregnancy are presented.",
+          "offsetInBeginSection": 101,
+          "offsetInEndSection": 242,
+          "document": "2319339",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The purpose of the present study was to investigate the frequency with which health care professionals identify alcohol and drug problems in an adolescent clinic population.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 173,
+          "document": "3710649",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This study among American Indian prenatal patients was conducted to validate a self-administered questionnaire (SAQ) designed to (1) identify women who had consumed alcohol during pregnancy, (2) identify women who may be at risk of drinking during pr...",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 253,
+          "document": "10198664",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "A cross-sectional study was conducted with two groups of substance-dependent women using the Drug Abuse Screening Test, the Short Alcohol Dependence Data questionnaire, the Fagerstr\u00f6m Test for Nicotine Dependence for the evaluation of the severity of...",
+          "offsetInBeginSection": 279,
+          "offsetInEndSection": 532,
+          "document": "26894525",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Cardiovascular disease is the most common cause of death in women in the United States, and hypertension is a major contributor to cardiovascular mortality.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 156,
+          "document": "23820325",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This cohort grew up within permissive alcohol environments that encouraged women's consumption, linking it to success, femininity, and empowerment.",
+          "offsetInBeginSection": 89,
+          "offsetInEndSection": 236,
+          "document": "39675100",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Alcohol consumption is traditionally part of most human cultures, and with the onset of industrial revolution it was recognized as a health and social problem.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 159,
+          "document": "22338756",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Chronic alcoholism and drug abuse are often associated in women with derangements of reproductive function such as amenorrhea, anovulation, luteal phase dysfunction and early menopause.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 185,
+          "document": "1560669",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Survey data from current drinkers (n=2380) were analyzed, along with qualitative interviews from a quota sample of 81.",
+          "offsetInBeginSection": 152,
+          "offsetInEndSection": 270,
+          "document": "24729946",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This is a cross-sectional study that was done on 236 girls and young women aged 16-25 years in 2012 in three groups: vulnerable women who have substance dependency (crimes that had made women incarcerated were considered as vulnerability in this stud...",
+          "offsetInBeginSection": 285,
+          "offsetInEndSection": 538,
+          "document": "25802797",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": "yes",
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6953f46a4afd1e2b0400002c",
+      "body": "What is Scleral Buckle used for?",
+      "type": "factoid",
+      "documents": [
+        "26555211",
+        "25784106",
+        "15085976",
+        "4068597",
+        "34592117",
+        "32516225",
+        "12842668",
+        "29520006",
+        "1393814",
+        "7976837"
+      ],
+      "snippets": [
+        {
+          "text": "Pneumatic retinopexy is less costly to perform than scleral buckling and pars plana vitrectomy and avoids many of the complications associated with these procedures.",
+          "offsetInBeginSection": 468,
+          "offsetInEndSection": 633,
+          "document": "25784106",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Polyurethane sponge was used for scleral buckling in 165 patients suffering from retinal detachment.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 100,
+          "document": "4068597",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The authors describe a method to improve teaching the most critical step in strabismus surgery, the scleral pass.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 113,
+          "document": "34592117",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Here we show that within a visual angle of 46.3 degrees, POLYRETINA embeds 2215 stimulating pixels, of which 967 are in the central area of 5\u2009mm, it is foldable to allow implantation through a small scleral incision, and it has a hemispherical shape ...",
+          "offsetInBeginSection": 361,
+          "offsetInEndSection": 614,
+          "document": "29520006",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The postoperative management was complicated by a retinal detachment; however, this responded to a scleral buckling procedure.",
+          "offsetInBeginSection": 456,
+          "offsetInEndSection": 582,
+          "document": "1393814",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "To understand the development of epimacular membrane following rhegmatogenous retinal detachment surgery, we studied 105 eyes which had undergone scleral buckling procedure.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 173,
+          "document": "7976837",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 401 - {'error': {'message': 'litellm"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "695289334afd1e2b0400000f",
+      "body": "Which kinases that take part in the same pathway as the kinase Pi4KIIalpha, both \nupstream and downstream?",
+      "type": "list",
+      "documents": [
+        "34056659",
+        "7874203",
+        "8649413",
+        "39081779",
+        "28931550",
+        "17875337",
+        "19860827",
+        "10495353",
+        "8608011",
+        "9079650"
+      ],
+      "snippets": [
+        {
+          "text": "MEKs lie at a point of convergence for multiple upstream signals, mediated by distinct protein kinases, Raf, MEK kinase, and Mos, all of which have MEK kinase activity.",
+          "offsetInBeginSection": 231,
+          "offsetInEndSection": 399,
+          "document": "7874203",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Salt-inducible kinases (SIKs) are serine/threonine kinases of the adenosine monophosphate-activated protein kinase family.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 122,
+          "document": "39081779",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The three Akt kinases are related proteins that are essential for normal growth and metabolic regulation and are implicated as key signaling mediators in many physiological and pathophysiological processes.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 206,
+          "document": "28931550",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "In addition, phosphorylation is mediated through both indirect and direct interaction between these kinases and substrates, which makes it difficult to effectively prepare large quantities of recombinant phosphorylated proteins.",
+          "offsetInBeginSection": 215,
+          "offsetInEndSection": 443,
+          "document": "17875337",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Protein kinases drive the cellular signal transduction networks that underlie the regulation of growth, survival and differentiation.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 133,
+          "document": "19860827",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "p38 MAP kinase is a member of the family of kinases which mediate intracellular transduction pathways.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 102,
+          "document": "10495353",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The past year has revealed the complexity of pp70S6k regulation, with the overriding theme being that enzymes which have proven or putative roles in phospholipid metabolism mediate its activation.",
+          "offsetInBeginSection": 199,
+          "offsetInEndSection": 395,
+          "document": "8608011",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Mitogen-activated protein kinases (MAPKs) are components of sequential kinase cascades that are activated in response to a variety of extracellular signals.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 156,
+          "document": "9079650",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "69528af74afd1e2b04000014",
+      "body": "What are Car T cells?",
+      "type": "summary",
+      "documents": [
+        "40348587",
+        "30728213",
+        "36346550",
+        "38027056",
+        "35468841",
+        "39025235",
+        "40908464",
+        "30103488",
+        "38231412",
+        "35572525"
+      ],
+      "snippets": [],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6952a96b4afd1e2b04000029",
+      "body": "What growth factor has been shown to affect GABAergic neurogenesis in the prenatal human brain?",
+      "type": "factoid",
+      "documents": [
+        "16400934",
+        "7041530",
+        "33706916",
+        "31100265",
+        "36166833",
+        "12732224",
+        "29034320",
+        "32864517",
+        "10338318",
+        "24875535"
+      ],
+      "snippets": [
+        {
+          "text": "It was shown that an accelerated brain development was associated with somewhat smaller number of newborn rats per litter, an increased prenatal fetal loss, and lower HSD activity in ovarian and adrenal cortex steroid-producing cells, low estradiol c...",
+          "offsetInBeginSection": 924,
+          "offsetInEndSection": 1177,
+          "document": "16400934",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This is followed by a review of the determinants of neuron fate, the molecular and genetic regulatory mechanisms, and considerations on the evolution of cortical neurogenesis in vertebrates leading to humans.",
+          "offsetInBeginSection": 600,
+          "offsetInEndSection": 808,
+          "document": "33706916",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Recent achievements have shown that reelin, a large extracellular glycoprotein, plays a crucial role in neuronal migration and localization during the development of neocortex and cerebellar cortex, thereby participating in the development of neurops...",
+          "offsetInBeginSection": 321,
+          "offsetInEndSection": 574,
+          "document": "36166833",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "In particular, it has been shown that disruptions in the mother-infant relationship result in neuroendocrine, neurochemical and behavioural changes in the adult organism, although the basic mechanisms underlying such changes have not been completely ...",
+          "offsetInBeginSection": 195,
+          "offsetInEndSection": 448,
+          "document": "12732224",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Since fetal brain is highly plastic, we hypothesize that the fetal brain ECM may contain cues promoting neural growth and differentiation, highly desired in regenerative medicine.",
+          "offsetInBeginSection": 422,
+          "offsetInEndSection": 601,
+          "document": "29034320",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Prenatal alcohol exposure can result in growth, cognitive, and behavioral deficits due to the toxicant and teratogenic effects of alcohol.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 138,
+          "document": "32864517",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Vascular endothelial growth factor is a highly conserved, heparin-binding protein which mediates a number of critical developmental processes in both vertebrates and invertebrates, including angiogenesis, vasculogenesis and hematopoiesis.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 238,
+          "document": "10338318",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Its use in industrial applications is widespread and results in an increased risk of human environmental exposure.",
+          "offsetInBeginSection": 78,
+          "offsetInEndSection": 192,
+          "document": "24875535",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ],
+        [
+          "Try again in 5 seconds"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "69529ea84afd1e2b04000026",
+      "body": "Are vaccines a type of prophylaxis?",
+      "type": "yesno",
+      "documents": [
+        "17981684",
+        "34304387",
+        "17986242",
+        "36952316",
+        "25496339",
+        "23338932",
+        "11981310",
+        "12455399",
+        "11516782",
+        "6095715"
+      ],
+      "snippets": [
+        {
+          "text": "Vaccines based on the VesiVax system have been designed against the influenza virus and herpes simplex type 2 virus, the causative agents of the \"flu\" and genital herpes, respectively.",
+          "offsetInBeginSection": 394,
+          "offsetInEndSection": 578,
+          "document": "17981684",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This report will serve to assess the safety and immunogenicity of quadrivalent (types 6, 11, 16, and 18) HPV L1 virus-like particle (VLP) vaccine in the Korean population.",
+          "offsetInBeginSection": 116,
+          "offsetInEndSection": 287,
+          "document": "17986242",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Occupational health programs caring for laboratory workers handling unusual biological agents require careful planning and coordination to facilitate access to vaccines that are not commercially available, anticipate and mitigate barriers to vaccinat...",
+          "offsetInBeginSection": 734,
+          "offsetInEndSection": 987,
+          "document": "36952316",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The inclusion of an adjuvant is typically vital for the efficacy of vaccines using inactivated organisms, subunit and DNA antigens.",
+          "offsetInBeginSection": 235,
+          "offsetInEndSection": 366,
+          "document": "25496339",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Hexaxim(\u00ae) (DTaP-IPV-Hep B-Hib) is a new, thiomersal-free, fully liquid, hexavalent combination pediatric vaccine containing diphtheria and tetanus toxoids, acellular pertussis, inactivated poliovirus, recombinant hepatitis B virus surface antigen pr...",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 253,
+          "document": "23338932",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Although current inactivated split/subunit vaccines are reasonably effective, significant improvements have been shown to be possible in the boosting of responses by the use of particular adjuvants and/or the direct administration of vaccines to the ...",
+          "offsetInBeginSection": 341,
+          "offsetInEndSection": 594,
+          "document": "11981310",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "In order to further reduce these losses, academicians and companies are employing the multidisciplinary approach to develop better and safer vaccines.",
+          "offsetInBeginSection": 348,
+          "offsetInEndSection": 498,
+          "document": "12455399",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "These microparticles allow controlled release of vaccines with the aim to develop as single dose vaccines.",
+          "offsetInBeginSection": 462,
+          "offsetInEndSection": 568,
+          "document": "11516782",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Conditions for growing Bordetella pertussis bacteria in fermentors were studied for the purpose of producing highly protective vaccines.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 136,
+          "document": "6095715",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": "yes",
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6940ea534afd1e2b04000003",
+      "body": "What are the types of Cushing Syndrome?",
+      "type": "list",
+      "documents": [
+        "28005257",
+        "8725498",
+        "37828397",
+        "16915537",
+        "33543159",
+        "37174967",
+        "23092037",
+        "25146409",
+        "35505424",
+        "9460889"
+      ],
+      "snippets": [
+        {
+          "text": "Patients affected by Cushing's disease often have important comorbidities directly linked to hypercortisolism that might enhance the operative risk.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 148,
+          "document": "28005257",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "She was suspected of having primary glucocorticoid resistance on the basis of high plasma ACTH and serum cortisol levels without the features of Cushing's syndrome.",
+          "offsetInBeginSection": 95,
+          "offsetInEndSection": 259,
+          "document": "8725498",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Transient pregnancy-induced Cushing's syndrome is a rare condition characterized by the manifestation of symptoms solely during pregnancy, which typically resolve spontaneously following delivery or miscarriage.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 211,
+          "document": "37828397",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The overnight one-mg dexamethasone suppression test has been used for many years to screen for Cushing's syndrome.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 114,
+          "document": "16915537",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Acromegaly and Cushing's disease are rare but important diagnoses to detect.",
+          "offsetInBeginSection": 814,
+          "offsetInEndSection": 890,
+          "document": "33543159",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The diagnosis and treatment of Cushing's syndrome remain challenging, and monitoring the effects of treatment is often necessary.",
+          "offsetInBeginSection": 280,
+          "offsetInEndSection": 409,
+          "document": "37174967",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Cushing's syndrome results from inappropriate exposure to excessive glucocorticoids.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 84,
+          "document": "23092037",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Seven members of her family were screened for Cushing syndrome and Carney complex, and their blood DNA was extracted and sequenced for PRKAR1A, PDE11A, PDE8B and CTNNB1 mutations with ABI3730.",
+          "offsetInBeginSection": 252,
+          "offsetInEndSection": 444,
+          "document": "25146409",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Several subtypes have been described with different clinical and clinicopathological consequences.",
+          "offsetInBeginSection": 129,
+          "offsetInEndSection": 227,
+          "document": "35505424",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Fifty three consecutive patients with Cushing's disease were operated on in the Neurosurgical Institute from 1987 to 1995.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 122,
+          "document": "9460889",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: Azu"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6936c720f9d177840e00000b",
+      "body": "Does dual checkpoint inhibition with ipilimumab (ipi) with nivolumab (nivo) improve progression free survival of newly diagnosed glioblastoma?",
+      "type": "yesno",
+      "documents": [
+        "29696531",
+        "31676562",
+        "32028838",
+        "41613513",
+        "30449777",
+        "37649594",
+        "33653801",
+        "40092399",
+        "30078806",
+        "40151392"
+      ],
+      "snippets": [
+        {
+          "text": "Overall survival (OS), local failure, distant brain failure, and failure-free survival were analyzed with the Kaplan-Meier method.",
+          "offsetInBeginSection": 546,
+          "offsetInEndSection": 676,
+          "document": "29696531",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Dual checkpoint blockade of PD-1 and CTLA4 in conjunction with lymphodepletion-an \"immunotransplant\"-uncouples the T-cell inhibition from activation and amplifies the T-cell antitumor immune response.",
+          "offsetInBeginSection": 254,
+          "offsetInEndSection": 454,
+          "document": "31676562",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We report herein a patient with metastatic hepatocellular carcinoma who achieved a durable response to the second-line agent nivolumab administered intravenous 240\u2009mg every two weeks.",
+          "offsetInBeginSection": 215,
+          "offsetInEndSection": 398,
+          "document": "32028838",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Relatlimab, a LAG-3 inhibitor, in combination with nivolumab, a PD-1 inhibitor, has recently emerged as a dual ICI strategy targeting T-cell exhaustion.",
+          "offsetInBeginSection": 180,
+          "offsetInEndSection": 332,
+          "document": "41613513",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Nivolumab was not restarted, and the bicytopenia gradually recovered with no corticosteroid administration for this event.",
+          "offsetInBeginSection": 440,
+          "offsetInEndSection": 562,
+          "document": "30449777",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Current GBM standard of care, including radiotherapy, often ends up with cancer recurrence, resulting in limited long-term survival benefits for GBM patients.",
+          "offsetInBeginSection": 88,
+          "offsetInEndSection": 246,
+          "document": "37649594",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Immune checkpoint inhibitors (ICIs) have improved overall survival for cancer patients, however, optimal duration of ICI therapy has yet to be defined.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 151,
+          "document": "33653801",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The combination of nivolumab and ipilimumab has demonstrated significant antitumor activity in first-line treatment for hepatocellular carcinoma (HCC) and in second-line treatment following progression on sorafenib.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 215,
+          "document": "40092399",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Clinical trials for immune-checkpoint inhibitors and T cell-based adoptive cell therapy have demonstrated robust clinical responses in some patients with advanced cancer of various types, including hematological malignancies.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 225,
+          "document": "30078806",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "At the last follow-up of 16 months after sintilimab discontinuation, the patient remained in partial response, with total progression-free survival exceeding 30 months.",
+          "offsetInBeginSection": 790,
+          "offsetInEndSection": 958,
+          "document": "40151392",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": "yes",
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "695290854afd1e2b0400001e",
+      "body": "Where does Drosophila melanogaster show homology with Homo sapiens?",
+      "type": "list",
+      "documents": [
+        "8163194",
+        "21683257",
+        "2107332",
+        "6799802",
+        "34613817",
+        "27097273",
+        "7893752",
+        "3923201",
+        "11989718",
+        "15579698"
+      ],
+      "snippets": [
+        {
+          "text": "Transgenic Drosophila melanogaster have been used to model both the physiological and pathological behavior of serpins.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 119,
+          "document": "21683257",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "125I-labeled tRNA probes from Drosophila melanogaster were hybridized to spreads of polytene chromosomes prepared from four Drosophila species representing different evolutionary lineages (D.",
+          "offsetInBeginSection": 121,
+          "offsetInEndSection": 312,
+          "document": "2107332",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "A virus-free Drosophila stock was obtained by outer disinfection of eggs from DCV-contaminated females.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 103,
+          "document": "6799802",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "In many cases, there is more information about the gene's orthologs in model organisms, including Drosophila melanogaster.",
+          "offsetInBeginSection": 278,
+          "offsetInEndSection": 400,
+          "document": "27097273",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We report the isolation of the Drosophila melanogaster homologue of the rat ribosomal protein L11 gene.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 103,
+          "document": "7893752",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "In Drosophila melanogaster there are significant differences in the way the polytene chromosomes are arranged in different nuclei from the same salivary gland (Mathog et al., 1984).",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 181,
+          "document": "3923201",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "There is a high degree of sequence homology and functional similarity between the human insulin receptor kinase (IRK) and the drosophila (Drosophila melanogaster) form (DIRK) of this enzyme.",
+          "offsetInBeginSection": 173,
+          "offsetInEndSection": 363,
+          "document": "11989718",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Several seminal fluid proteins (Acps) made in the Drosophila male reproductive tract show evidence of rapid adaptive evolution.",
+          "offsetInBeginSection": 393,
+          "offsetInEndSection": 520,
+          "document": "15579698",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "69528ff24afd1e2b04000017",
+      "body": "Why do we only have L-amino acids and not D-amino acids?",
+      "type": "summary",
+      "documents": [
+        "39129775",
+        "29953325",
+        "6656993",
+        "2912518",
+        "9060751",
+        "6838745",
+        "38296164",
+        "28053803",
+        "805423",
+        "20922371"
+      ],
+      "snippets": [
+        {
+          "text": "During translation, exclusively l-amino acids are loaded onto transfer RNA molecules (tRNA), which are then connected at the ribosome to give homo-l-proteins.",
+          "offsetInBeginSection": 173,
+          "offsetInEndSection": 331,
+          "document": "39129775",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "These findings suggest that an initial description of a phenomenon should hint at a mechanism even if the mechanism would be learned only later.",
+          "offsetInBeginSection": 897,
+          "offsetInEndSection": 1041,
+          "document": "29953325",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "However the diet restricted (Pair-fed) animals showed increased incorporation of tyrosine only.",
+          "offsetInBeginSection": 371,
+          "offsetInEndSection": 466,
+          "document": "6656993",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The breast is the most important external identification of femininity, and the loss of a breast can have devastating psychological effects on a woman.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 151,
+          "document": "9060751",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The reason why the heterozygous state is rarely present in those who have prolonged apnoea is that the vast majority of those who suffer from this abnormality are only slightly more sensitive to suxamethonium than are normal individuals.",
+          "offsetInBeginSection": 307,
+          "offsetInEndSection": 544,
+          "document": "6838745",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Humans have inexplicably made extraordinary intellectual and technical advances within a relatively very short period of time, referred to as the 'great leap forward'.",
+          "offsetInBeginSection": 337,
+          "offsetInEndSection": 504,
+          "document": "38296164",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Only L-amino acids have been considered necessary in mammals, including humans.",
+          "offsetInBeginSection": 95,
+          "offsetInEndSection": 174,
+          "document": "28053803",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The mutliphasic kinetics that characterize the transport of many amino acids into Bacillus subtilis suggests a priori at least two mechanisms: (i) a tilis suggests a prior at least two independent transport processes, or (ii) a single, homogeneous sy...",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 253,
+          "document": "805423",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "To satisfy their nitrogen demand and to ensure a sufficient nitrogen supply even in situations of nitrogen limitation, microorganisms have evolved sophisticated uptake and assimilation mechanisms for different nitrogen sources.",
+          "offsetInBeginSection": 143,
+          "offsetInEndSection": 370,
+          "document": "20922371",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "69529f094afd1e2b04000027",
+      "body": "Please list the drugs that are used as HIV prophylaxis.",
+      "type": "list",
+      "documents": [
+        "36213300",
+        "28244366",
+        "22778343",
+        "1814334",
+        "19372838",
+        "41111716",
+        "15812928",
+        "23611617",
+        "3236388",
+        "36782321"
+      ],
+      "snippets": [
+        {
+          "text": "With the transmission prophylaxis and therapy that are now available, it is possible to prevent transmission to a\u00a0large extent and with a timely diagnosis to enable HIV positive children to lead a\u00a0largely healthy life.",
+          "offsetInBeginSection": 1552,
+          "offsetInEndSection": 1770,
+          "document": "36213300",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Assuming that limited resources are available for spending on drugs, we conclude that it would be unethical to watch patients with treatable AIDS worsen and die, even with supportive care, so that medications for treatment can be diverted for prevent...",
+          "offsetInBeginSection": 690,
+          "offsetInEndSection": 943,
+          "document": "22778343",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Furthermore, countries that have so far been neglected should be granted priority in future research.",
+          "offsetInBeginSection": 1293,
+          "offsetInEndSection": 1394,
+          "document": "1814334",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "These drugs have an added value in combination therapy as they are expected to be less prone to virus-drug resistance selection, but they are likely to be more cytotoxic.",
+          "offsetInBeginSection": 662,
+          "offsetInEndSection": 832,
+          "document": "19372838",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "In this presentation to \"HIV Treatment for Drug Users--A Realistic Goal,\" a satellite meeting of the XIV International AIDS Conference held on 15 July 2004, Dmitry Samoilov describes the discrimination faced by people living with HIV/AIDS in general,...",
+          "offsetInBeginSection": 163,
+          "offsetInEndSection": 416,
+          "document": "15812928",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "\u03c7(2) tests were used for comparisons of interest across groups.",
+          "offsetInBeginSection": 201,
+          "offsetInEndSection": 264,
+          "document": "23611617",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Twelve applicants tested HIV-antibody positive; eight of these had injected drugs parenterally with syringes and needles used by other addicts and four had never taken drugs intravenously.",
+          "offsetInBeginSection": 200,
+          "offsetInEndSection": 388,
+          "document": "3236388",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The extent to which this recommendation has been implemented globally for people who inject drugs is unclear.",
+          "offsetInBeginSection": 161,
+          "offsetInEndSection": 270,
+          "document": "36782321",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "6952896f4afd1e2b04000010",
+      "body": "How does the environment of the womb modify the development of the embryo?",
+      "type": "summary",
+      "documents": [
+        "32603853",
+        "38612405",
+        "21888486",
+        "34925068",
+        "33852138",
+        "28883820",
+        "8432250",
+        "19297625",
+        "34131520",
+        "34217204"
+      ],
+      "snippets": [
+        {
+          "text": "The placenta is a transient but essential organ for normal in utero development, playing several essential functions in normal pregnancy [...].",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 143,
+          "document": "38612405",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "During this migration, spermatozoa interact with the female microenvironment both physically and molecularly.",
+          "offsetInBeginSection": 467,
+          "offsetInEndSection": 576,
+          "document": "33852138",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Determining the limits of the endometrial plasticity at the onset of implantation should bring new insights on the contribution of the maternal environment to the development of an embryo and the success of pregnancy.",
+          "offsetInBeginSection": 1317,
+          "offsetInEndSection": 1534,
+          "document": "19297625",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Spider embryonic development depends on several factors, including temperature.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 79,
+          "document": "34131520",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "However, very little is known about whether and how fetal BAT development is modulated in-utero in response to changes in maternal thermal environment during pregnancy.",
+          "offsetInBeginSection": 252,
+          "offsetInEndSection": 420,
+          "document": "34217204",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "695289c94afd1e2b04000011",
+      "body": "Do 2 embryos with the same genetic information show differences in their \nphenotype if the environment of the mother?s womb is different in each \npregnancy?",
+      "type": "summary",
+      "documents": [
+        "38509383",
+        "38679468",
+        "28883820",
+        "22198255",
+        "11487223",
+        "34217204",
+        "3818915",
+        "32260352",
+        "6963276",
+        "15248596"
+      ],
+      "snippets": [
+        {
+          "text": "Yet, less is known about the evolutionary changes shaping their presence within diverse oocytes.",
+          "offsetInBeginSection": 340,
+          "offsetInEndSection": 436,
+          "document": "38679468",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This discovery offered the possibility of non-invasive sampling of fetal genetic material simply through the collection of a maternal blood sample.",
+          "offsetInBeginSection": 118,
+          "offsetInEndSection": 265,
+          "document": "22198255",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Approximately 41 h after mating, embryos were flushed from the oviducts, and we determined the number of embryos and their developmental stages for each treatment group.",
+          "offsetInBeginSection": 291,
+          "offsetInEndSection": 460,
+          "document": "11487223",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Using BL6 mice, we evaluated the impact of different maternal environmental temperatures (28\u2009\u00b0C and 18\u2009\u00b0C) on the transcriptome of the placenta and fetal BAT to test if maternal cold exposure influences fetal BAT development via placental remodeling.",
+          "offsetInBeginSection": 421,
+          "offsetInEndSection": 671,
+          "document": "34217204",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The relationships between embryos and children conceived by assisted procreation and their genetic and uterine parents are discussed.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 133,
+          "document": "3818915",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "However, the PA fetuses at day 35 showed ceased fetal development and degenerated with abnormal morphologies in their organs.",
+          "offsetInBeginSection": 825,
+          "offsetInEndSection": 950,
+          "document": "32260352",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Transplantation of cloned eukaryotic genes into mouse eggs will permit the molecular and genetic analysis of their integration and regulation during development and, eventually, their germ line transmission as new heritable elements.",
+          "offsetInBeginSection": 654,
+          "offsetInEndSection": 887,
+          "document": "6963276",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Expressed sequence tags (ESTs) generated based on characterization of clones isolated randomly from cDNA libraries are used to study gene expression profiles in specific tissues and to provide useful information for characterizing tissue physiology.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 249,
+          "document": "15248596",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6940eaa74afd1e2b04000007",
+      "body": "What is the role of cortisol in the human body?",
+      "type": "summary",
+      "documents": [
+        "7955553",
+        "24735400",
+        "8039271",
+        "40990000",
+        "39699132",
+        "31442935",
+        "12506678",
+        "26055775",
+        "3771797",
+        "1124533"
+      ],
+      "snippets": [
+        {
+          "text": "The glucocorticoid hormone cortisol is released in pulses resulting in a complex and dynamic ultradian rhythm of plasma cortisol that underlies the classical circadian rhythm.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 175,
+          "document": "24735400",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The aim of this study was to investigate patterns of cortisol stress reactivity and basal resting levels in individuals with obesity and healthy weight controls.",
+          "offsetInBeginSection": 104,
+          "offsetInEndSection": 265,
+          "document": "40990000",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Cortisol, and other glucocorticoids, are routinely used as markers of physiological stress in wildlife.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 103,
+          "document": "39699132",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The female fetus at full-term (sampled as scheduled Caesarian section without antecedent labor) both receives more cortisol in umbilical venous blood and adds more cortisol to umbilical arterial circulation than the male.",
+          "offsetInBeginSection": 160,
+          "offsetInEndSection": 381,
+          "document": "31442935",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Most critically ill patients display an elevated plasma Cortisol level, reflecting activation of the pituitary-adrenal axis, which is considered to be a homeostatic adaptation.",
+          "offsetInBeginSection": 75,
+          "offsetInEndSection": 251,
+          "document": "12506678",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Cortisol, one indicator of the body's hormonal responses to stress, is regulated by the hypothalamic-pituitary-adrenal (HPA) axis and is commonly measured in saliva, urine, or blood samples.",
+          "offsetInBeginSection": 112,
+          "offsetInEndSection": 302,
+          "document": "26055775",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We have studied a woman with an apparent receptor-mediated resistance to cortisol on the basis of elevated 24-h mean plasma cortisol levels and increased urinary free cortisol.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 176,
+          "document": "3771797",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Serial plasma cortisol estimations were carried out in 81 male lung cancer patients and in a control group of 50 male subjects with conditions other than lung cancer.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 166,
+          "document": "1124533",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "6940ea834afd1e2b04000006",
+      "body": "Is Cushing Syndrome hereditary?",
+      "type": "yesno",
+      "documents": [
+        "35872832",
+        "39207826",
+        "35808120",
+        "11841638",
+        "31555754",
+        "22521856",
+        "2873554",
+        "18493111",
+        "25146409",
+        "28005257"
+      ],
+      "snippets": [
+        {
+          "text": "A 53-year-old woman presented with signs of Cushing syndrome with challenges in diagnosis and localization.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 107,
+          "document": "39207826",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "McCune-Albright syndrome is a rare disorder caused by an activating mutation of the alpha subunit of the Gs protein and is characterized by multiple hormonal abnormalities, fibrous dysplasia of bone, and cutaneous pigmentation.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 227,
+          "document": "11841638",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Primary macronodular adrenal hyperplasia (PMAH) is a rare type of Cushing or subclinical Cushing syndrome and is associated with bilateral multinodular formation.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 162,
+          "document": "31555754",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "A transient cholestasis observed during the 2nd month of life and reversed by hydrocortisone treatment, is to be considered, in Authors' opinion, in the context of the endocrine syndrome, probably as consequence of the adrenal failure.",
+          "offsetInBeginSection": 177,
+          "offsetInEndSection": 412,
+          "document": "2873554",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This report concerns a case of cortisol-producing adrenocortical adenoma without the phenotype of Cushing's syndrome.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 117,
+          "document": "18493111",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Seven members of her family were screened for Cushing syndrome and Carney complex, and their blood DNA was extracted and sequenced for PRKAR1A, PDE11A, PDE8B and CTNNB1 mutations with ABI3730.",
+          "offsetInBeginSection": 252,
+          "offsetInEndSection": 444,
+          "document": "25146409",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Patients affected by Cushing's disease often have important comorbidities directly linked to hypercortisolism that might enhance the operative risk.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 148,
+          "document": "28005257",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": "yes",
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "695290364afd1e2b0400001a",
+      "body": "How does sexual activity correlate with cellular aging?",
+      "type": "summary",
+      "documents": [
+        "25024066",
+        "35397782",
+        "37223988",
+        "39018151",
+        "7630576",
+        "26330647",
+        "35761724",
+        "2482366",
+        "17541850",
+        "17007602"
+      ],
+      "snippets": [
+        {
+          "text": "The reported frequencies and presentations of various sexual dysfunctions vary widely in the literature, which is likely related to the patient cohorts examined, in particular with regard to age and gender, duration and severity of disease and applie...",
+          "offsetInBeginSection": 527,
+          "offsetInEndSection": 780,
+          "document": "35397782",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Greater sexual frequency for a sexual activity was associated with endorsing that same activity as having had sex.",
+          "offsetInBeginSection": 719,
+          "offsetInEndSection": 833,
+          "document": "39018151",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Such procedures also study the interaction of physical/physiological systems with psychological events, and as such may be considered relevant to understanding the relationship between psychological aspects of sexual response.",
+          "offsetInBeginSection": 906,
+          "offsetInEndSection": 1132,
+          "document": "7630576",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Though generally, women are sexually active during adolescence, they reach their peak orgasmic frequency in their 30 s, and have a constant level of sexual capacity up to the age of 55 with little evidence that aging affects it in later life.",
+          "offsetInBeginSection": 399,
+          "offsetInEndSection": 641,
+          "document": "26330647",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "A regression analysis revealed that the percentages of LNV spermatozoa and sperm DNA fragmentation positively correlated with age.",
+          "offsetInBeginSection": 792,
+          "offsetInEndSection": 922,
+          "document": "35761724",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Results indicate that although transurethral prostatectomy was generally associated with deterioration in various aspects of sexual expression, grouping subjects according to age and presurgery sexual adjustment qualified these general findings drama...",
+          "offsetInBeginSection": 184,
+          "offsetInEndSection": 437,
+          "document": "2482366",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Noncoital sexual behaviors with a partner were uncorrelated with the PRQC dimensions.",
+          "offsetInBeginSection": 648,
+          "offsetInEndSection": 733,
+          "document": "17541850",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This study compared young adults (ages 18 to 26) with and without childhood attention deficit hyperactivity disorder (ADHD) on self-reported risky sexual behaviors.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 164,
+          "document": "17007602",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6940ea5f4afd1e2b04000004",
+      "body": "What is the difference between Cushing Syndrome and Cushing Disease?",
+      "type": "factoid",
+      "documents": [
+        "28005257",
+        "39207826",
+        "18493111",
+        "10376369",
+        "16915537",
+        "25146409",
+        "23092037",
+        "37828397",
+        "18304406",
+        "1323248"
+      ],
+      "snippets": [
+        {
+          "text": "We have retrospectively analyzed 142 patients with Cushing's disease and 299 patients with nonfunctioning pituitary adenoma who underwent transsphenoidal surgery performed by a single experienced neurosurgeon between September 2007 and December 2014.",
+          "offsetInBeginSection": 304,
+          "offsetInEndSection": 554,
+          "document": "28005257",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "A 53-year-old woman presented with signs of Cushing syndrome with challenges in diagnosis and localization.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 107,
+          "document": "39207826",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This report concerns a case of cortisol-producing adrenocortical adenoma without the phenotype of Cushing's syndrome.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 117,
+          "document": "18493111",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The overnight one-mg dexamethasone suppression test has been used for many years to screen for Cushing's syndrome.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 114,
+          "document": "16915537",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Seven members of her family were screened for Cushing syndrome and Carney complex, and their blood DNA was extracted and sequenced for PRKAR1A, PDE11A, PDE8B and CTNNB1 mutations with ABI3730.",
+          "offsetInBeginSection": 252,
+          "offsetInEndSection": 444,
+          "document": "25146409",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Cushing's syndrome results from inappropriate exposure to excessive glucocorticoids.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 84,
+          "document": "23092037",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "While it has been established that GNAS is associated with adrenal tumors, its specific role in the pathogenesis of pregnancy-induced Cushing's syndrome remains uncertain.This work aims to examine the association between GNAS mutation and pregnancy-i...",
+          "offsetInBeginSection": 212,
+          "offsetInEndSection": 465,
+          "document": "37828397",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Ectopic secretion of adrenocorticotropic hormone (ACTH) is an infrequent cause of Cushing's syndrome.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 101,
+          "document": "18304406",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ],
+        [
+          "Try again in 5 seconds"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "6952ad1f4afd1e2b0400002a",
+      "body": "What is a  mechanotransducers, in realtion to ion channels?",
+      "type": "factoid",
+      "documents": [
+        "18719209",
+        "28402883",
+        "25961077",
+        "25305018",
+        "7678077",
+        "37126437",
+        "32270037",
+        "30932811",
+        "41125887",
+        "27643958"
+      ],
+      "snippets": [],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ],
+        [
+          "Try again in 5 seconds"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "695290a94afd1e2b04000020",
+      "body": "Is the formation of the Barr body stochastic, or is it correlated with the silencing \nof mutated X-chromosomes when extensive mutations are present?",
+      "type": "yesno",
+      "documents": [
+        "1778461",
+        "25975716",
+        "32647452",
+        "11136717",
+        "31186537",
+        "21349919",
+        "10091545",
+        "37608017",
+        "2822534",
+        "26697316"
+      ],
+      "snippets": [
+        {
+          "text": "As a prelude to testing cell lines from patients with X-linked disorders, this array was used as a hybridization probe to compare gene expression profiles in lymphoblastoid cell lines from normal males, females and individuals with supernumerary X ch...",
+          "offsetInBeginSection": 403,
+          "offsetInEndSection": 656,
+          "document": "11136717",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Somatic mutations occur spontaneously in normal individuals and accumulate throughout life.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 91,
+          "document": "31186537",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Here, we used genome-wide long mate-pair sequencing to systematically screen for inherited and de novo structural variation in a trio including a child with severe congenital abnormalities.",
+          "offsetInBeginSection": 142,
+          "offsetInEndSection": 331,
+          "document": "21349919",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "When a base variation occurs in a DNA fragment, base change, deletion or insertion of one or several bases, a mutation or a polymorphism is generated depending whether this base change modifies or not the function of the encoded gene.",
+          "offsetInBeginSection": 181,
+          "offsetInEndSection": 415,
+          "document": "10091545",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Rapid clonal expansion during disease transformation is associated with biallelic TP53 mutations and increased mutation burden.",
+          "offsetInBeginSection": 760,
+          "offsetInEndSection": 887,
+          "document": "37608017",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Genetic analysis of rearrangements within the multifunctional sex determining gene Sex-lethal has allowed correlation of changes in specific functions with DNA alterations.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 172,
+          "document": "2822534",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "While major mutations that have been expanded in many cognate cells are readily detected by sequencing, minor ones are overlaid with a large depth of non-mutated alleles and are not detected.",
+          "offsetInBeginSection": 235,
+          "offsetInEndSection": 426,
+          "document": "26697316",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": "yes",
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6940eac64afd1e2b04000009",
+      "body": "What is the average diagnosis time for Cushing Syndrome?",
+      "type": "factoid",
+      "documents": [
+        "28005257",
+        "16915537",
+        "39207826",
+        "40577853",
+        "23092037",
+        "900852",
+        "2559823",
+        "25146409",
+        "1424208",
+        "1825738"
+      ],
+      "snippets": [
+        {
+          "text": "Patients affected by Cushing's disease often have important comorbidities directly linked to hypercortisolism that might enhance the operative risk.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 148,
+          "document": "28005257",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The overnight one-mg dexamethasone suppression test has been used for many years to screen for Cushing's syndrome.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 114,
+          "document": "16915537",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "A 53-year-old woman presented with signs of Cushing syndrome with challenges in diagnosis and localization.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 107,
+          "document": "39207826",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "No single test provides absolute distinction, but the combined results of several tests generally provide a correct diagnosis of Cushing's syndrome.",
+          "offsetInBeginSection": 1369,
+          "offsetInEndSection": 1517,
+          "document": "23092037",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "In four patients in whom Cushing's syndrome was diagnosed, urinary free 11-hydroxycorticosteroid/creatinine ratios were greater than 85 mumol/mol creatinine.",
+          "offsetInBeginSection": 264,
+          "offsetInEndSection": 421,
+          "document": "900852",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We report the long-term follow-up of the clinical and biochemical effects of megavoltage pituitary irradiation (radiotherapy; RT), administered as primary or secondary therapy, for pituitary Cushing's disease and Nelson's syndrome in 52 patients.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 246,
+          "document": "2559823",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The diagnosis of adrenocorticotrophic hormone (ACTH)-independent Cushing syndrome was established.",
+          "offsetInBeginSection": 754,
+          "offsetInEndSection": 852,
+          "document": "25146409",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We assessed pituitary histology in patients with Cushing's disease.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 67,
+          "document": "1424208",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The pathogenesis of hypertension associated with Cushing's syndrome is incompletely understood.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 95,
+          "document": "1825738",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ],
+        [
+          "Try again in 5 seconds"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "6940eb1a4afd1e2b0400000e",
+      "body": "Is Cushing Syndrome present in dogs?",
+      "type": "yesno",
+      "documents": [
+        "28005257",
+        "7342413",
+        "23992376",
+        "39699132",
+        "24246648",
+        "35505424",
+        "14703251",
+        "8725498",
+        "25146409",
+        "16915537"
+      ],
+      "snippets": [
+        {
+          "text": "Patients affected by Cushing's disease often have important comorbidities directly linked to hypercortisolism that might enhance the operative risk.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 148,
+          "document": "28005257",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The metabolic syndrome is a set of risk factors for the development of type 2 diabetes, atherosclerosis, coronary heart disease and stroke in human beings.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 155,
+          "document": "24246648",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Canine hypoadrenocorticism is a relatively uncommon endocrine disease that can present with a wide variety of clinical signs resulting from cortisol or aldosterone deficiency or both.",
+          "offsetInBeginSection": 503,
+          "offsetInEndSection": 686,
+          "document": "35505424",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "She was suspected of having primary glucocorticoid resistance on the basis of high plasma ACTH and serum cortisol levels without the features of Cushing's syndrome.",
+          "offsetInBeginSection": 95,
+          "offsetInEndSection": 259,
+          "document": "8725498",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Seven members of her family were screened for Cushing syndrome and Carney complex, and their blood DNA was extracted and sequenced for PRKAR1A, PDE11A, PDE8B and CTNNB1 mutations with ABI3730.",
+          "offsetInBeginSection": 252,
+          "offsetInEndSection": 444,
+          "document": "25146409",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Therefore, an overnight dexamethasone suppression test was performed in 17 consecutive patients presenting to an endocrinology clinic with signs and symptoms of hypercortisolemia who were later proven to have Cushing's syndrome.",
+          "offsetInBeginSection": 513,
+          "offsetInEndSection": 741,
+          "document": "16915537",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": "yes",
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6940ea404afd1e2b04000002",
+      "body": "What are the common symptoms of Cushing Syndrome?",
+      "type": "list",
+      "documents": [
+        "28005257",
+        "39207826",
+        "10376369",
+        "16915537",
+        "25146409",
+        "18304406",
+        "37828397",
+        "23092037",
+        "1323248",
+        "2559823"
+      ],
+      "snippets": [
+        {
+          "text": "Patients affected by Cushing's disease often have important comorbidities directly linked to hypercortisolism that might enhance the operative risk.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 148,
+          "document": "28005257",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "A 53-year-old woman presented with signs of Cushing syndrome with challenges in diagnosis and localization.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 107,
+          "document": "39207826",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Pituitary disease is relatively uncommon, but because failure to recognise and manage it correctly has such severe repercussions, it has an importance out of proportion to its prevalence.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 187,
+          "document": "10376369",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Therefore, an overnight dexamethasone suppression test was performed in 17 consecutive patients presenting to an endocrinology clinic with signs and symptoms of hypercortisolemia who were later proven to have Cushing's syndrome.",
+          "offsetInBeginSection": 513,
+          "offsetInEndSection": 741,
+          "document": "16915537",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Seven members of her family were screened for Cushing syndrome and Carney complex, and their blood DNA was extracted and sequenced for PRKAR1A, PDE11A, PDE8B and CTNNB1 mutations with ABI3730.",
+          "offsetInBeginSection": 252,
+          "offsetInEndSection": 444,
+          "document": "25146409",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Ectopic secretion of adrenocorticotropic hormone (ACTH) is an infrequent cause of Cushing's syndrome.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 101,
+          "document": "18304406",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Transient pregnancy-induced Cushing's syndrome is a rare condition characterized by the manifestation of symptoms solely during pregnancy, which typically resolve spontaneously following delivery or miscarriage.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 211,
+          "document": "37828397",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Cushing's syndrome results from inappropriate exposure to excessive glucocorticoids.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 84,
+          "document": "23092037",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "With the exceptions of hyperpigmentation and hyperkalemia, the similarity of symptoms and signs to those of Addison's disease and their reversibility by glucocorticoids indicate that most, but not all, manifestation of isolated corticotropin deficien...",
+          "offsetInBeginSection": 177,
+          "offsetInEndSection": 430,
+          "document": "1323248",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We report the long-term follow-up of the clinical and biochemical effects of megavoltage pituitary irradiation (radiotherapy; RT), administered as primary or secondary therapy, for pituitary Cushing's disease and Nelson's syndrome in 52 patients.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 246,
+          "document": "2559823",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: Azu"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6936c690f9d177840e000009",
+      "body": "What is the target of lapatinib?",
+      "type": "list",
+      "documents": [
+        "30570750",
+        "33713299",
+        "27934102",
+        "37496997",
+        "22287765",
+        "21070441",
+        "31602269",
+        "32365528",
+        "35259456",
+        "22471661"
+      ],
+      "snippets": [
+        {
+          "text": "The human epidermal growth factor receptor, EGFR/ERBB/HER, family of receptor tyrosine kinases is central to many signaling pathways and a validated chemotherapy target in multiple cancers.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 189,
+          "document": "27934102",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Targeted therapies in cancer treatment can improve ",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 51,
+          "document": "37496997",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Six targeted agents [sorafenib, sunitinib, temsirolimus, bevacizumab (plus interferon), everolimus and pazopanib] have been approved for the treatment of patients with metastatic renal cell carcinoma.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 200,
+          "document": "22287765",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Therapeutic options for brain metastases with systemic therapy remain a challenge in those patients since targeted and chemotherapeutic agents have limited penetration through the blood-brain barrier.",
+          "offsetInBeginSection": 134,
+          "offsetInEndSection": 334,
+          "document": "21070441",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Targeted treatment with tyrosine kinase inhibitors is also administered and novel inhibitors are also under evaluation.",
+          "offsetInBeginSection": 367,
+          "offsetInEndSection": 486,
+          "document": "31602269",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Trastuzumab is the first-line targeted therapeutic drug for HER2-positive breast cancer, leading to improved overall survival.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 126,
+          "document": "32365528",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "In this work, the PI3K/AKT/mTOR signaling pathway was examined as a therapeutic target for the treatment of childhood acute lymphoblastic leukemia (ALL) with a new therapeutic approach to avoid cell resistance.",
+          "offsetInBeginSection": 580,
+          "offsetInEndSection": 790,
+          "document": "35259456",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Two approved therapies targeting HER2, the monoclonal antibody trastuzumab and the tyrosine kinase inhibitor lapatinib, are clinically active against this type of breast cancer.",
+          "offsetInBeginSection": 203,
+          "offsetInEndSection": 380,
+          "document": "22471661",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "6936c667f9d177840e000008",
+      "body": "What is the mechanism of action of brigatinib?",
+      "type": "summary",
+      "documents": [
+        "34589929",
+        "33150799",
+        "37097659",
+        "25110867",
+        "33593493",
+        "41201209",
+        "39195309",
+        "16909423",
+        "33587347",
+        "22287765"
+      ],
+      "snippets": [
+        {
+          "text": "The purpose of this study was to find drugs that could increase sensitivity to FGFR inhibitor effects in BT-474 breast cancer cells, and to investigate the combined effects and underlying mechanisms of these combinations for BT-474 breast cancer cell...",
+          "offsetInBeginSection": 223,
+          "offsetInEndSection": 476,
+          "document": "37097659",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Baseline vitreomacular traction (VMT) may predispose patients to drug-induced SRF.",
+          "offsetInBeginSection": 157,
+          "offsetInEndSection": 239,
+          "document": "41201209",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Although both classes of anti-EGFR agents target the same receptor, substantial distinctions regarding their mechanism significantly affect dosing requirements, toxicity profiles, and their use as combination agents.",
+          "offsetInBeginSection": 562,
+          "offsetInEndSection": 778,
+          "document": "16909423",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "He achieved good efficacy and tolerable adverse reactions.",
+          "offsetInBeginSection": 857,
+          "offsetInEndSection": 915,
+          "document": "33587347",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "6953f4354afd1e2b0400002b",
+      "body": "Do cancers ever become drug dependent?",
+      "type": "yesno",
+      "documents": [
+        "24883085",
+        "24993385",
+        "27385173",
+        "31392521",
+        "22704202",
+        "33668248",
+        "1843113",
+        "28715315",
+        "23540742",
+        "9002413"
+      ],
+      "snippets": [
+        {
+          "text": "However there are few success stories as far as the treatment of cancer is concerned.",
+          "offsetInBeginSection": 688,
+          "offsetInEndSection": 773,
+          "document": "24883085",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Alternatively, model organisms with highly conserved cancer-related cellular processes relative to human cells may offer new opportunities for anticancer drug discovery when combined with chemical screening.",
+          "offsetInBeginSection": 197,
+          "offsetInEndSection": 404,
+          "document": "24993385",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "It is now evident that transporters play an important role for determining toxicity of chemotherapeutic drugs not only against target but also against nontarget cells.",
+          "offsetInBeginSection": 376,
+          "offsetInEndSection": 543,
+          "document": "27385173",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The ability of a tumor to become dormant in response to suboptimal conditions has recently been recognized as a key step in tumor progression.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 142,
+          "document": "31392521",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Cancers are a large group of diseases that mostly emerge because of the uncontrollable action of many different genes in human cells [...].",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 139,
+          "document": "33668248",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "However, these agents have not yet realized their clinical potential, presumably due to physiologic resistance inherent in tumors.",
+          "offsetInBeginSection": 173,
+          "offsetInEndSection": 303,
+          "document": "1843113",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Worldwide data indicate that over 14 million new cancers were diagnosed in 2012, with a projected increase of more than 19 million diagnosed cases by 2025 [1].",
+          "offsetInBeginSection": 95,
+          "offsetInEndSection": 254,
+          "document": "28715315",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Normal cells, however, are also dependent on these pathways to maintain their function and, consequently, their survival.",
+          "offsetInBeginSection": 390,
+          "offsetInEndSection": 511,
+          "document": "23540742",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "These methods have been applied with increasing frequency in community-based approaches to reduce the risk of environmentally provoked cancers.",
+          "offsetInBeginSection": 399,
+          "offsetInEndSection": 542,
+          "document": "9002413",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": "yes",
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "695290194afd1e2b04000018",
+      "body": "Is there any crosstalk between ERK-2 kinase and Nanog transcription factor?",
+      "type": "yesno",
+      "documents": [
+        "39069943",
+        "37643243",
+        "15485655",
+        "32070424",
+        "28654420",
+        "16892036",
+        "33766558",
+        "16846002",
+        "20650883",
+        "28314267"
+      ],
+      "snippets": [
+        {
+          "text": "During this transition, transcription factors and chromatin are rewired to encode new functional features.",
+          "offsetInBeginSection": 163,
+          "offsetInEndSection": 269,
+          "document": "39069943",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Signaling by the kinase cascade composed of Raf, MEK, and ERK is critical for animal development and is often inappropriately activated in human malignancies.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 158,
+          "document": "37643243",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "ERK1/2 are members of the mitogen-activated protein kinase family that regulate diverse cellular activities in response to various stimuli.",
+          "offsetInBeginSection": 208,
+          "offsetInEndSection": 347,
+          "document": "15485655",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "NANOG is a transcription factor highly expressed in pig pre-implantation embryos, indicating that it is a conserved pluripotency-associated factor.",
+          "offsetInBeginSection": 103,
+          "offsetInEndSection": 250,
+          "document": "32070424",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Here, we report that MEK1 and the Nanog-related transcription factor Ventx2 coordinate this transition.",
+          "offsetInBeginSection": 171,
+          "offsetInEndSection": 274,
+          "document": "28654420",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Owing to the similarities between these two types of cells, the developing zebrafish can be used as a biosensor for tumor-derived signals.",
+          "offsetInBeginSection": 217,
+          "offsetInEndSection": 355,
+          "document": "16892036",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The mitogen-activated protein kinase (MAPK) cascade is a fundamental signaling pathway that regulates cell fate decisions in response to external stimuli.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 154,
+          "document": "33766558",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Although the DNA damage-induced signaling cascades activated in these cells are known to include p38 and c-Jun N-terminal protein kinase mitogen-activated protein kinase pathways and activation of a variety of transcription factors, including p53, nu...",
+          "offsetInBeginSection": 437,
+          "offsetInEndSection": 690,
+          "document": "16846002",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Therefore, it is important to understand the development and regulation of this crucial epididymal region.",
+          "offsetInBeginSection": 190,
+          "offsetInEndSection": 296,
+          "document": "20650883",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Conversely, oncogenic transformations frequently express transcriptional factors and Nanog.",
+          "offsetInBeginSection": 310,
+          "offsetInEndSection": 401,
+          "document": "28314267",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": "yes",
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6952a8a84afd1e2b04000028",
+      "body": "summarizze the connection between epidermal growth factor receptor (EGFR) and fear.",
+      "type": "summary",
+      "documents": [
+        "32124699",
+        "29399190",
+        "9671791",
+        "17690890",
+        "8639530",
+        "32510498",
+        "38991978",
+        "27934102",
+        "35954311",
+        "15098012"
+      ],
+      "snippets": [
+        {
+          "text": "The epidermal growth factor receptor (EGFR) belongs to the ERBB family of tyrosine kinase receptors.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 100,
+          "document": "32124699",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The detection of epidermal growth factor receptor (",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 51,
+          "document": "29399190",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We report here that, in agreement with previous data, the epidermal growth factor receptor (EGFR) is a signaling intermediate in ERK activation by GPCRs.",
+          "offsetInBeginSection": 408,
+          "offsetInEndSection": 561,
+          "document": "9671791",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Expression and overexpression of the epidermal growth factor receptor (EGFR) have been described in several solid tumors including bladder, breast, colorectal, NSCLC, prostate, and ovarian cancers.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 197,
+          "document": "17690890",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The binding of epidermal growth factor (EGF) to epidermal growth factor receptor (EGF receptor) induces dimerization of the receptor and activation of its protein tyrosine kinase.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 179,
+          "document": "8639530",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Numerous somatic mutations occurring in the epidermal growth factor receptor (EGFR) family (ErbB) of receptor tyrosine kinases (RTK) have been reported from cancer patients, although relatively few have been tested and shown to cause functional chang...",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 253,
+          "document": "32510498",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "In the case of epidermal growth factor (EGF) receptor (EGFR), the resulting endosomes are trafficked to the perinuclear region, where dephosphorylation of receptors occurs, which are subsequently directed to degradation.",
+          "offsetInBeginSection": 97,
+          "offsetInEndSection": 317,
+          "document": "38991978",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The human epidermal growth factor receptor, EGFR/ERBB/HER, family of receptor tyrosine kinases is central to many signaling pathways and a validated chemotherapy target in multiple cancers.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 189,
+          "document": "27934102",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The Epidermal Growth Factor Receptor (EGFR) is a transmembrane glycoprotein belonging to the protein kinase superfamily.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 120,
+          "document": "35954311",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Epidermal growth factor receptor plays an important role in the pathogenesis of many malignancies.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 98,
+          "document": "15098012",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "695bd8f44afd1e2b0400002f",
+      "body": "Which are the countries most affected by leprosy?",
+      "type": "list",
+      "documents": [
+        "38116294",
+        "3895806",
+        "2482532",
+        "7004800",
+        "8361429",
+        "22250629",
+        "21404593",
+        "7963598",
+        "1950443",
+        "20857654"
+      ],
+      "snippets": [
+        {
+          "text": "Tuberculosis and leprosy are bacillary infectious diseases which cause severe global health problems with approximately 50 to 60 million people suffering from tuberculosis and 10 to 15 million from leprosy.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 206,
+          "document": "2482532",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Leprosy is no longer the feared disease of the past, but it still causes significant morbidity in countries where it is endemic, and it is estimated that up to 2500 million people are at risk of contracting the disease.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 219,
+          "document": "8361429",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "leprae and the Mitsuda's reaction in leprosy patients and their unaffected sibs.",
+          "offsetInBeginSection": 346,
+          "offsetInEndSection": 426,
+          "document": "1950443",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: Azu"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "695291464afd1e2b04000024",
+      "body": "What is the mechanism by which the Lipid Droplets handle misfolded proteins \ninside the cell?",
+      "type": "summary",
+      "documents": [
+        "15849697",
+        "33945280",
+        "22854296",
+        "40601869",
+        "25034043",
+        "11121744",
+        "31999927",
+        "6751292",
+        "11994744",
+        "12944420"
+      ],
+      "snippets": [
+        {
+          "text": "Many hard faceted nanoparticles are known to undergo disorder-to-order phase transitions following a classical nucleation and growth mechanism.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 143,
+          "document": "33945280",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "ER-associated degradation (ERAD) is a mechanism by which numerous ER-localized proteins are targeted for cytosolic degradation by the ubiquitin-proteasome system.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 162,
+          "document": "22854296",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Lipid droplets (LDs) are pivotal organelles in lipid metabolism, whose dysfunction links to atherosclerosis and cancer.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 119,
+          "document": "40601869",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "With this information, it is possible to design both in vitro and in vivo systems, which not only serves as model systems for understanding the mechanism of amyloid fibril formation but also helps to test new therapeutic strategies against the diseas...",
+          "offsetInBeginSection": 921,
+          "offsetInEndSection": 1174,
+          "document": "25034043",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Cells avoid accumulating potentially toxic aggregates by mechanisms including the suppression of aggregate formation by molecular chaperones and the degradation of misfolded proteins by proteasomes.",
+          "offsetInBeginSection": 165,
+          "offsetInEndSection": 363,
+          "document": "11121744",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The energy landscape theory has shown that, irrespective of the mechanism followed, folding and binding of dimers and multidomain proteins are funneled processes.",
+          "offsetInBeginSection": 179,
+          "offsetInEndSection": 341,
+          "document": "31999927",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "On the basis of analysis of the literature and the author's data a hypothesis of transformation of lipids into glycogen in animal and human cells by means of microbodies and lysosomes as one of the universal adaptative reactions of the host is substa...",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 253,
+          "document": "6751292",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Proteins that are misfolded in the endoplasmic reticulum are transported back into the cytosol for destruction by the proteasome.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 129,
+          "document": "11994744",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Further analysis of the cellular and molecular mechanisms by which UPP and molecular chaperones influence the degradation of misfolded proteins could provide novel concepts and targets for the treatment and understanding of the pathogenesis of OPMD a...",
+          "offsetInBeginSection": 1315,
+          "offsetInEndSection": 1568,
+          "document": "12944420",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "6940ea764afd1e2b04000005",
+      "body": "Which tests are commonly used to diagnose Cushing Syndrome and Cushing Disease?",
+      "type": "list",
+      "documents": [
+        "35872832",
+        "28005257",
+        "35808120",
+        "39402967",
+        "33058356",
+        "41264037",
+        "35745461",
+        "11996589",
+        "27976885",
+        "18214917"
+      ],
+      "snippets": [
+        {
+          "text": "Patients affected by Cushing's disease often have important comorbidities directly linked to hypercortisolism that might enhance the operative risk.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 148,
+          "document": "28005257",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "6936c6ddf9d177840e00000a",
+      "body": "Is Dotatate PET MRI used in the diagnosis of meningioma?",
+      "type": "yesno",
+      "documents": [
+        "37148355",
+        "22726909",
+        "40404539",
+        "22782313",
+        "39499400",
+        "1087217",
+        "28806249",
+        "26692551",
+        "40795804",
+        "8619911"
+      ],
+      "snippets": [
+        {
+          "text": "CNS tumor diagnostics are an essential tool in the diagnosis and treatment of patients with glioma, offering valuable insights into tumor characteristics, treatment response and outcomes.",
+          "offsetInBeginSection": 209,
+          "offsetInEndSection": 396,
+          "document": "40404539",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Radioisotope imaging of the brain is considerably less useful in posterior fossa lesions than in supratentorial diagnosis, due to the peculiar technical difficulties and biological characteristics of infratentorial lesions.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 223,
+          "document": "1087217",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We report a woman with multifocal lesions suggestive of meningiomas in MRI, which also presented with high Ga-DOTATATE uptake in PET, a finding characteristic for meningioma.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 174,
+          "document": "28806249",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": "yes",
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "695290534afd1e2b0400001c",
+      "body": "Which factors control the successful introduction of the sperm into the egg and \ncould be used as targets for birth control pills?",
+      "type": "list",
+      "documents": [
+        "33852138",
+        "32048955",
+        "18297818",
+        "15279320",
+        "20730092",
+        "19848264",
+        "18454318",
+        "35641867",
+        "9123710",
+        "28892594"
+      ],
+      "snippets": [
+        {
+          "text": "This is done by means of various factors, such as sperm motility, the uterine and fallopian tubes contractility, and the ciliary movement of the lining cells.",
+          "offsetInBeginSection": 308,
+          "offsetInEndSection": 466,
+          "document": "33852138",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Thus, hormonal manipulation resulting in the suppression of sperm production seems, so far, to be the most feasible approach to achieve the above-mentioned goal.",
+          "offsetInBeginSection": 698,
+          "offsetInEndSection": 859,
+          "document": "32048955",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Recently, intracytoplasmic sperm injection (ICSI) has been extremely successful in the treatment of male infertility.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 117,
+          "document": "18297818",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "To evaluate the influence of sperm characteristics on the outcome of infertility treatment using intrauterine insemination (IUI).",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 129,
+          "document": "15279320",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We use artificial insemination as a method of controlled sperm delivery and show that sperm swimming velocity is the primary determinant of fertilization success when ejaculates from two males compete to fertilize a female's eggs.",
+          "offsetInBeginSection": 520,
+          "offsetInEndSection": 750,
+          "document": "20730092",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Recent data suggest that even the perivitelline fluid is involved in sperm surface remodelling as it contains factors which could facilitate the first penetrating sperm to fertilize the oocyte.",
+          "offsetInBeginSection": 1042,
+          "offsetInEndSection": 1235,
+          "document": "19848264",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "There is a threshold fluid velocity where sperm transition from traveling with the fluid to a regime in which the sperm can move independently of the flow.",
+          "offsetInBeginSection": 351,
+          "offsetInEndSection": 506,
+          "document": "18454318",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Hence, in this chapter, we aim to review the main factors leading to sperm DNA damage, along with the different types of damage which can occur.",
+          "offsetInBeginSection": 572,
+          "offsetInEndSection": 716,
+          "document": "35641867",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "For cycles in which sperm were retrieved, normal fertilizations were achieved for 51 of 98 (52%) mature oocytes injected with testicular sperm in 10 couples.",
+          "offsetInBeginSection": 861,
+          "offsetInEndSection": 1018,
+          "document": "9123710",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Male infertility can result from anatomical or genetic abnormalities, systemic or neurological diseases, infections, trauma, iatrogenic injury, gonadotoxins and development of sperm antibodies.",
+          "offsetInBeginSection": 369,
+          "offsetInEndSection": 562,
+          "document": "28892594",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: Azu"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6936c5eef9d177840e000006",
+      "body": "What disease is treated with belzutifan?",
+      "type": "factoid",
+      "documents": [
+        "16570352",
+        "1098508",
+        "22731986",
+        "17574308",
+        "9924299",
+        "33781322",
+        "12208593",
+        "26113687",
+        "1404018",
+        "39930799"
+      ],
+      "snippets": [
+        {
+          "text": "The study was blind, randomized and placebo-controlled with a crossover design.",
+          "offsetInBeginSection": 266,
+          "offsetInEndSection": 345,
+          "document": "16570352",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "There were no complications with this treatment in the patients reported in this series.",
+          "offsetInBeginSection": 335,
+          "offsetInEndSection": 423,
+          "document": "1098508",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Severe treatment-resistant disease can occur, and is associated with significant disability.",
+          "offsetInBeginSection": 150,
+          "offsetInEndSection": 242,
+          "document": "22731986",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Nelson's syndrome is a severe complication of bilateral adrenalectomy performed in the treatment of some Cushing's diseases, and its management remains difficult.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 162,
+          "document": "17574308",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "36 patients were treated with lodoxamide 0.1% and 37 with NAAGA 4.9%, the drops being instilled four times daily for up to 56 days.",
+          "offsetInBeginSection": 474,
+          "offsetInEndSection": 605,
+          "document": "9924299",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "He was treated with supportive therapy that improved his hypercapnia allowing him to be discharged on domiciliary oxygen, chest physiotherapy and bronchodilators.",
+          "offsetInBeginSection": 665,
+          "offsetInEndSection": 827,
+          "document": "33781322",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We randomised 141 patients (mean 68 years, 74% males) with stable mild/moderate heart failure and left ventricular ejection fraction 0.45 or less, to valsartan 160 mg q.d.",
+          "offsetInBeginSection": 467,
+          "offsetInEndSection": 638,
+          "document": "12208593",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The safety profile of bosentan added to sildenafil was consistent with the known bosentan safety profile.In COMPASS-2, adding bosentan to stable sildenafil therapy was not superior to sildenafil monotherapy in delaying the time to the first morbidity...",
+          "offsetInBeginSection": 1230,
+          "offsetInEndSection": 1483,
+          "document": "26113687",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "It plays a role in a wide range of diseases.",
+          "offsetInBeginSection": 80,
+          "offsetInEndSection": 124,
+          "document": "1404018",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ],
+        [
+          "Try again in 5 seconds"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "695289e94afd1e2b04000012",
+      "body": "How does the malnourishment of the mother impact the embryo?s sex \ndetermination?",
+      "type": "summary",
+      "documents": [
+        "36686605",
+        "39457970",
+        "6385554",
+        "29760810",
+        "24896998",
+        "7117561",
+        "37437545",
+        "30181841",
+        "26417827",
+        "20685293"
+      ],
+      "snippets": [
+        {
+          "text": "This observational study aimed to identify the impact of exposure to the summer season at different trimesters of gestation, dam parity, and their interaction on the postpartum disease incidence, first-lactation milk production, and herd lifespan of ...",
+          "offsetInBeginSection": 228,
+          "offsetInEndSection": 481,
+          "document": "39457970",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Here, we show that Igf2 deletion in these cells impairs placental endocrine signaling to the mother, without affecting placental morphology.",
+          "offsetInBeginSection": 308,
+          "offsetInEndSection": 448,
+          "document": "37437545",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We used different combined keywords as teen pregnancy, teen mother, teenage parents, teenage childbearing, teenage mother depression.",
+          "offsetInBeginSection": 346,
+          "offsetInEndSection": 479,
+          "document": "26417827",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Many studies have used animal models to study the impact of ECs on the development of the nervous system and have reported effects of early exposure on neural and neuroendocrine systems and on behavior, when the exposed animals are tested as adults.",
+          "offsetInBeginSection": 306,
+          "offsetInEndSection": 555,
+          "document": "20685293",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "6936c5c0f9d177840e000005",
+      "body": "What drug is tested in the ABBV-637 trial?",
+      "type": "factoid",
+      "documents": [
+        "31838007",
+        "31219754",
+        "16248286",
+        "36178769",
+        "38666761",
+        "36668880",
+        "30916381",
+        "40185989",
+        "25024259",
+        "22819210"
+      ],
+      "snippets": [
+        {
+          "text": "Design and development of HIV therapeutic vaccine clinical trials poses many challenges, from Phase 0/pilot studies to Phase I/II trials in which efficacy of the intervention is being tested and antiretroviral therapy cessation is needed, complexity ...",
+          "offsetInBeginSection": 1006,
+          "offsetInEndSection": 1259,
+          "document": "36178769",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "In addition, multiple antibody-drug conjugates (ADCs) are under investigation, designed to deliver drugs directly to tumor cells through binding to specific target antigens.",
+          "offsetInBeginSection": 1105,
+          "offsetInEndSection": 1278,
+          "document": "38666761",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This evaluation of anti-drug antibody formation with DAXI shows low rates of antibody formation to both daxibotulinumtoxinA and RTP004.",
+          "offsetInBeginSection": 1410,
+          "offsetInEndSection": 1545,
+          "document": "36668880",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We evaluated antidrug antibody (ADA) development in patients with chronic plaque psoriasis from three clinical trials of tildrakizumab, a humanized anti-interleukin-23p19 monoclonal antibody (P05495, reSURFACE 1 and reSURFACE 2).",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 229,
+          "document": "30916381",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "PK evaluation demonstrated that levels of MEDI-573 increased with dose at all dose levels tested.",
+          "offsetInBeginSection": 1014,
+          "offsetInEndSection": 1111,
+          "document": "25024259",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Ongoing and completed trials were identified by searching the clinicaltrials.gov Web site, in the first instance, with published trials of drugs of interest identified through American Society of Clinical Oncology, European CanCer Organisation/Europe...",
+          "offsetInBeginSection": 385,
+          "offsetInEndSection": 638,
+          "document": "22819210",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 401 - {'error': {'message': 'litellm"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6936c55cf9d177840e000003",
+      "body": "What is the role of valproic acid for treatment of glioblastoma?",
+      "type": "summary",
+      "documents": [
+        "17566732",
+        "27225028",
+        "6774836",
+        "10386205",
+        "22593993",
+        "16600518",
+        "33603587",
+        "21740400",
+        "31092106",
+        "36982984"
+      ],
+      "snippets": [
+        {
+          "text": "Valproic (2-propylpentanoic) acid is a commonly used drug in the treatment of bipolar disorder and epilepsy.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 108,
+          "document": "17566732",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "I have developed a procedure to monitor, by gas chromatography with electron-capture detection, the concentration of valproic acid in serum.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 140,
+          "document": "6774836",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "It took us years to control her seizures, and valproic acid seems to be the only way to control them.",
+          "offsetInBeginSection": 49,
+          "offsetInEndSection": 150,
+          "document": "10386205",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Valproic acid is widely used for the treatment of epilepsy and mood disorders, but its mode of action is unclear.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 113,
+          "document": "16600518",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Clinical manifestations of valproic acid (VPA) toxicity can range from just mild confusion and drowsiness to serious encephalopathy, leading to depressed sensorium and even coma and death.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 188,
+          "document": "33603587",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "GBM (glioblastoma multiforme) is a highly aggressive brain tumour with very poor prognosis despite multi-modalities of treatment.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 129,
+          "document": "21740400",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Valproic acid (VPA), a histone deacetylase inhibitor, is a potential new drug in tumor therapy.",
+          "offsetInBeginSection": 241,
+          "offsetInEndSection": 336,
+          "document": "31092106",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "These results suggest that GBM-derived small EVs represent a promising drug delivery tool for further preclinical studies and potentially for the clinical development of GBM treatments.",
+          "offsetInBeginSection": 886,
+          "offsetInEndSection": 1071,
+          "document": "36982984",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6952903e4afd1e2b0400001b",
+      "body": "Please list the function of endosomal sorting complex required for transport (ESCRT), a multicomplex machinery comprising proteins that are conserved from bacteria to humans, in cellular processes.",
+      "type": "list",
+      "documents": [
+        "10825282",
+        "23564907",
+        "19575650",
+        "15634208",
+        "16276403",
+        "35316660",
+        "18304842",
+        "27194765",
+        "25460076",
+        "7644530"
+      ],
+      "snippets": [
+        {
+          "text": "In order to maintain cellular homeostasis, some proteins are retrieved from endosomal compartments and transported back to the trans-Golgi network.",
+          "offsetInBeginSection": 892,
+          "offsetInEndSection": 1039,
+          "document": "10825282",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Internalized cargo proteins are transported to the limiting membrane of the early endosome, from which they are incorporated into the lumenal vesicles of the endosome.",
+          "offsetInBeginSection": 315,
+          "offsetInEndSection": 482,
+          "document": "23564907",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The known tethering factors are large complexes important for one or more intracellular trafficking pathways and are capable of interacting directly with many of the other principal components of the cellular trafficking machinery.",
+          "offsetInBeginSection": 219,
+          "offsetInEndSection": 450,
+          "document": "19575650",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The sorting nexins (SNXs) are a family of PX domain-containing proteins found in yeast and mammalian cells that have been proposed to regulate intracellular trafficking.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 169,
+          "document": "15634208",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "While phylogenetic analysis of AP subunits indicates a primitive origin for clathrin-mediated endocytosis, similar analysis of dynamin-related proteins suggests, strikingly, that the recruitment of dynamin-family proteins to the endocytic pathway occ...",
+          "offsetInBeginSection": 881,
+          "offsetInEndSection": 1134,
+          "document": "16276403",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Eukaryotic cells possess hundreds of protein complexes that contain multiple subunits and must be formed at the correct time and place during development.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 154,
+          "document": "35316660",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Key components of membrane trafficking and signaling machinery in eukaryotic cells are proteins that bind or synthesize phosphoinositides.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 138,
+          "document": "18304842",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This process is mediated by cellular proteins that interact first with the reverse transcription complex and later with the preintegration complex (PIC), allowing it to reach and enter the nucleus.",
+          "offsetInBeginSection": 149,
+          "offsetInEndSection": 346,
+          "document": "27194765",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "In this review, we summarize recent findings on SNARE proteins and RAB GTPases mediating vacuolar transport in plants, especially focusing on the functions and regulation of two distinct trans-SNARE complexes and RAB5 and RAB7 in multiple vacuolar tr...",
+          "offsetInBeginSection": 736,
+          "offsetInEndSection": 989,
+          "document": "25460076",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We have isolated a major integral membrane protein from Golgi-derived coatomer-coated vesicles.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 95,
+          "document": "7644530",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "6940eaf44afd1e2b0400000b",
+      "body": "After treatment, how long does it take for Cushing Syndrome's symptoms to go away?",
+      "type": "factoid",
+      "documents": [
+        "28005257",
+        "6385446",
+        "2559823",
+        "16915537",
+        "6308036",
+        "1424208",
+        "23092037",
+        "1806464",
+        "37828397",
+        "18826366"
+      ],
+      "snippets": [
+        {
+          "text": "Patients affected by Cushing's disease often have important comorbidities directly linked to hypercortisolism that might enhance the operative risk.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 148,
+          "document": "28005257",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We report the long-term follow-up of the clinical and biochemical effects of megavoltage pituitary irradiation (radiotherapy; RT), administered as primary or secondary therapy, for pituitary Cushing's disease and Nelson's syndrome in 52 patients.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 246,
+          "document": "2559823",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Therefore, an overnight dexamethasone suppression test was performed in 17 consecutive patients presenting to an endocrinology clinic with signs and symptoms of hypercortisolemia who were later proven to have Cushing's syndrome.",
+          "offsetInBeginSection": 513,
+          "offsetInEndSection": 741,
+          "document": "16915537",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Peak plasma cortisol concentrations during a 30-min ACTH test performed 2 days after stopping injection of ACTH depot increased in all seven subjects (they were normal in five subjects) compared to the initial subnormal responses.",
+          "offsetInBeginSection": 182,
+          "offsetInEndSection": 412,
+          "document": "6308036",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We assessed pituitary histology in patients with Cushing's disease.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 67,
+          "document": "1424208",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Cushing's syndrome results from inappropriate exposure to excessive glucocorticoids.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 84,
+          "document": "23092037",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The long-term results of transsphenoidal adenomectomy and the incidence of possible recurrences were studied in 61 patients who had normal basal serum growth hormone (GH) levels 1 week after surgery.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 199,
+          "document": "1806464",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Transient pregnancy-induced Cushing's syndrome is a rare condition characterized by the manifestation of symptoms solely during pregnancy, which typically resolve spontaneously following delivery or miscarriage.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 211,
+          "document": "37828397",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Outcomes of therapy for Cushing's disease (CD) vary depending on different aspects of presentation and diagnostic studies.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 122,
+          "document": "18826366",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 401 - {'error': {'message': 'litellm"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6936c584f9d177840e000004",
+      "body": "Can cetuximab improve prognosis of patients with glioblastoma?",
+      "type": "yesno",
+      "documents": [
+        "23903995",
+        "28756482",
+        "29456734",
+        "37433817",
+        "9839625",
+        "28960403",
+        "21312096",
+        "27225028",
+        "40221458",
+        "30125556"
+      ],
+      "snippets": [
+        {
+          "text": "Head and neck squamous cell carcinoma (HNSCC) tumours are associated with high mortality despite advances in therapy.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 117,
+          "document": "28756482",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Despite advances achieved in treatment and research, the median survival for patients with GBM remains <1.5 years.",
+          "offsetInBeginSection": 97,
+          "offsetInEndSection": 211,
+          "document": "29456734",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Patients with glioblastoma are treated by radiotherapy in combination with temozolamid.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 87,
+          "document": "21312096",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "With the Precision Medicine Initiative being announced in the President's State of the Union Address in 2016, GBM immunotherapy provides a useful platform for changing the landscape in treating patients with difficult disease.",
+          "offsetInBeginSection": 391,
+          "offsetInEndSection": 617,
+          "document": "27225028",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "A total of 1206 patients with newly diagnosed gliomas treated between 2000 and 2020 were enrolled, including 537 glioblastoma (WHO grade 4), 450 astrocytomas (grade 2/3) and 219 oligodendroglial tumors (grade 2/3).",
+          "offsetInBeginSection": 312,
+          "offsetInEndSection": 526,
+          "document": "40221458",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Thus, the development of novel therapeutic approaches is urgently needed to improve the survival of the patients suffering this devastating disease.",
+          "offsetInBeginSection": 216,
+          "offsetInEndSection": 364,
+          "document": "30125556",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": "yes",
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "6936c53bf9d177840e000002",
+      "body": "Which IDH inhibitors can be used for treatment of astrocytoma, IDH mutant?",
+      "type": "list",
+      "documents": [
+        "29849122",
+        "27225028",
+        "1560258",
+        "32049048",
+        "38396261",
+        "34763709",
+        "27281939",
+        "28427200",
+        "564083",
+        "23494632"
+      ],
+      "snippets": [
+        {
+          "text": "We knock out the chromatin remodeler ATRX, which suffers loss-of-function alterations in most IDH-mutant astrocytomas, in an IDH-mutant immunocompetent intracranial murine model.",
+          "offsetInBeginSection": 815,
+          "offsetInEndSection": 993,
+          "document": "34763709",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Clinical suspicion must however be confirmed by histology and molecular markers become essential to refine the diagnosis and tailor the treatment.",
+          "offsetInBeginSection": 234,
+          "offsetInEndSection": 380,
+          "document": "27281939",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Numerous studies have reported that glioma patients with isocitrate dehydrogenase 1(IDH1) R132H mutation are sensitive to temozolomide treatment.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 145,
+          "document": "28427200",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Analysis of human marker enzymes for 37 different clones revealed a syntenic relationship between IDH-2 and mannose phosphate isomerase (EC 5.3.1.8; MPI), which has been assigned to chromosome 15 (1).",
+          "offsetInBeginSection": 483,
+          "offsetInEndSection": 683,
+          "document": "564083",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This study aimed to evaluate the impact of the IDH1/2 mutations on the clinical course and genetic alterations of sGBMs, which histopathologically progressed from lower-grade gliomas.",
+          "offsetInBeginSection": 118,
+          "offsetInEndSection": 301,
+          "document": "23494632",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: Azu"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6593d1b806a2ea257c000017",
+      "body": "What are the uses for faecal microbiota transplantation (FMT) in children under 19 years of age?",
+      "type": "list",
+      "documents": [
+        "32104162",
+        "35357572",
+        "41037505",
+        "40211191",
+        "10084774",
+        "38566341",
+        "8122229",
+        "31315214",
+        "37349964",
+        "33304339"
+      ],
+      "snippets": [
+        {
+          "text": "Fecal microbiota transplantation (FMT) is the process of transplanting stool from a healthy donor into the gut of a diseased individual for therapeutic purposes.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 161,
+          "document": "32104162",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Paediatric recipients under 7\u00a0years old seemed to have a higher risk of mortality and GD than those 7\u00a0years old and older.",
+          "offsetInBeginSection": 1062,
+          "offsetInEndSection": 1184,
+          "document": "35357572",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Bifidobacteria typify the gut microbiota of healthy, breastfed infants.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 71,
+          "document": "41037505",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Faecal microbiota transplantation (FMT) offers a potential strategy of supporting the gut microbiota and improve HSCT outcomes.",
+          "offsetInBeginSection": 232,
+          "offsetInEndSection": 359,
+          "document": "40211191",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The study assessed psychological and social adjustment to pediatric liver transplantation in 101 patients aged 4-16 years who had undergone transplantation 2-10 years earlier.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 175,
+          "document": "10084774",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Ten patients underwent kidney after gut transplant (KAGT), three patients underwent simultaneous kidney and re-do gut transplant (SKAGT), and one patient died on the KT waitlist.",
+          "offsetInBeginSection": 462,
+          "offsetInEndSection": 640,
+          "document": "38566341",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Initially a few children were transplanted yearly and the lower age limit was 3 years.",
+          "offsetInBeginSection": 133,
+          "offsetInEndSection": 219,
+          "document": "8122229",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Fecal microbiota transplantation (FMT) has been shown to be an effective treatment for recurrent ",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 97,
+          "document": "31315214",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Fecal microbiota transplantation (FMT) is an emerging technique for modulating the pig microbiota, however, donor variability is one of the major reasons for inconsistent outcomes across studies.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 195,
+          "document": "37349964",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Among them, fecal microbiota transplantation (FMT) is an emergent, promising technology employed to improve clinical outcomes of various pathological conditions through modifications in the gut microbiota composition.",
+          "offsetInBeginSection": 374,
+          "offsetInEndSection": 591,
+          "document": "33304339",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: Azu"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6940eab84afd1e2b04000008",
+      "body": "How is cortisol secreation regulated in the human body?",
+      "type": "summary",
+      "documents": [
+        "20183876",
+        "24735400",
+        "14641032",
+        "40990000",
+        "7398586",
+        "26055775",
+        "3774898",
+        "31442935",
+        "12506678",
+        "32040961"
+      ],
+      "snippets": [
+        {
+          "text": "The glucocorticoid hormone cortisol is released in pulses resulting in a complex and dynamic ultradian rhythm of plasma cortisol that underlies the classical circadian rhythm.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 175,
+          "document": "24735400",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The aim of this study was to investigate patterns of cortisol stress reactivity and basal resting levels in individuals with obesity and healthy weight controls.",
+          "offsetInBeginSection": 104,
+          "offsetInEndSection": 265,
+          "document": "40990000",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We have studied the role of the small amount of cortisol supplied by the serum routinely added to culture media.",
+          "offsetInBeginSection": 114,
+          "offsetInEndSection": 226,
+          "document": "7398586",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Cortisol, one indicator of the body's hormonal responses to stress, is regulated by the hypothalamic-pituitary-adrenal (HPA) axis and is commonly measured in saliva, urine, or blood samples.",
+          "offsetInBeginSection": 112,
+          "offsetInEndSection": 302,
+          "document": "26055775",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We found that a five min exposure to a novel cage was insufficient to activate the pituitary-adrenal system, but that cortisol levels increased significantly as duration of exposure increased from 15 to 30 min.",
+          "offsetInBeginSection": 169,
+          "offsetInEndSection": 379,
+          "document": "3774898",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The female fetus at full-term (sampled as scheduled Caesarian section without antecedent labor) both receives more cortisol in umbilical venous blood and adds more cortisol to umbilical arterial circulation than the male.",
+          "offsetInBeginSection": 160,
+          "offsetInEndSection": 381,
+          "document": "31442935",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Most critically ill patients display an elevated plasma Cortisol level, reflecting activation of the pituitary-adrenal axis, which is considered to be a homeostatic adaptation.",
+          "offsetInBeginSection": 75,
+          "offsetInEndSection": 251,
+          "document": "12506678",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Several precursor molecules in the steroidogenic pathway (corticosterone, cortisone, and 11-deoxycortisol) were significantly decreased 24\u2009h after administration of a single dose of pitavastatin in human study subjects.",
+          "offsetInBeginSection": 904,
+          "offsetInEndSection": 1123,
+          "document": "32040961",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    },
+    {
+      "id": "6940eafe4afd1e2b0400000c",
+      "body": "How often is leukocytosis present in patients with Cushing Disease?",
+      "type": "factoid",
+      "documents": [
+        "28005257",
+        "1667234",
+        "15761659",
+        "8836317",
+        "15018331",
+        "39207826",
+        "25146409",
+        "16915537",
+        "21374072",
+        "10376369"
+      ],
+      "snippets": [
+        {
+          "text": "Patients affected by Cushing's disease often have important comorbidities directly linked to hypercortisolism that might enhance the operative risk.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 148,
+          "document": "28005257",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Of these, 100 patients had aseptic meningitis and 32 presented with respiratory infection syndrome.",
+          "offsetInBeginSection": 119,
+          "offsetInEndSection": 218,
+          "document": "1667234",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "She presented with classical features of acromegaly and was found to have retrocrural and retroperitoneal lymphadenopathy.",
+          "offsetInBeginSection": 93,
+          "offsetInEndSection": 215,
+          "document": "15761659",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Treatment with growth factors may induce primitive cells to enter into cell cycle.",
+          "offsetInBeginSection": 119,
+          "offsetInEndSection": 201,
+          "document": "8836317",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "A 69-year-old man was admitted semicomatose with high-grade fever and meningeal signs.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 86,
+          "document": "15018331",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "A 53-year-old woman presented with signs of Cushing syndrome with challenges in diagnosis and localization.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 107,
+          "document": "39207826",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Seven members of her family were screened for Cushing syndrome and Carney complex, and their blood DNA was extracted and sequenced for PRKAR1A, PDE11A, PDE8B and CTNNB1 mutations with ABI3730.",
+          "offsetInBeginSection": 252,
+          "offsetInEndSection": 444,
+          "document": "25146409",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Therefore, an overnight dexamethasone suppression test was performed in 17 consecutive patients presenting to an endocrinology clinic with signs and symptoms of hypercortisolemia who were later proven to have Cushing's syndrome.",
+          "offsetInBeginSection": 513,
+          "offsetInEndSection": 741,
+          "document": "16915537",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "We present a case of a malignant adrenal rest tumor arising from the retroperitoneum with Cushing's syndrome in a 31-year-old female.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 133,
+          "document": "21374072",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The clinical presentation of pituitary disease varies from asymptomatic to severe features of endocrine disturbance.",
+          "offsetInBeginSection": 384,
+          "offsetInEndSection": 500,
+          "document": "10376369",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 401 - {'error': {'message': 'litellm"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "695291704afd1e2b04000025",
+      "body": "Nasel Vaccines have been developed for viruses that affect what part of the body?",
+      "type": "factoid",
+      "documents": [
+        "22021043",
+        "16593397",
+        "28724741",
+        "38164135",
+        "40630111",
+        "33528730",
+        "34304387",
+        "3495361",
+        "27677510",
+        "17981684"
+      ],
+      "snippets": [
+        {
+          "text": "The 'easiest' vaccines, base on production of neutralizing antibodies, have been made.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 86,
+          "document": "22021043",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The envelope contains subunits arranged in a hexagonal pattern that impart a distinctive reticular appearance to virions in negatively stained preparations.",
+          "offsetInBeginSection": 1237,
+          "offsetInEndSection": 1393,
+          "document": "16593397",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Immunomodulatory factors, participant's age, body fat, and free testosterone levels, were controlled.",
+          "offsetInBeginSection": 707,
+          "offsetInEndSection": 808,
+          "document": "28724741",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "If this first line of defense did not operate, as in parentally immunized mice, recirculating T cells participated in accelerated viral control that reduced the intensity of inter-individual transmission.",
+          "offsetInBeginSection": 861,
+          "offsetInEndSection": 1065,
+          "document": "38164135",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Phenuiviruses, a group of arthropod-borne RNA viruses, have the capacity to emerge unexpectedly in human beings, resulting in a spectrum of clinical manifestations, including hemorrhagic disease, hepatitis, shock, encephalitis, congenital abnormaliti...",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 253,
+          "document": "40630111",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "With the continuous development of oncolytic viruses in recent years, studies have found that influenza viruses also have certain oncolytic activity.",
+          "offsetInBeginSection": 461,
+          "offsetInEndSection": 610,
+          "document": "33528730",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Mucosal vaccination has been interested in many researchers because mucosal immune responses play part in the first line of defense against pathogens.",
+          "offsetInBeginSection": 136,
+          "offsetInEndSection": 286,
+          "document": "34304387",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "This finding could be useful in designing potential vaccines, particularly attenuated virus vaccines using molecular biological methods.",
+          "offsetInBeginSection": 518,
+          "offsetInEndSection": 654,
+          "document": "3495361",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Different sections provide outlines on: (i) the structure, functions and properties of virus capsids; (ii) general approaches for obtaining assembled virus particles; (iii) basic principles and events related to virus capsid self-assembly; (iv) genet...",
+          "offsetInBeginSection": 649,
+          "offsetInEndSection": 902,
+          "document": "27677510",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Vaccines based on the VesiVax system have been designed against the influenza virus and herpes simplex type 2 virus, the causative agents of the \"flu\" and genital herpes, respectively.",
+          "offsetInBeginSection": 394,
+          "offsetInEndSection": 578,
+          "document": "17981684",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "exact_answer": [
+        [
+          "Error generating response: Error code: 401 - {'error': {'message': 'litellm"
+        ]
+      ],
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+    },
+    {
+      "id": "6940eadc4afd1e2b0400000a",
+      "body": "How is Cushing Syndrome treated?",
+      "type": "summary",
+      "documents": [
+        "39207826",
+        "16915537",
+        "2873554",
+        "28005257",
+        "6088243",
+        "10376369",
+        "18304406",
+        "25146409",
+        "23092037",
+        "1323248"
+      ],
+      "snippets": [
+        {
+          "text": "A 53-year-old woman presented with signs of Cushing syndrome with challenges in diagnosis and localization.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 107,
+          "document": "39207826",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The overnight one-mg dexamethasone suppression test has been used for many years to screen for Cushing's syndrome.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 114,
+          "document": "16915537",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "A transient cholestasis observed during the 2nd month of life and reversed by hydrocortisone treatment, is to be considered, in Authors' opinion, in the context of the endocrine syndrome, probably as consequence of the adrenal failure.",
+          "offsetInBeginSection": 177,
+          "offsetInEndSection": 412,
+          "document": "2873554",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Patients affected by Cushing's disease often have important comorbidities directly linked to hypercortisolism that might enhance the operative risk.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 148,
+          "document": "28005257",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "The most common complications are Cushing syndrome, infections, and arterial hypertension.",
+          "offsetInBeginSection": 205,
+          "offsetInEndSection": 295,
+          "document": "6088243",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Ectopic secretion of adrenocorticotropic hormone (ACTH) is an infrequent cause of Cushing's syndrome.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 101,
+          "document": "18304406",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Seven members of her family were screened for Cushing syndrome and Carney complex, and their blood DNA was extracted and sequenced for PRKAR1A, PDE11A, PDE8B and CTNNB1 mutations with ABI3730.",
+          "offsetInBeginSection": 252,
+          "offsetInEndSection": 444,
+          "document": "25146409",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Cushing's syndrome results from inappropriate exposure to excessive glucocorticoids.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 84,
+          "document": "23092037",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        }
+      ],
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+    }
+  ]
+}
