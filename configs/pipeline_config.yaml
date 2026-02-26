@@ -1,7 +1,7 @@
 bioasq:
   cache_pubmed: true
-  data_dir: /data/user_data/jgibson2/bioask_pubmed_dataset/round2_data/test_data
-  pubmed_cache_dir: /data/user_data/jgibson2/bioask_pubmed_dataset/round2_data/pubmed_cache
+  data_dir: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/test_data
+  pubmed_cache_dir: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/pubmed_cache
   pubmed_email: jgibson2@andrew.cmu.edu
   question_types:
   - yesno
@@ -17,15 +17,15 @@ bm25:
   b: 0.75
   elasticsearch_host: localhost
   elasticsearch_port: 9200
-  index_name: medical_docs_2
+  index_name: medical_docs_3
   k1: 2.0
   min_score: 0.1
 data:
-  docs_path: /data/user_data/jgibson2/bioask_pubmed_dataset/json/pubmed_round2_corpus.jsonl
-  embeddings_manifest: /data/user_data/jgibson2/bioask_pubmed_dataset/round2_data/runs/embeddings_manifest.json
-  embeddings_path: /data/user_data/jgibson2/bioask_pubmed_dataset/round2_data/runs/embeddings.npy
-  results_path: /data/user_data/jgibson2/bioask_pubmed_dataset/round2_data/runs/results.jsonl
-  run_manifest: /data/user_data/jgibson2/bioask_pubmed_dataset/round2_data/runs/run_manifest.json
+  docs_path: /data/user_data/jgibson2/bioask_pubmed_dataset/json/pubmed_round3_corpus.jsonl
+  embeddings_manifest: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/runs/embeddings_manifest.json
+  embeddings_path: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/runs/embeddings.npy
+  results_path: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/runs/results.jsonl
+  run_manifest: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/runs/run_manifest.json
 encoder:
   backend: medcpt
   batch_size: 32
@@ -60,7 +60,7 @@ evaluation:
 faiss:
   index_type: IndexFlatIP
   nprobe: 32
-  save_path: /data/user_data/jgibson2/bioask_pubmed_dataset/round2_dataruns/faiss.index
+  save_path: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/runs/faiss.index
 fallback:
   use_elasticsearch: false
   use_faiss_only: true
@@ -83,21 +83,37 @@ llm:
   project_id: null  # Will use OPENAI_PROJECT_ID if set
   system_prompt: |
     You are a biomedical expert answering BioASQ questions.
-    Use ONLY the provided documents.
-    Produce a concise, factual answer suitable for BioASQ.
-    Do NOT include citations or JSON formatting.
+    Use ONLY the provided documents to formulate your answers.
+    Produce a concise, factual answer suitable for BioASQ submission.
 
-    The following are the types of questions and the answers required: 
+    CRITICAL: Follow these formatting rules EXACTLY based on question type:
 
-    Yes/no questions: These are questions that, strictly speaking, require "yes" or "no" answers, though of course in practice longer answers will often be desirable. For example, "Do CpG islands colocalise with transcription start sites?" is a yes/no question.
-    Factoid questions: These are questions that, strictly speaking, require a particular entity name (e.g., of a disease, drug, or gene), a number, or a similar short expression as an answer, though again a longer answer may be desirable in practice. For example, "Which virus is best known as the cause of infectious mononucleosis?" is a factoid question.
-    List questions: These are questions that, strictly speaking, require a list of entity names (e.g., a list of gene names), numbers, or similar short expressions as an answer; again, in practice additional information may be desirable. For example, "Which are the Raf kinase inhibitors?" is a list question.
-    Summary questions: These are questions that do not belong in any of the previous categories and can only be answered by producing a short text summarizing the most prominent relevant information. For example, "What is the treatment of infectious mononucleosis?" is a summary question.
+    For YES/NO questions:
+    - Exact answer MUST be only "yes" or "no" (lowercase, no punctuation)
+    - Do NOT include "Yes:" or "No:" prefixes
+    - Ideal answer: Brief explanation (2-3 sentences) supporting your yes/no answer
 
-    Further instructions for answers: 
+    For FACTOID questions:
+    - Exact answer: Name or identify the main entity (drug, gene, disease, etc.)
+    - If multiple answers exist, list them separated by commas (max 5)
+    - Ideal answer: Detailed explanation with supporting evidence
 
-    For each yes/no question , the exact answer of each participating system will have to be either "yes" or "no". Although the value "" will be used in the feedback files for yes/no questions to indicate that they do not have a golden answer yet, in the submission files the value "" is not axcepted.
-    For each factoid question , each participating system will have to return a list* of up to 5 entity names (e.g., up to 5 names of drugs), numbers, or similar short expressions, ordered by decreasing confidence.
+    For LIST questions:
+    - Exact answer: Numbered list of items (one per line)
+    - Format: 1. Item name
+    - 2. Another item
+    - (Continue for all items, max 100 items)
+    - Ideal answer: Brief summary of the list context
+
+    For SUMMARY questions:
+    - No exact answer required
+    - Ideal answer: Paragraph summarizing key information (max 200 words)
+
+    Question types and their definitions:
+    - Yes/no: Require "yes" or "no" answer (e.g., "Is X true?")
+    - Factoid: Require entity name, number, or short expression (e.g., "Which drug treats X?")
+    - List: Require list of entity names or expressions (e.g., "What are the causes of X?")
+    - Summary: Require text summary (e.g., "What is the treatment of X?")
     For each list question , each participating system will have to return a single list* of entity names, numbers, or similar short expressions, jointly taken to constitute a single answer (e.g., the most common symptoms of a disease). The returned list will have to contain no more than 100 entries of no more than 100 characters each.
     No exact answers will be returned for summary questions .
     Ideal Answers
@@ -107,7 +123,7 @@ llm:
 logging:
   format: json
   level: INFO
-  output_dir: /data/user_data/jgibson2/bioask_pubmed_dataset/round2_data/runs/logs
+  output_dir: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/runs/logs
 mmr:
   lambda_param: 0.7
   recency_weight: 0.3
@@ -131,8 +147,8 @@ prompt:
 #   retry_attempts: 3
 #   retry_delay: 1.0
 reranker:
-  batch_size: 16
-  device: cpu
+  batch_size: 32
+  device: cuda
   model: pritamdeka/S-PubMedBert-MS-MARCO
   top_k: 20
 retrieval:

@@ -5,7 +5,7 @@ Medical RAG Pipeline - Main orchestration
 import os
 import logging
 from datetime import datetime
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 import uuid
 
 from src.core.normalizer import normalize_medical_query
@@ -182,7 +182,8 @@ class MedicalRAGPipeline:
         query_text: str,
         top_k: int = 10,
         use_mmr: bool = True,
-        recency_boost: bool = True
+        recency_boost: bool = True,
+        question_type: Optional[str] = None
     ) -> Dict[str, Any]:
         """
         Process a query through the complete RAG pipeline
@@ -192,6 +193,7 @@ class MedicalRAGPipeline:
             top_k: Number of final documents
             use_mmr: Whether to apply MMR
             recency_boost: Whether to boost recent documents
+            question_type: Type of question (yesno, factoid, list, summary) for better answer formatting
         
         Returns:
             Dictionary with answer and retrieved documents
@@ -294,10 +296,23 @@ class MedicalRAGPipeline:
         llm_config = self.config.get("llm", {})
         system_prompt = llm_config.get("system_prompt", "You are a medical AI assistant.")
         
+        # Use provided question_type or try to detect from query
+        if question_type is None:
+            query_lower = query_text.lower()
+            if any(query_lower.startswith(word) for word in ["is ", "are ", "does ", "do ", "can ", "could ", "will ", "would "]):
+                question_type = "yesno"
+            elif "how many" in query_lower or "what is the" in query_lower or "who is" in query_lower or "which virus" in query_lower:
+                question_type = "factoid"
+            elif "list" in query_lower or "which are" in query_lower or "what are the" in query_lower:
+                question_type = "list"
+            elif "what is" in query_lower or "describe" in query_lower or "explain" in query_lower:
+                question_type = "summary"
+        
         answer = self.llm.generate_with_context(
             query=query_text,
             context_documents=final_docs,
-            system_prompt=system_prompt
+            system_prompt=system_prompt,
+            question_type=question_type
         )
         
         # 8. Format response

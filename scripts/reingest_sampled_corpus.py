@@ -208,8 +208,7 @@ def ingest_corpus(
         ),
         desc="Ingesting documents",
         unit="docs",
-        total=200000,  # Total documents expected
-        bar_format='{l_bar}{bar:50}{r_bar}{bar_format}'
+        total=300000  # Total documents expected
     )
     
     for ok, result in pbar:
@@ -230,7 +229,7 @@ def ingest_corpus(
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Reingest sampled 200K corpus into Elasticsearch")
+    parser = argparse.ArgumentParser(description="Reingest sampled 300K corpus into Elasticsearch")
     parser.add_argument(
         "--config",
         required=True,

@@ -1,0 +1,1667 @@
+[
+  {
+    "question": "What are the symptoms of glucocorticoid withdrawal syndrome after surgical remission of Cushing Syndrome?",
+    "question_type": "list",
+    "candidate_answer": "1. Fatigue\n2. Muscle weakness\n3. Weight loss\n4. Nausea\n5. Hypotension",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 95,
+      "conciseness_score": 90,
+      "overall_score": 88,
+      "feedback": "The candidate answer lists several symptoms associated with glucocorticoid withdrawal syndrome, and most of the symptoms provided are accurate and relevant. However, the list could be considered incomplete as it does not include other common symptoms such as joint pain, mood changes, or decreased appetite, which are also significant aspects of glucocorticoid withdrawal syndrome. The answer is well-structured and clear, making it easy to read and understand. The use of concise language contributes positively to the overall clarity and conciseness of the response.",
+      "strengths": [
+        "Accurate symptoms listed",
+        "Clear and well-structured format",
+        "Concise presentation of information"
+      ],
+      "weaknesses": [
+        "Incomplete list of symptoms",
+        "Could include more common symptoms"
+      ],
+      "improvements": "To improve the answer, consider adding additional symptoms commonly associated with glucocorticoid withdrawal syndrome, such as joint pain, mood changes, and decreased appetite. This would enhance the completeness of the list.",
+      "comparison_to_reference": "Compared to reference answers, this response is largely accurate but lacks some critical symptoms that are typically included in comprehensive lists of glucocorticoid withdrawal syndrome symptoms."
+    },
+    "timestamp": "2026-02-11T11:36:52.581416"
+  },
+  {
+    "question": "How many members of the serine/threonine kinase family group are present in \nthe human proteome?",
+    "question_type": "factoid",
+    "candidate_answer": "The main entity is \"serine/threonine kinases.\" The human proteome contains approximately 518 serine/threonine kinases. These kinases are crucial for various cellular processes, including signal transduction and cell cycle control, and are part of the larger protein kinase superfamily. Understanding their roles can provide insights into various diseases, particularly those related to deregulated phosphorylation and signaling pathways.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 75,
+      "overall_score": 83,
+      "feedback": "The answer correctly identifies that there are approximately 518 serine/threonine kinases in the human proteome, which aligns with current biomedical knowledge. However, while the additional context about the importance of these kinases is relevant, it detracts slightly from the conciseness of the answer. The answer is mostly clear and well-structured, but could be more concise by omitting some of the background information that, while informative, is not directly necessary to answer the question. Overall, the answer is strong but could be improved in terms of conciseness and focus.",
+      "strengths": [
+        "Accurate number of serine/threonine kinases provided",
+        "Relevant context about the role of kinases in cellular processes"
+      ],
+      "weaknesses": [
+        "Slightly verbose; could be more concise",
+        "Background information may distract from the main answer"
+      ],
+      "improvements": "To improve the answer, it could focus more on directly answering the question with the number of kinases and a brief mention of their significance, rather than elaborating on their roles in cellular processes.",
+      "comparison_to_reference": "The answer is consistent with reference data regarding the number of serine/threonine kinases in the human proteome, which supports its accuracy. However, it could benefit from a more direct approach to the question without excessive elaboration."
+    },
+    "timestamp": "2026-02-11T11:36:56.781401"
+  },
+  {
+    "question": "What is Scleral Buckle used for?",
+    "question_type": "factoid",
+    "candidate_answer": "Scleral Buckle\n\nScleral buckle is a surgical procedure used to treat retinal detachment. It involves placing a silicone band around the eye to indent the sclera, which helps to close the retinal breaks and reattach the retina to the underlying tissue. This technique is particularly effective for repairing rhegmatogenous retinal detachments and has been shown to be successful in a significant percentage of cases.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 95,
+      "completeness_score": 90,
+      "relevance_score": 100,
+      "clarity_score": 90,
+      "conciseness_score": 85,
+      "overall_score": 91,
+      "feedback": "The candidate answer accurately describes the scleral buckle procedure and its purpose in treating retinal detachment, particularly rhegmatogenous retinal detachments. The information provided is factually correct and aligns well with established biomedical knowledge. The answer is mostly complete, but could benefit from mentioning potential complications or limitations of the procedure for a more rounded response. The relevance of the information is high, as all details pertain directly to the question asked. The clarity of the answer is good, with a logical structure, but could be improved slightly for conciseness by removing redundant phrases. Overall, the answer is strong, but minor enhancements could elevate it further.",
+      "strengths": [
+        "Accurate description of the scleral buckle procedure",
+        "High relevance to the question",
+        "Clear structure and logical flow"
+      ],
+      "weaknesses": [
+        "Could include potential complications or limitations",
+        "Slight redundancy in phrasing"
+      ],
+      "improvements": "To improve the answer, consider adding information about potential complications or limitations of the scleral buckle procedure. Additionally, streamline the phrasing to eliminate any redundancy for better conciseness.",
+      "comparison_to_reference": "The answer aligns well with standard references on scleral buckle procedures, providing a clear and accurate description. It covers the essential aspects of the procedure effectively, similar to what would be found in authoritative medical literature."
+    },
+    "timestamp": "2026-02-11T11:37:00.774434"
+  },
+  {
+    "question": "Which are the most common viral haemorrhagic fevers?",
+    "question_type": "list",
+    "candidate_answer": "",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 0,
+      "completeness_score": 0,
+      "relevance_score": 0,
+      "clarity_score": 0,
+      "conciseness_score": 0,
+      "overall_score": 0,
+      "feedback": "The candidate answer is empty and does not provide any information regarding the most common viral hemorrhagic fevers. As a result, it scores 0 in all criteria. There is no accuracy, completeness, relevance, clarity, or conciseness to evaluate.",
+      "strengths": [],
+      "weaknesses": [
+        "No information provided",
+        "Lack of any relevant content",
+        "Failure to address the question"
+      ],
+      "improvements": "The candidate should provide a list of the most common viral hemorrhagic fevers, such as Ebola virus disease, Marburg virus disease, Lassa fever, and Crimean-Congo hemorrhagic fever, ensuring that each item is accurate and relevant.",
+      "comparison_to_reference": "There is no comparison to reference answers as the candidate answer does not contain any content."
+    },
+    "timestamp": "2026-02-11T11:37:03.573554"
+  },
+  {
+    "question": "Which kinases that take part in the same pathway as the kinase Pi4KIIalpha, both \nupstream and downstream?",
+    "question_type": "list",
+    "candidate_answer": "1. Akt\n2. p38 MAP kinase\n3. MEK\n4. Raf\n5. SIK (Salt-Inducible Kinase)",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 60,
+      "completeness_score": 50,
+      "relevance_score": 70,
+      "clarity_score": 80,
+      "conciseness_score": 90,
+      "overall_score": 66,
+      "feedback": "The answer lists several kinases, but the accuracy of the listed kinases in relation to their involvement in the same pathway as Pi4KIIalpha is questionable. While some kinases like Akt and MEK are known to be involved in pathways that may intersect with those involving Pi4KIIalpha, others like p38 MAP kinase and SIK may not have a direct connection. The completeness is lacking as it does not mention other significant kinases that are well-established in the same pathway, which would be necessary for a comprehensive answer. The clarity of the list is good, but the relevance suffers due to the inclusion of potentially incorrect or less relevant kinases. Overall, while the answer is somewhat organized and concise, it does not fully meet the criteria for accuracy and completeness.",
+      "strengths": [
+        "Clear and organized list format",
+        "Concise presentation of information"
+      ],
+      "weaknesses": [
+        "Several inaccuracies regarding the kinases listed",
+        "Incomplete representation of the pathway"
+      ],
+      "improvements": "The answer should include a more accurate and complete list of kinases that are known to interact with or are part of the same signaling pathway as Pi4KIIalpha. It would be beneficial to verify the involvement of each kinase in relation to Pi4KIIalpha to ensure accuracy.",
+      "comparison_to_reference": "Compared to a reference answer, which would likely include a more comprehensive and accurate list of kinases such as PI3K, mTOR, and others directly involved in the pathway, this answer falls short in both accuracy and completeness."
+    },
+    "timestamp": "2026-02-11T11:37:07.835281"
+  },
+  {
+    "question": "What are Car T cells?",
+    "question_type": "summary",
+    "candidate_answer": "Chimeric Antigen Receptor (CAR) T cells are a revolutionary form of immunotherapy that involve genetically modifying a patient's T cells to express CARs, enabling them to recognize and attack specific cancer cells. Initially developed for treating hematological malignancies, CAR T cells have shown promise for broader applications, including autoimmune diseases. These engineered T cells enhance the immune response against tumors by targeting specific antigens, leading to improved patient outcomes, although challenges remain in treating solid tumors and managing potential adverse effects.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 85,
+      "relevance_score": 90,
+      "clarity_score": 90,
+      "conciseness_score": 85,
+      "overall_score": 88,
+      "feedback": "The candidate answer provides a largely accurate and relevant description of CAR T cells, highlighting their role in immunotherapy and their mechanism of action. However, while it mentions their initial development for hematological malignancies and potential broader applications, it could be improved by specifying some examples of the specific cancer types treated and elaborating on the challenges faced in solid tumors. The answer is clear and well-structured, making it easy to understand. It avoids unnecessary information, although a bit more detail on the mechanism of action could enhance completeness.",
+      "strengths": [
+        "Accurate description of CAR T cells",
+        "Clear and well-structured presentation",
+        "Relevant information regarding applications and challenges"
+      ],
+      "weaknesses": [
+        "Lacks specific examples of cancer types",
+        "Could provide more detail on the mechanism of action"
+      ],
+      "improvements": "Include specific examples of cancers treated with CAR T cells and elaborate on the mechanism of action to enhance completeness. Additionally, discussing the types of adverse effects could provide a more rounded view.",
+      "comparison_to_reference": "The answer aligns well with standard references on CAR T cells, accurately reflecting their purpose and challenges. It is comparable to reference answers, though it could benefit from additional detail to match the depth often found in comprehensive summaries."
+    },
+    "timestamp": "2026-02-11T11:37:11.491820"
+  },
+  {
+    "question": "What growth factor has been shown to affect GABAergic neurogenesis in the prenatal human brain?",
+    "question_type": "factoid",
+    "candidate_answer": "reelin\n\nReelin is a large extracellular glycoprotein that plays a crucial role in neuronal migration and localization during the development of the neocortex and cerebellar cortex. It is regulated by thyroid hormones, specifically triiodothyronine (T3), which is necessary for reelin-induced neuronal migration. This indicates that reelin, influenced by thyroid hormones, affects GABAergic neurogenesis in the prenatal human brain.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 70,
+      "relevance_score": 90,
+      "clarity_score": 80,
+      "conciseness_score": 80,
+      "overall_score": 80,
+      "feedback": "The candidate answer correctly identifies 'reelin' as the growth factor affecting GABAergic neurogenesis in the prenatal human brain, which is factually accurate. However, while the additional information about reelin's role and its regulation by thyroid hormones is relevant, it somewhat detracts from the completeness of the answer by not directly addressing the specific aspect of GABAergic neurogenesis. The answer is clear and well-structured, but could be more concise by omitting some of the background details that do not directly answer the question.",
+      "strengths": [
+        "Accurate identification of reelin",
+        "Clear explanation of reelin's role"
+      ],
+      "weaknesses": [
+        "Lacks direct focus on GABAergic neurogenesis",
+        "Additional details may reduce conciseness"
+      ],
+      "improvements": "The answer could be improved by directly linking the role of reelin specifically to GABAergic neurogenesis without the extra details about thyroid hormones, which are not necessary for answering the question.",
+      "comparison_to_reference": "Compared to a reference answer that might simply state 'reelin' and briefly mention its role in GABAergic neurogenesis, this answer provides more context but at the cost of directness and conciseness."
+    },
+    "timestamp": "2026-02-11T11:37:15.055442"
+  },
+  {
+    "question": "Does dual checkpoint inhibition with ipilimumab (ipi) with nivolumab (nivo) improve progression free survival of newly diagnosed glioblastoma?",
+    "question_type": "yesno",
+    "candidate_answer": "no  \nThere is no evidence in the provided documents specifically addressing the impact of dual checkpoint inhibition with ipilimumab and nivolumab on progression-free survival for newly diagnosed glioblastoma. The content primarily discusses their use in other cancers, such as hepatocellular carcinoma, without mentioning glioblastoma outcomes.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 80,
+      "completeness_score": 60,
+      "relevance_score": 70,
+      "clarity_score": 85,
+      "conciseness_score": 90,
+      "overall_score": 78,
+      "feedback": "The answer correctly states 'no' regarding the improvement of progression-free survival with dual checkpoint inhibition in glioblastoma, which aligns with the current understanding that there is limited evidence for this specific combination in this context. However, the explanation lacks completeness as it does not mention any relevant studies or data that might support this claim, nor does it clarify the absence of evidence in the context of glioblastoma specifically. The relevance is somewhat diminished by the mention of other cancers without a direct link to the question. The clarity is good, and the answer is concise, but it could benefit from additional context or references to bolster the explanation.",
+      "strengths": [
+        "Correct yes/no answer",
+        "Clear and concise presentation"
+      ],
+      "weaknesses": [
+        "Lacks supporting evidence or references",
+        "Incomplete explanation regarding glioblastoma"
+      ],
+      "improvements": "Include references to specific studies or data regarding the use of ipilimumab and nivolumab in glioblastoma, or clarify the lack of evidence more thoroughly. This would enhance the completeness and relevance of the answer.",
+      "comparison_to_reference": "Compared to a reference answer that might include specific studies or data supporting the claim, this answer falls short in providing a robust explanation, which could lead to a more informed understanding of the topic."
+    },
+    "timestamp": "2026-02-11T11:37:18.623395"
+  },
+  {
+    "question": "Where does Drosophila melanogaster show homology with Homo sapiens?",
+    "question_type": "list",
+    "candidate_answer": "1. Insulin receptor kinase (IRK)\n2. Protein tyrosine phosphatase 1B (PTP1B)\n3. Ribosomal protein L11\n4. Neuropeptides involved in behavior\n5. Genetic pathways regulating development",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 80,
+      "completeness_score": 70,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 90,
+      "overall_score": 82,
+      "feedback": "The candidate answer provides a list of items where Drosophila melanogaster shows homology with Homo sapiens, which is relevant to the question. However, while most items listed are accurate, some could benefit from more specificity or context to enhance clarity and completeness. For instance, the mention of 'neuropeptides involved in behavior' is vague and could be more specific regarding which neuropeptides are being referred to. Overall, the answer is clear and concise, but it lacks some depth in completeness.",
+      "strengths": [
+        "The answer is clear and well-structured.",
+        "Most items listed are relevant and accurate."
+      ],
+      "weaknesses": [
+        "Some items lack specificity, which affects completeness.",
+        "The term 'neuropeptides involved in behavior' is too vague."
+      ],
+      "improvements": "To improve the answer, it would be beneficial to provide more specific examples or details for each item listed, particularly for the neuropeptides. Additionally, ensuring that all items are well-defined would enhance the completeness of the answer.",
+      "comparison_to_reference": "Compared to reference answers, this response is generally accurate but lacks the depth and specificity that might be found in more comprehensive sources. Reference answers typically provide specific examples of genes or proteins, which would strengthen this response."
+    },
+    "timestamp": "2026-02-11T11:37:24.088855"
+  },
+  {
+    "question": "How does the environment of the womb modify the development of the embryo?",
+    "question_type": "summary",
+    "candidate_answer": "The environment of the womb significantly influences embryonic development through various mechanisms. The placenta plays a crucial role by facilitating nutrient and gas exchange, as well as providing a protective barrier for the developing embryo. Additionally, factors such as maternal temperature can affect gene expression in both the placenta and the embryo, impacting metabolic processes and growth. For instance, maternal cold exposure has been shown to alter the development of fetal brown adipose tissue, indicating that the intrauterine environment can modulate developmental pathways that are critical for postnatal health.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 85,
+      "relevance_score": 90,
+      "clarity_score": 90,
+      "conciseness_score": 90,
+      "overall_score": 89,
+      "feedback": "The candidate answer provides a mostly accurate and relevant overview of how the womb environment influences embryonic development. It correctly identifies the role of the placenta and mentions the impact of maternal temperature on gene expression and metabolic processes. However, while it covers important aspects, it could elaborate further on other environmental factors such as maternal nutrition or stress, which also play significant roles in embryonic development. The answer is clear and well-structured, making it easy to understand. There are no significant issues with clarity or conciseness, as the information is presented in a straightforward manner without unnecessary detail.",
+      "strengths": [
+        "Accurate description of the role of the placenta in embryonic development.",
+        "Clear explanation of the impact of maternal temperature on fetal development."
+      ],
+      "weaknesses": [
+        "Lacks mention of other critical environmental factors such as maternal nutrition and stress."
+      ],
+      "improvements": "To enhance the completeness of the answer, it could include additional environmental factors that influence embryonic development, such as maternal nutrition, stress, and exposure to toxins. This would provide a more comprehensive overview of the womb environment's impact on embryonic development.",
+      "comparison_to_reference": "Compared to potential reference answers, this candidate answer is strong but could be improved by including a broader range of environmental factors. It aligns well with the key points typically highlighted in expert summaries on this topic."
+    },
+    "timestamp": "2026-02-11T11:37:28.030771"
+  },
+  {
+    "question": "Do 2 embryos with the same genetic information show differences in their \nphenotype if the environment of the mother?s womb is different in each \npregnancy?",
+    "question_type": "summary",
+    "candidate_answer": "Maternal environmental factors significantly influence the phenotypic outcomes of embryos, even when they possess identical genetic information. Research indicates that variations in maternal conditions, such as temperature and hormonal environment, can lead to differences in gene expression, fetal development, and overall growth. For instance, studies have shown that maternal cold exposure alters the transcriptome of both placental and fetal tissues, impacting metabolic pathways and ultimately affecting fetal phenotype. These findings highlight the dynamic interplay between genetics and maternal environment in shaping developmental outcomes.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 85,
+      "relevance_score": 90,
+      "clarity_score": 90,
+      "conciseness_score": 80,
+      "overall_score": 87,
+      "feedback": "The candidate answer accurately describes the influence of maternal environmental factors on phenotypic outcomes in embryos with identical genetic information. It correctly highlights the role of maternal conditions in gene expression and fetal development. However, while the answer is mostly complete, it could have included more specific examples or mechanisms to enhance completeness. The answer is relevant and clear, but there is a slight verbosity that could be trimmed for conciseness. Overall, it provides a strong summary of the topic.",
+      "strengths": [
+        "Accurate information regarding maternal environmental influence",
+        "Clear explanation of the interplay between genetics and environment",
+        "Relevant examples provided"
+      ],
+      "weaknesses": [
+        "Could include more specific examples or mechanisms",
+        "Slight verbosity in phrasing"
+      ],
+      "improvements": "To improve, the answer could include specific studies or data points that illustrate the effects of different maternal environments on phenotypic differences. Additionally, reducing any redundant phrases would enhance conciseness.",
+      "comparison_to_reference": "The candidate answer aligns well with established literature on the topic, providing a solid summary that reflects current understanding in developmental biology. It compares favorably to reference answers that emphasize the importance of maternal factors in fetal development."
+    },
+    "timestamp": "2026-02-11T11:37:31.316193"
+  },
+  {
+    "question": "What is the role of cortisol in the human body?",
+    "question_type": "summary",
+    "candidate_answer": "Cortisol is a vital hormone produced by the adrenal glands, playing a crucial role in the body's response to stress. It is part of the hypothalamic-pituitary-adrenal (HPA) axis, which regulates various physiological processes, including metabolism, immune response, and blood pressure. Cortisol helps maintain homeostasis during stressful situations by increasing blood sugar levels, suppressing the immune system, and aiding in the metabolism of fats, proteins, and carbohydrates. Additionally, it influences mood and cognition, making it essential for both physical and mental health. Dysregulation of cortisol levels can lead to various health issues, including chronic stress, anxiety, and metabolic disorders.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 95,
+      "completeness_score": 90,
+      "relevance_score": 95,
+      "clarity_score": 90,
+      "conciseness_score": 85,
+      "overall_score": 91,
+      "feedback": "The candidate answer provides an accurate overview of cortisol's role in the human body, correctly identifying its production by the adrenal glands and its involvement in the HPA axis. It also accurately describes cortisol's functions in metabolism, immune response, and mood regulation. However, while the answer is mostly complete, it could benefit from mentioning specific conditions associated with cortisol dysregulation, such as Cushing's syndrome or Addison's disease, which would enhance completeness. The answer is relevant and clear, though slightly verbose in parts, which affects conciseness. Overall, the answer is well-structured and informative.",
+      "strengths": [
+        "Accurate description of cortisol's role and functions",
+        "Well-organized and coherent presentation",
+        "Relevant information pertaining to stress response and health"
+      ],
+      "weaknesses": [
+        "Could mention specific health conditions related to cortisol dysregulation",
+        "Slightly verbose in some areas, affecting conciseness"
+      ],
+      "improvements": "To improve the answer, include specific examples of health issues related to cortisol dysregulation, such as Cushing's syndrome or Addison's disease. Additionally, aim for more conciseness by reducing redundancy in the explanation of cortisol's functions.",
+      "comparison_to_reference": "The answer aligns well with standard biomedical references regarding cortisol's role in the body, covering essential aspects while lacking only minor details that could enhance completeness."
+    },
+    "timestamp": "2026-02-11T11:37:35.592760"
+  },
+  {
+    "question": "Is Cushing Syndrome hereditary?",
+    "question_type": "yesno",
+    "candidate_answer": "no  \nCushing Syndrome is not typically hereditary. While some cases can be linked to genetic mutations, such as in primary pigmented nodular adrenocortical disease, most instances are sporadic and not passed down through families. Thus, the condition itself is not classified as hereditary.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 90,
+      "overall_score": 87,
+      "feedback": "The answer correctly states that Cushing Syndrome is not typically hereditary, which aligns with current biomedical understanding. The explanation provided about sporadic cases and genetic mutations adds valuable context, reinforcing the accuracy of the answer. However, the phrase 'not typically hereditary' could be interpreted as slightly ambiguous, as it may imply that there are significant hereditary cases when in fact they are quite rare. The answer is mostly complete, but it could benefit from a clearer distinction between sporadic cases and hereditary cases. The structure is clear and concise, making it easy to understand.",
+      "strengths": [
+        "Accurate yes/no response",
+        "Good supporting explanation",
+        "Clear and concise presentation"
+      ],
+      "weaknesses": [
+        "Slight ambiguity in terminology",
+        "Could clarify the rarity of hereditary cases more explicitly"
+      ],
+      "improvements": "Consider rephrasing to emphasize that Cushing Syndrome is predominantly sporadic with very few hereditary cases, to avoid any potential ambiguity.",
+      "comparison_to_reference": "The answer aligns well with reference material, which typically states that Cushing Syndrome is primarily sporadic and not hereditary, with only rare exceptions. The additional detail about genetic mutations is a valuable enhancement not always present in basic reference answers."
+    },
+    "timestamp": "2026-02-11T11:37:38.966109"
+  },
+  {
+    "question": "How does sexual activity correlate with cellular aging?",
+    "question_type": "summary",
+    "candidate_answer": "Sexual activity appears to have a complex relationship with cellular aging, particularly in the context of reproductive health and psychological well-being. Research indicates that sexual dysfunction is prevalent in aging populations, significantly impacting quality of life and relationships. For instance, older adults often report decreased sexual desire and satisfaction, which can correlate with broader health issues and psychosocial factors. Furthermore, studies suggest that sexual activity may influence physiological functions, including hormonal regulation and overall mental health, potentially affecting cellular aging processes. Overall, maintaining sexual health in older age may be integral to enhancing life quality and mitigating some aspects of cellular aging.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 85,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 75,
+      "overall_score": 81,
+      "feedback": "The candidate answer provides a generally accurate overview of the relationship between sexual activity and cellular aging, highlighting factors such as sexual dysfunction and its impact on quality of life. However, it lacks specific references to studies or data that could strengthen the claims made. While it covers key aspects of the question, it could benefit from more direct connections between sexual activity and cellular aging processes. The answer is mostly clear and well-structured, but there are areas where it could be more concise, particularly in the explanation of psychological factors. Overall, it effectively addresses the question but could improve in specificity and conciseness.",
+      "strengths": [
+        "Accurate overview of the relationship between sexual activity and aging",
+        "Addresses psychological and physiological aspects",
+        "Well-structured and coherent"
+      ],
+      "weaknesses": [
+        "Lacks specific references to studies",
+        "Could be more concise in certain areas",
+        "Does not explicitly connect sexual activity to cellular aging processes"
+      ],
+      "improvements": "Incorporate specific studies or data to support claims about the relationship between sexual activity and cellular aging. Streamline the answer to focus more directly on how sexual activity influences cellular aging, reducing any overly verbose explanations.",
+      "comparison_to_reference": "Compared to a reference answer, this response provides a good summary but lacks the depth and specificity that might be expected in a high-quality answer. A reference answer would likely include more concrete examples or data to illustrate the points made."
+    },
+    "timestamp": "2026-02-11T11:37:43.452458"
+  },
+  {
+    "question": "What is the best treatment for trauma and depression in pre-teen children?",
+    "question_type": "summary",
+    "candidate_answer": "",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 0,
+      "completeness_score": 0,
+      "relevance_score": 0,
+      "clarity_score": 0,
+      "conciseness_score": 0,
+      "overall_score": 0,
+      "feedback": "The candidate answer is completely empty, providing no information regarding the best treatment for trauma and depression in pre-teen children. As such, it scores 0 across all criteria. There are no facts presented to evaluate for accuracy, completeness, relevance, clarity, or conciseness. An answer is expected to provide evidence-based treatment options, such as therapy types (e.g., cognitive-behavioral therapy), medication considerations, or other interventions relevant to the demographic specified. Without any content, it fails to meet the basic requirements of the question.",
+      "strengths": [],
+      "weaknesses": [
+        "No content provided",
+        "No relevant information",
+        "No clarity or structure"
+      ],
+      "improvements": "The candidate answer should include a summary of evidence-based treatments for trauma and depression in pre-teen children, such as psychotherapy options, medication if applicable, and any other relevant interventions or considerations.",
+      "comparison_to_reference": "There is no reference answer to compare against, but a proper response would typically include a discussion of therapeutic approaches and possibly mention studies or guidelines that support the recommended treatments."
+    },
+    "timestamp": "2026-02-11T11:37:46.779748"
+  },
+  {
+    "question": "What is a  mechanotransducers, in realtion to ion channels?",
+    "question_type": "factoid",
+    "candidate_answer": "Piezo proteins\n\nPiezo proteins are mechanotransducers that function as ion channels mediating mechanosensory transduction in mammalian cells. They play a crucial role in various biological processes, including somatosensation, shear stress sensing in the vasculature, and bladder distention regulation. Mutations in these proteins can be linked to several disorders, highlighting their importance in cellular function and mechanosensitivity.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 90,
+      "overall_score": 86,
+      "feedback": "The answer accurately identifies Piezo proteins as mechanotransducers that function as ion channels, which is correct and relevant to the question. However, while it provides good context about their role in various biological processes, it could have included additional examples of mechanotransducers beyond Piezo proteins to enhance completeness. The answer is clear and well-structured, but could benefit from a more explicit connection to the concept of mechanotransduction in relation to ion channels. Overall, the answer is strong but has room for improvement in completeness and clarity.",
+      "strengths": [
+        "Accurate identification of Piezo proteins as mechanotransducers",
+        "Clear explanation of their biological roles",
+        "Relevant information provided"
+      ],
+      "weaknesses": [
+        "Lacks mention of other mechanotransducers",
+        "Could improve connection to the broader concept of mechanotransduction"
+      ],
+      "improvements": "Include additional examples of mechanotransducers and clarify the relationship between mechanotransduction and ion channels more explicitly.",
+      "comparison_to_reference": "The answer is consistent with what is generally known about mechanotransducers and Piezo proteins, but it could be enhanced by including a broader range of examples and a more detailed explanation of the mechanotransduction process."
+    },
+    "timestamp": "2026-02-11T11:37:50.776081"
+  },
+  {
+    "question": "Is the formation of the Barr body stochastic, or is it correlated with the silencing \nof mutated X-chromosomes when extensive mutations are present?",
+    "question_type": "yesno",
+    "candidate_answer": "no  \nThe formation of the Barr body is a stochastic process, meaning it occurs randomly during the early stages of embryonic development. This process is not directly correlated with the silencing of mutated X-chromosomes, as the mechanism primarily involves random inactivation of one of the two X chromosomes in females, regardless of mutations present.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 90,
+      "overall_score": 87,
+      "feedback": "The candidate answer correctly identifies the formation of the Barr body as a stochastic process, which aligns with established biological knowledge. The explanation provided is relevant and supports the yes/no answer. However, the completeness score is slightly lower because while it addresses the question, it could elaborate more on the implications of the stochastic process in relation to mutated X-chromosomes. The clarity of the answer is good, but a more structured presentation could enhance understanding. Overall, the answer is accurate, relevant, and concise, but could benefit from a bit more detail.",
+      "strengths": [
+        "Accurate identification of Barr body formation as stochastic",
+        "Clear and concise explanation",
+        "Relevant information provided"
+      ],
+      "weaknesses": [
+        "Could provide more detail on the implications of stochasticity",
+        "Lacks a structured presentation"
+      ],
+      "improvements": "Expand on the implications of stochasticity in relation to mutated X-chromosomes to enhance completeness. Consider structuring the response to improve clarity.",
+      "comparison_to_reference": "The answer aligns well with reference knowledge about Barr body formation, accurately reflecting the stochastic nature of the process without misrepresenting the relationship with mutated X-chromosomes."
+    },
+    "timestamp": "2026-02-11T11:37:54.266414"
+  },
+  {
+    "question": "Which are the causes of the degeneration of Y-chromosome in Homo sapiens?",
+    "question_type": "list",
+    "candidate_answer": "1. Chromosomal rearrangements\n2. Aneuploidy\n3. X-Y translocations\n4. Microdeletions\n5. Genetic mutations",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 80,
+      "completeness_score": 70,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 90,
+      "overall_score": 82,
+      "feedback": "The answer lists several potential causes of Y-chromosome degeneration, which are relevant to the question. However, while most items are accurate, some may not be the primary causes of degeneration. For example, aneuploidy is more of a consequence than a direct cause. The list is clear and concise, but it could benefit from additional context or examples to enhance completeness. Overall, the answer is good but lacks some critical detail regarding the mechanisms of degeneration.",
+      "strengths": [
+        "Relevant causes listed",
+        "Clear and concise presentation"
+      ],
+      "weaknesses": [
+        "Some items may not be direct causes",
+        "Lacks context or examples for clarity"
+      ],
+      "improvements": "Include more specific mechanisms or examples of how each listed cause contributes to Y-chromosome degeneration. Consider re-evaluating the inclusion of aneuploidy as a direct cause.",
+      "comparison_to_reference": "Compared to reference answers, this response captures several key aspects but misses some critical insights into the biological processes involved in Y-chromosome degeneration."
+    },
+    "timestamp": "2026-02-11T11:37:58.502789"
+  },
+  {
+    "question": "Is Cushing Syndrome present in dogs?",
+    "question_type": "yesno",
+    "candidate_answer": "yes\n\nCushing Syndrome, also known as hyperadrenocorticism, is indeed present in dogs. It is characterized by excessive production of glucocorticoids, and can manifest as a result of pituitary tumors or adrenal gland disorders. This condition is recognized in veterinary medicine and has specific diagnostic and treatment protocols, including the use of medications like trilostane.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 100,
+      "completeness_score": 90,
+      "relevance_score": 100,
+      "clarity_score": 90,
+      "conciseness_score": 80,
+      "overall_score": 92,
+      "feedback": "The candidate answer correctly identifies that Cushing Syndrome is present in dogs, which is factually accurate. The explanation provided is relevant and informative, detailing the condition's characteristics and causes. However, while the answer is generally concise, it could be slightly more succinct by omitting some of the details about diagnostic and treatment protocols, which are not strictly necessary for a yes/no question. Overall, the answer is well-structured and clear.",
+      "strengths": [
+        "Accurate identification of Cushing Syndrome in dogs",
+        "Relevant explanation of the condition and its causes",
+        "Well-structured and clear presentation"
+      ],
+      "weaknesses": [
+        "Slightly verbose for a yes/no question",
+        "Could omit some details on diagnostics and treatments for brevity"
+      ],
+      "improvements": "To improve, the answer could be more concise by focusing solely on confirming the presence of Cushing Syndrome in dogs and briefly mentioning its causes without delving into treatment protocols.",
+      "comparison_to_reference": "The answer aligns well with the expected reference answer, as it accurately confirms the presence of Cushing Syndrome in dogs and provides relevant context. The additional details enhance understanding but are somewhat excessive for a yes/no format."
+    },
+    "timestamp": "2026-02-11T11:38:02.186017"
+  },
+  {
+    "question": "Are there any nucleosomes detected in the human serum?",
+    "question_type": "yesno",
+    "candidate_answer": "no  \nCurrent research does not provide evidence for the presence of nucleosomes in human serum. Nucleosomes are primarily associated with chromatin within cells, and while fragments of chromatin can be found in circulation, the detection of intact nucleosomes in serum has not been established in the literature provided.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 80,
+      "completeness_score": 70,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 80,
+      "overall_score": 80,
+      "feedback": "The candidate answer correctly states 'no' regarding the detection of nucleosomes in human serum, which aligns with current understanding in the field. However, the explanation could be more robust by citing specific studies or data to support the claim. The answer is mostly clear and well-structured, but it could benefit from a more thorough discussion of the context around chromatin fragments in circulation. The answer is concise but could provide a bit more detail without becoming verbose.",
+      "strengths": [
+        "Correct yes/no answer",
+        "Clear structure",
+        "Relevant information provided"
+      ],
+      "weaknesses": [
+        "Lack of specific references to studies",
+        "Limited explanation of chromatin fragments in circulation"
+      ],
+      "improvements": "Incorporate references to specific studies or reviews that discuss the presence of chromatin fragments in circulation. Expand on the context of chromatin fragments to enhance completeness.",
+      "comparison_to_reference": "The answer is consistent with the current literature, which indicates that while chromatin fragments may be present in circulation, intact nucleosomes have not been established in serum. The answer aligns well with the expected reference response."
+    },
+    "timestamp": "2026-02-11T11:38:05.768164"
+  },
+  {
+    "question": "What is the target of lapatinib?",
+    "question_type": "list",
+    "candidate_answer": "1. HER2 (ERBB2)\n2. EGFR (ERBB)",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 90,
+      "overall_score": 86,
+      "feedback": "The answer correctly identifies the primary targets of lapatinib, which are HER2 (ERBB2) and EGFR (ERBB). However, while the answer is mostly accurate, it could be improved by specifying that lapatinib primarily targets HER2 and has activity against EGFR, as this distinction is important in the context of its mechanism of action. The list is clear and concise, but it lacks additional context that could enhance completeness. Overall, the answer is strong but could benefit from minor elaboration.",
+      "strengths": [
+        "Accurate identification of targets",
+        "Clear and concise presentation"
+      ],
+      "weaknesses": [
+        "Lacks additional context on the significance of targets",
+        "Could specify the primary target more clearly"
+      ],
+      "improvements": "Consider adding a brief explanation of the significance of HER2 and EGFR in the context of lapatinib's therapeutic action. This would improve completeness and clarity.",
+      "comparison_to_reference": "Compared to reference answers, this response is accurate and relevant but lacks some depth that might be found in more comprehensive answers. Reference answers often include additional context about the role of these targets in cancer treatment."
+    },
+    "timestamp": "2026-02-11T11:38:13.838194"
+  },
+  {
+    "question": "What is the mechanism of action of brigatinib?",
+    "question_type": "summary",
+    "candidate_answer": "Brigatinib is a targeted therapy that functions primarily as an inhibitor of anaplastic lymphoma kinase (ALK) and is used in the treatment of non-small cell lung cancer (NSCLC) with ALK rearrangements. Its mechanism of action involves the selective inhibition of ALK, which is a protein involved in cell signaling pathways that promote cell proliferation and survival. By inhibiting ALK, brigatinib disrupts these pathways, leading to reduced tumor growth and increased apoptosis in cancer cells harboring ALK mutations. Additionally, brigatinib also shows activity against other kinases, which may contribute to its efficacy in overcoming resistance mechanisms observed with other ALK inhibitors.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 95,
+      "completeness_score": 90,
+      "relevance_score": 95,
+      "clarity_score": 90,
+      "conciseness_score": 85,
+      "overall_score": 91,
+      "feedback": "The candidate answer provides a largely accurate and well-structured explanation of brigatinib's mechanism of action. It correctly identifies brigatinib as an ALK inhibitor and describes its role in treating NSCLC. The mention of its effects on cell signaling pathways and apoptosis is accurate and relevant. However, while the answer is comprehensive, it could have briefly mentioned the specific types of ALK mutations or rearrangements that brigatinib targets, which would enhance completeness. The answer is generally clear and well-organized, but there are minor areas where conciseness could be improved by eliminating some redundancy in explaining the mechanism.",
+      "strengths": [
+        "Accurate description of brigatinib's mechanism of action as an ALK inhibitor.",
+        "Clear explanation of the effects on cell proliferation and apoptosis.",
+        "Relevant mention of activity against other kinases, adding depth to the answer."
+      ],
+      "weaknesses": [
+        "Could be more concise; some phrases are slightly redundant.",
+        "Lacks specific details about the types of ALK rearrangements targeted."
+      ],
+      "improvements": "To improve the answer, it could include specific examples of ALK rearrangements that brigatinib targets and streamline some of the wording to enhance conciseness.",
+      "comparison_to_reference": "The answer aligns well with standard reference answers regarding brigatinib's mechanism of action, covering the essential aspects while providing additional context about resistance mechanisms. It is comparable to high-quality reference answers but could benefit from minor enhancements in specificity and conciseness."
+    },
+    "timestamp": "2026-02-11T11:38:18.818292"
+  },
+  {
+    "question": "summarizze the connection between epidermal growth factor receptor (EGFR) and fear.",
+    "question_type": "summary",
+    "candidate_answer": "The connection between epidermal growth factor receptor (EGFR) and fear is not well established in the provided documents, which primarily focus on the role of EGFR in cancer biology and signaling pathways. EGFR is known for its involvement in cell proliferation, differentiation, and cancer progression. While the emotional aspects of fear are not discussed, understanding the biological pathways regulated by EGFR could potentially reveal insights into stress responses or psychological conditions, as signaling pathways often intersect with neurobiological functions. However, further research would be necessary to elucidate any specific links between EGFR activity and fear responses.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 80,
+      "completeness_score": 70,
+      "relevance_score": 75,
+      "clarity_score": 85,
+      "conciseness_score": 80,
+      "overall_score": 77,
+      "feedback": "The answer provides a generally accurate overview of the connection between EGFR and fear, noting that the established literature primarily focuses on EGFR's role in cancer biology. However, it lacks specific studies or evidence that directly link EGFR to fear responses, which would enhance its completeness. The mention of potential intersections with neurobiological functions is relevant but somewhat speculative without concrete examples. The clarity of the writing is good, and the structure is logical, but the answer could be more concise by eliminating some of the more speculative language. Overall, while the answer is informative, it could benefit from more direct references to research or findings that specifically address the question.",
+      "strengths": [
+        "Accurate description of EGFR's role in cancer biology",
+        "Clear and logical structure"
+      ],
+      "weaknesses": [
+        "Lacks specific evidence linking EGFR to fear",
+        "Some speculative language without concrete examples"
+      ],
+      "improvements": "Include specific studies or findings that explore the relationship between EGFR and fear. Reduce speculative language to enhance conciseness and focus on established facts.",
+      "comparison_to_reference": "Compared to a reference answer, this response is informative but lacks depth in terms of specific connections between EGFR and fear. A reference answer would ideally include direct citations or findings from research that establish a clearer link."
+    },
+    "timestamp": "2026-02-11T11:38:22.848617"
+  },
+  {
+    "question": "What is the mechanism by which the Lipid Droplets handle misfolded proteins \ninside the cell?",
+    "question_type": "summary",
+    "candidate_answer": "Lipid droplets play a significant role in managing misfolded proteins within cells. They serve as storage depots for lipids and can also sequester misfolded proteins, preventing their aggregation and toxicity. The process involves the encapsulation of misfolded proteins into lipid droplets, which can then be targeted for degradation via the autophagy or proteasome pathways, thereby assisting in maintaining cellular homeostasis and reducing proteotoxic stress. This mechanism highlights the interplay between lipid metabolism and protein quality control in cellular environments.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 85,
+      "relevance_score": 90,
+      "clarity_score": 80,
+      "conciseness_score": 85,
+      "overall_score": 86,
+      "feedback": "The candidate answer provides a mostly accurate description of the role of lipid droplets in handling misfolded proteins. The mention of lipid droplets serving as storage depots and sequestering misfolded proteins is correct. The answer appropriately describes the mechanisms involved, such as targeting for degradation via autophagy or proteasome pathways. However, it could be improved by explicitly mentioning the role of specific proteins or pathways involved in the encapsulation process. The answer is generally clear and relevant, but some sentences could be more concise to enhance clarity. Overall, it covers the key aspects of the question well.",
+      "strengths": [
+        "Accurate description of lipid droplets' role in managing misfolded proteins.",
+        "Relevant mention of autophagy and proteasome pathways."
+      ],
+      "weaknesses": [
+        "Could benefit from more specific details about the encapsulation process.",
+        "Some sentences are slightly verbose, affecting clarity."
+      ],
+      "improvements": "To improve the answer, consider adding specific proteins or mechanisms involved in the encapsulation of misfolded proteins into lipid droplets. Additionally, rephrasing some sentences to be more concise would enhance clarity.",
+      "comparison_to_reference": "The answer aligns well with the expected reference answers in terms of accuracy and relevance but lacks some specificity that might be found in more detailed reference materials."
+    },
+    "timestamp": "2026-02-11T11:38:26.921574"
+  },
+  {
+    "question": "Are there any proline kinases detected in the human proteome?",
+    "question_type": "yesno",
+    "candidate_answer": "yes\n\nProline kinases have been identified in the human proteome, specifically as part of the larger family of protein kinases that regulate various biological functions through phosphorylation. These kinases play a significant role in cellular signaling and metabolic pathways, contributing to processes such as cell growth and differentiation.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 80,
+      "completeness_score": 70,
+      "relevance_score": 80,
+      "clarity_score": 85,
+      "conciseness_score": 75,
+      "overall_score": 78,
+      "feedback": "The answer correctly states that proline kinases are present in the human proteome, which is factually accurate. However, the explanation lacks specificity regarding which proline kinases are identified and their specific roles, which affects completeness. While the answer is relevant and mostly clear, it could be more concise by reducing some of the general information about protein kinases that does not directly address the question.",
+      "strengths": [
+        "Accurate identification of proline kinases in the human proteome",
+        "Clear explanation of the role of protein kinases"
+      ],
+      "weaknesses": [
+        "Lacks specific details about proline kinases",
+        "Somewhat verbose with general information about protein kinases"
+      ],
+      "improvements": "Include specific examples of proline kinases identified in the human proteome and their functions to enhance completeness. Reduce general information about protein kinases to improve conciseness.",
+      "comparison_to_reference": "The answer aligns with the expected response that proline kinases are present in the human proteome but falls short in providing detailed examples or specific information that would be expected in a comprehensive reference answer."
+    },
+    "timestamp": "2026-02-11T11:38:30.379372"
+  },
+  {
+    "question": "In which childhood cancers has CAR-T cell therapy been used?",
+    "question_type": "list",
+    "candidate_answer": "1. Acute lymphoblastic leukemia  \n2. Neuroblastoma  ",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 100,
+      "clarity_score": 90,
+      "conciseness_score": 100,
+      "overall_score": 88,
+      "feedback": "The answer provides two correct examples of childhood cancers where CAR-T cell therapy has been used, which demonstrates a high level of accuracy. However, the completeness score is slightly lower because there are additional childhood cancers, such as certain types of lymphoma, where CAR-T cell therapy has also been utilized. The relevance of the provided information is excellent, as both cancers listed are directly related to the question. The answer is clear and concise, making it easy to read and understand. Overall, the answer is strong but could be improved by including more examples to enhance completeness.",
+      "strengths": [
+        "Accurate identification of cancers",
+        "Clear and concise format"
+      ],
+      "weaknesses": [
+        "Missing additional relevant cancers",
+        "Could provide more context or details"
+      ],
+      "improvements": "Include additional childhood cancers where CAR-T cell therapy has been applied, such as certain lymphomas, to enhance completeness. Providing a brief context about CAR-T cell therapy's application in these cancers could also improve the answer.",
+      "comparison_to_reference": "Compared to reference answers, this response is mostly accurate and relevant but lacks some completeness. Reference answers typically include a broader range of cancers treated with CAR-T cell therapy."
+    },
+    "timestamp": "2026-02-11T11:38:34.116435"
+  },
+  {
+    "question": "Is Dotatate PET MRI used in the diagnosis of meningioma?",
+    "question_type": "yesno",
+    "candidate_answer": "yes\n\nDotatate PET MRI is used in the diagnosis of meningioma. Evidence suggests that somatostatin receptor-targeted imaging, such as with Ga-DOTATATE, can be effective in identifying meningiomas, as shown in cases where high Ga-DOTATATE uptake was observed in lesions indicative of meningioma. This imaging technique enhances diagnostic accuracy for these tumors.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 80,
+      "completeness_score": 70,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 80,
+      "overall_score": 81,
+      "feedback": "The candidate answer correctly states that Dotatate PET MRI is used in the diagnosis of meningioma, which is factually accurate. However, the explanation could be more comprehensive regarding the specific role of Ga-DOTATATE in meningioma diagnosis, such as its sensitivity and specificity compared to other imaging modalities. The answer is relevant and clear, but it could be more concise by eliminating some redundancy in the explanation. Overall, the answer is strong but lacks a bit of depth in completeness.",
+      "strengths": [
+        "Accurate yes/no response",
+        "Relevant explanation about Ga-DOTATATE uptake"
+      ],
+      "weaknesses": [
+        "Lacks depth in explanation",
+        "Could be more concise"
+      ],
+      "improvements": "Enhance the completeness by providing more detailed information about the effectiveness of Dotatate PET MRI in diagnosing meningioma, including comparisons to other imaging techniques. Aim for a more concise presentation by reducing redundancy.",
+      "comparison_to_reference": "The answer aligns well with the reference information regarding the use of Dotatate PET MRI in diagnosing meningiomas, but it could benefit from additional details that are often included in reference answers."
+    },
+    "timestamp": "2026-02-11T11:38:37.873475"
+  },
+  {
+    "question": "How does the malnourishment of the mother impact the embryo?s sex \ndetermination?",
+    "question_type": "summary",
+    "candidate_answer": "Malnourishment of the mother during pregnancy can significantly impact the embryo's sex determination. Research suggests that maternal nutritional status influences hormonal environments, which can affect the development of the embryo and its eventual sex. Disruptions in energy metabolism and fertility due to malnutrition may lead to altered expression of genes involved in sexual differentiation, potentially skewing the sex ratio of offspring. Proper maternal nutrition is therefore critical for optimal fetal development, including the regulation of sex determination processes.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 85,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 80,
+      "overall_score": 83,
+      "feedback": "The candidate answer provides a generally accurate overview of how maternal malnourishment can impact embryo sex determination. It correctly identifies the influence of maternal nutritional status on hormonal environments and gene expression related to sexual differentiation. However, while the answer is mostly accurate, it lacks specific references to studies or mechanisms that could strengthen its claims, which affects the completeness score. The answer is relevant and clear, but could be slightly more concise by eliminating some redundancy in phrasing. Overall, it effectively addresses the question but could benefit from more detailed evidence or examples.",
+      "strengths": [
+        "Accurate description of the impact of maternal malnourishment on hormonal environments.",
+        "Clear and coherent structure that addresses the question."
+      ],
+      "weaknesses": [
+        "Lacks specific examples or references to studies that support the claims.",
+        "Some redundancy in phrasing could be improved for conciseness."
+      ],
+      "improvements": "Incorporate specific studies or examples that illustrate the mechanisms by which maternal malnourishment affects embryo sex determination. Streamline the phrasing to avoid redundancy and enhance conciseness.",
+      "comparison_to_reference": "Compared to a reference answer, which might include specific studies or more detailed mechanisms, this answer is less comprehensive. A reference answer would likely provide more depth and specificity regarding the hormonal and genetic pathways involved."
+    },
+    "timestamp": "2026-02-11T11:38:41.757002"
+  },
+  {
+    "question": "What drug is tested in the ABBV-637 trial?",
+    "question_type": "factoid",
+    "candidate_answer": "",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 0,
+      "completeness_score": 0,
+      "relevance_score": 0,
+      "clarity_score": 0,
+      "conciseness_score": 0,
+      "overall_score": 0,
+      "feedback": "The candidate answer does not provide any information regarding the drug tested in the ABBV-637 trial. As a result, it scores zero across all criteria. There is no factual content to evaluate for accuracy, completeness, relevance, clarity, or conciseness.",
+      "strengths": [],
+      "weaknesses": [
+        "No information provided",
+        "Lack of response to the question",
+        "No clarity or structure"
+      ],
+      "improvements": "The answer should include the name of the drug tested in the ABBV-637 trial. Providing a brief context or description of the trial could also enhance completeness and clarity.",
+      "comparison_to_reference": "Since there is no answer provided, it cannot be compared to any reference answer. A reference answer would typically include the name of the drug and possibly additional relevant details about the trial."
+    },
+    "timestamp": "2026-02-11T11:38:44.925349"
+  },
+  {
+    "question": "How is Ca2+ stored in the Endoplasmic Reticulum?",
+    "question_type": "summary",
+    "candidate_answer": "The endoplasmic reticulum (ER) serves as the primary intracellular store for calcium ions (Ca2+), facilitating release during various cellular signaling processes. Ca2+ is stored in the ER lumen and released through specialized channels such as inositol 1,4,5-trisphosphate receptors (IP3R) and ryanodine receptors (RyR), which are activated by different signaling pathways. To maintain Ca2+ levels, the sarco/endoplasmic reticulum Ca2+ ATPase (SERCA) pump plays a crucial role in re-uptaking Ca2+ into the ER after it has been released, ensuring cellular functions are sustained and preventing depletion of Ca2+ stores.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 85,
+      "relevance_score": 90,
+      "clarity_score": 80,
+      "conciseness_score": 85,
+      "overall_score": 86,
+      "feedback": "The answer is largely accurate, correctly identifying the endoplasmic reticulum (ER) as the primary intracellular store for Ca2+ and mentioning the key roles of IP3R, RyR, and SERCA in calcium storage and release. However, it could benefit from slightly more detail regarding the mechanisms of how Ca2+ is specifically stored in the ER, such as the role of calcium-binding proteins or the importance of the ER's structure in facilitating calcium storage. The answer is mostly clear but could be structured more effectively to enhance readability. Overall, it is a strong response but lacks some depth in completeness and clarity.",
+      "strengths": [
+        "Accurate identification of the ER as a calcium store",
+        "Correctly describes the mechanisms of calcium release and reuptake"
+      ],
+      "weaknesses": [
+        "Lacks detail on specific mechanisms of calcium storage",
+        "Could improve clarity through better structure"
+      ],
+      "improvements": "To improve the answer, consider including information about calcium-binding proteins that assist in the storage of Ca2+ within the ER. Additionally, restructuring the answer to separate the roles of calcium release and reuptake into distinct sentences could enhance clarity.",
+      "comparison_to_reference": "Compared to a reference answer, this response is strong but could be more comprehensive. A reference answer might include additional details about the structural aspects of the ER that facilitate calcium storage, which this response lacks."
+    },
+    "timestamp": "2026-02-11T11:38:49.075509"
+  },
+  {
+    "question": "How can Single-cell RNA sequencing help address the heterogenicity of cancer \ncells in a tumor?",
+    "question_type": "summary",
+    "candidate_answer": "Single-cell RNA sequencing (scRNA-seq) is a transformative tool for studying cancer heterogeneity, allowing researchers to dissect the complex molecular landscapes within tumors. By analyzing individual cancer cells, scRNA-seq uncovers distinct subpopulations, revealing variations in gene expression that contribute to tumor diversity and treatment resistance. This detailed insight into cellular differences aids in identifying rare cell types, such as cancer stem cells, and enhances our understanding of tumor dynamics, ultimately informing more targeted therapeutic strategies.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 95,
+      "completeness_score": 85,
+      "relevance_score": 90,
+      "clarity_score": 90,
+      "conciseness_score": 80,
+      "overall_score": 88,
+      "feedback": "The candidate answer provides a largely accurate description of how single-cell RNA sequencing (scRNA-seq) addresses cancer heterogeneity. It correctly highlights the ability of scRNA-seq to reveal distinct subpopulations and variations in gene expression. However, it could have explicitly mentioned how this information can lead to better treatment options or specific examples of targeted therapies, which would enhance completeness. The answer is relevant and well-structured, making it clear and coherent. There is a slight verbosity in the phrasing, which could be improved for conciseness.",
+      "strengths": [
+        "Accurate description of scRNA-seq and its role in studying cancer heterogeneity.",
+        "Well-structured and clear presentation of information."
+      ],
+      "weaknesses": [
+        "Lacks specific examples of how insights from scRNA-seq can directly inform treatment strategies.",
+        "Slightly verbose in some phrases."
+      ],
+      "improvements": "To improve the answer, it could include specific examples of targeted therapies that have been developed as a result of insights gained from scRNA-seq. Additionally, reducing some of the verbosity would enhance conciseness.",
+      "comparison_to_reference": "Compared to a reference answer, this response is strong but could benefit from additional detail regarding practical applications of scRNA-seq findings in clinical settings."
+    },
+    "timestamp": "2026-02-11T11:38:53.242080"
+  },
+  {
+    "question": "After treatment, how long does it take for Cushing Syndrome's symptoms to go away?",
+    "question_type": "factoid",
+    "candidate_answer": "Cushing's syndrome\n\nThe duration for symptoms of Cushing's syndrome to resolve after treatment varies significantly among individuals and depends on the type of treatment administered. For example, surgical interventions like transsphenoidal surgery (TSS) may show remission rates of approximately 88.6% in patients with positive MRI findings, with a median follow-up of about 39 months. However, some patients might experience persistent symptoms for months or even years, particularly if additional treatments such as radiotherapy or medication are required. In cases where patients undergo bilateral adrenalectomy, ongoing management and hormone replacement therapy are essential, and symptoms may take longer to fully resolve.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 80,
+      "completeness_score": 70,
+      "relevance_score": 85,
+      "clarity_score": 75,
+      "conciseness_score": 70,
+      "overall_score": 76,
+      "feedback": "The answer provides a reasonable overview of the variability in symptom resolution after treatment for Cushing's syndrome. However, it lacks a direct answer to the question regarding the specific duration for symptoms to go away, which is a critical aspect of the question. While it mentions that symptoms can persist for months or years, it does not provide a more precise timeframe or average duration, which would enhance completeness. The answer is mostly accurate, but the lack of specificity detracts from its overall quality. The clarity is somewhat hindered by the structure, as it could be more straightforward in addressing the question directly. Conciseness is also an issue, as some details, while relevant, could be trimmed to focus more on the core question.",
+      "strengths": [
+        "Accurate mention of variability in symptom resolution",
+        "Relevant details about treatment types"
+      ],
+      "weaknesses": [
+        "Lacks a direct answer to the duration question",
+        "Could be more concise and structured"
+      ],
+      "improvements": "The answer should provide a more direct response to the question about how long it takes for symptoms to resolve after treatment, ideally including specific timeframes or averages where applicable. It could also benefit from a clearer structure that directly addresses the question first before elaborating on treatment types and their effects.",
+      "comparison_to_reference": "The answer does not compare favorably to a reference answer that would likely provide a more specific timeframe for symptom resolution, which is essential for a factoid question."
+    },
+    "timestamp": "2026-02-11T11:38:57.496113"
+  },
+  {
+    "question": "Can cetuximab improve prognosis of patients with glioblastoma?",
+    "question_type": "yesno",
+    "candidate_answer": "",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 0,
+      "completeness_score": 0,
+      "relevance_score": 0,
+      "clarity_score": 0,
+      "conciseness_score": 0,
+      "overall_score": 0,
+      "feedback": "The candidate answer does not provide any information or response to the question. There is no indication of whether cetuximab can improve the prognosis of patients with glioblastoma, nor is there any supporting explanation or context provided. Therefore, the scores for all criteria are zero. The lack of any content means that it fails to meet the basic requirements of the question.",
+      "strengths": [],
+      "weaknesses": [
+        "No answer provided to the yes/no question.",
+        "Lack of supporting information or explanation.",
+        "No relevant biomedical terminology or context."
+      ],
+      "improvements": "The candidate answer should include a clear yes or no response to the question about cetuximab's effect on glioblastoma prognosis, along with a brief explanation supported by relevant biomedical literature.",
+      "comparison_to_reference": "Since there is no answer provided, it cannot be compared to any reference answer. A reference answer would typically include a definitive yes or no, backed by clinical evidence or studies regarding cetuximab's efficacy in glioblastoma."
+    },
+    "timestamp": "2026-02-11T11:39:01.139547"
+  },
+  {
+    "question": "Nasel Vaccines have been developed for viruses that affect what part of the body?",
+    "question_type": "factoid",
+    "candidate_answer": "nasal cavity\n\nNasal vaccines have been developed to target viruses that affect the nasal cavity, specifically focusing on inducing immune responses at mucosal sites. This route of vaccination is beneficial for eliciting both systemic and mucosal immunity, which is crucial for combating respiratory viruses.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 90,
+      "overall_score": 86,
+      "feedback": "The candidate answer correctly identifies the nasal cavity as the target area for nasal vaccines, which is accurate and relevant. However, it could have been more complete by mentioning specific viruses that nasal vaccines target, such as influenza or SARS-CoV-2. The answer is clear and well-structured, but the completeness could be improved by including examples of the viruses affected. Overall, the answer is strong but lacks some specificity that would enhance its completeness.",
+      "strengths": [
+        "Accurate identification of the nasal cavity",
+        "Clear explanation of the benefits of nasal vaccines"
+      ],
+      "weaknesses": [
+        "Lacks specific examples of viruses targeted by nasal vaccines",
+        "Could provide more detail on the immune response elicited"
+      ],
+      "improvements": "Include specific examples of viruses that nasal vaccines target to enhance completeness. Additionally, providing more detail on how these vaccines work to elicit immune responses would improve the answer.",
+      "comparison_to_reference": "Compared to a reference answer that might include specific viruses like influenza or rhinoviruses, this answer is less complete. A reference answer would likely score higher on completeness due to the inclusion of these details."
+    },
+    "timestamp": "2026-02-11T11:39:04.772658"
+  },
+  {
+    "question": "How is Cushing Syndrome treated?",
+    "question_type": "summary",
+    "candidate_answer": "Cushing Syndrome is primarily treated through surgical intervention, particularly when caused by tumors in the adrenal glands or pituitary gland. For example, transsphenoidal surgery is often performed to remove pituitary adenomas that lead to excess ACTH production. In cases where surgery is not feasible or effective, medical management with corticosteroid inhibitors and radiation therapy may be utilized. Additionally, lifestyle modifications and monitoring for associated health complications are essential parts of comprehensive care for individuals with Cushing Syndrome.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 85,
+      "relevance_score": 90,
+      "clarity_score": 95,
+      "conciseness_score": 90,
+      "overall_score": 90,
+      "feedback": "The candidate answer provides a largely accurate overview of the treatment options for Cushing Syndrome, including surgical intervention, medical management, and lifestyle modifications. The mention of transsphenoidal surgery for pituitary adenomas is particularly relevant and accurate. However, while the answer is comprehensive, it could have included more specific examples of corticosteroid inhibitors, such as ketoconazole or metyrapone, to enhance completeness. Overall, the answer is clear and well-structured, making it easy to understand.",
+      "strengths": [
+        "Accurate description of treatment options",
+        "Clear and well-structured presentation",
+        "Relevant information included about lifestyle modifications"
+      ],
+      "weaknesses": [
+        "Lacks specific examples of medical management options",
+        "Could mention potential complications or follow-up care"
+      ],
+      "improvements": "Include specific names of corticosteroid inhibitors and elaborate on potential complications or follow-up care for a more comprehensive answer.",
+      "comparison_to_reference": "The answer aligns well with standard references on Cushing Syndrome treatment, covering the main treatment modalities effectively. It is comparable to reference answers in terms of accuracy and clarity but could improve in completeness by providing more detailed examples."
+    },
+    "timestamp": "2026-02-11T11:39:08.702704"
+  },
+  {
+    "question": "What is the role of ketogenic diet for treatment of glioblastoma?",
+    "question_type": "summary",
+    "candidate_answer": "The ketogenic diet is being explored as a potential adjunctive treatment for glioblastoma due to its ability to alter metabolic processes in cancer cells. This high-fat, low-carbohydrate diet may help to starve glioblastoma cells of glucose, their primary energy source, thus inhibiting tumor growth. Preliminary studies suggest that the ketogenic diet could enhance the effectiveness of conventional therapies like chemotherapy and radiation, potentially leading to improved patient outcomes, although more research is needed to fully establish its efficacy and mechanisms of action.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 85,
+      "relevance_score": 90,
+      "clarity_score": 95,
+      "conciseness_score": 90,
+      "overall_score": 90,
+      "feedback": "The candidate answer provides a largely accurate overview of the ketogenic diet's role in glioblastoma treatment. It correctly identifies the diet's mechanism of potentially starving cancer cells of glucose and mentions its exploration as an adjunctive treatment alongside conventional therapies. However, it could have included more specific details about the types of studies conducted or the current state of clinical trials to enhance completeness. Overall, the answer is well-structured and clear, with relevant information presented concisely.",
+      "strengths": [
+        "Accurate description of the ketogenic diet's mechanism",
+        "Well-structured and clear presentation",
+        "Relevant information regarding adjunctive treatment"
+      ],
+      "weaknesses": [
+        "Lacks specific details about studies or clinical trials",
+        "Could mention potential side effects or limitations of the diet"
+      ],
+      "improvements": "To improve the answer, it could include more specific references to studies or clinical trials that have investigated the ketogenic diet's efficacy in glioblastoma treatment. Additionally, mentioning any known limitations or side effects of the ketogenic diet would provide a more balanced view.",
+      "comparison_to_reference": "Compared to reference answers, this candidate answer is strong but could benefit from additional detail and specificity. Reference answers often include more comprehensive data on clinical outcomes and specific studies, which would enhance the completeness and depth of the response."
+    },
+    "timestamp": "2026-02-11T11:39:12.966703"
+  },
+  {
+    "question": "What is the relationship between endometriosis and mental health?",
+    "question_type": "summary",
+    "candidate_answer": "Endometriosis is a chronic inflammatory condition that not only affects physical health but also has significant implications for mental health. Studies indicate that a high percentage of women with endometriosis experience moderate to severe symptoms of depression, with up to 71% reporting such symptoms. Psychosocial factors such as concerns about infertility, sexual dysfunction, and general feelings about medical care have been identified as predictors of depression in these patients. As a result, it is crucial for healthcare professionals to recognize the mental health risks associated with endometriosis and consider psychological referrals as part of comprehensive care for affected individuals.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 85,
+      "relevance_score": 90,
+      "clarity_score": 90,
+      "conciseness_score": 85,
+      "overall_score": 88,
+      "feedback": "The candidate answer provides a mostly accurate and relevant summary of the relationship between endometriosis and mental health. It correctly identifies the prevalence of depression among women with endometriosis and mentions psychosocial factors contributing to mental health issues. However, the answer could benefit from more specific references to studies or data sources to enhance its credibility. Overall, the answer is clear and well-structured, but slight improvements in completeness regarding the range of mental health issues beyond depression could be made.",
+      "strengths": [
+        "Accurate identification of the relationship between endometriosis and mental health.",
+        "Clear mention of psychosocial factors influencing mental health.",
+        "Well-structured and coherent presentation."
+      ],
+      "weaknesses": [
+        "Lacks specific references to studies or data sources.",
+        "Could mention other mental health issues beyond depression."
+      ],
+      "improvements": "Incorporate specific references to studies or data to strengthen the accuracy and credibility of the claims. Additionally, consider discussing other mental health conditions that may be relevant, such as anxiety or stress-related disorders, to enhance completeness.",
+      "comparison_to_reference": "Compared to reference answers, this response is strong but could be improved by including more detailed evidence or references to studies, which are often present in high-quality summaries."
+    },
+    "timestamp": "2026-02-11T11:39:16.901389"
+  },
+  {
+    "question": "Are women underdiagnosed with alcoholic disorders?",
+    "question_type": "yesno",
+    "candidate_answer": "yes\n\nWomen are often underdiagnosed with alcohol use disorders (AUD) due to a combination of societal stigma, differing presentation of symptoms compared to men, and biases in healthcare settings. Research indicates that many women with significant alcohol problems remain unseen, misunderstood, or misdiagnosed, highlighting the need for improved screening and awareness in primary care to address this disparity.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 80,
+      "overall_score": 86,
+      "feedback": "The candidate answer correctly identifies that women are often underdiagnosed with alcohol use disorders, which aligns with current biomedical understanding. The explanation provided supports the yes answer by discussing societal stigma, differing symptom presentation, and biases in healthcare, which are relevant factors contributing to underdiagnosis. However, while the answer is clear and mostly concise, it could benefit from more specific statistics or studies to enhance completeness and provide a stronger evidence base for the claims made. Overall, it is a well-structured response that addresses the question effectively.",
+      "strengths": [
+        "Accurate identification of the issue of underdiagnosis in women with AUD.",
+        "Relevant explanation of contributing factors such as stigma and biases."
+      ],
+      "weaknesses": [
+        "Lacks specific statistics or references to studies that could strengthen the argument.",
+        "Could be more concise by reducing some redundancy in the explanation."
+      ],
+      "improvements": "Incorporate specific statistics or references to studies that illustrate the extent of underdiagnosis in women with AUD. This would enhance the completeness and accuracy of the response. Additionally, consider tightening the language to improve conciseness.",
+      "comparison_to_reference": "The answer aligns well with existing literature on the topic, which indicates that women are indeed underdiagnosed with AUD. It provides a reasonable explanation, although a reference answer might include more detailed statistics or studies to substantiate the claims."
+    },
+    "timestamp": "2026-02-11T11:39:21.233918"
+  },
+  {
+    "question": "Are vaccines a type of prophylaxis?",
+    "question_type": "yesno",
+    "candidate_answer": "yes  \nVaccines are indeed a type of prophylaxis as they are specifically designed to prevent diseases by stimulating the immune system to recognize and combat pathogens. By introducing an antigen that mimics a disease-causing organism, vaccines prepare the immune system to fight off real infections before they occur, thereby providing protection against specific diseases.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 100,
+      "completeness_score": 100,
+      "relevance_score": 100,
+      "clarity_score": 90,
+      "conciseness_score": 85,
+      "overall_score": 95,
+      "feedback": "The candidate answer correctly identifies vaccines as a type of prophylaxis, which is factually accurate. The explanation provided is thorough and directly supports the yes answer, detailing how vaccines function to prevent diseases by stimulating the immune system. This demonstrates a strong understanding of the concept. The answer is relevant and complete, addressing the question fully. However, while the answer is mostly clear, it could be slightly more concise by removing some repetitive phrases. Overall, the answer effectively communicates the necessary information.",
+      "strengths": [
+        "Accurate identification of vaccines as prophylaxis",
+        "Thorough explanation of how vaccines work",
+        "Directly answers the question"
+      ],
+      "weaknesses": [
+        "Slightly repetitive in phrasing",
+        "Could be more concise"
+      ],
+      "improvements": "To improve conciseness, the answer could be streamlined by reducing redundancy in the explanation. For example, the phrase 'to recognize and combat pathogens' could be simplified to 'to combat pathogens' since the recognition aspect is implied in the context of immune response.",
+      "comparison_to_reference": "The answer aligns well with expected reference answers, which typically affirm that vaccines are a form of prophylaxis and explain their role in disease prevention. It meets the standards for accuracy and clarity expected in BioASQ evaluations."
+    },
+    "timestamp": "2026-02-11T11:39:24.683209"
+  },
+  {
+    "question": "What are the types of Cushing Syndrome?",
+    "question_type": "list",
+    "candidate_answer": "1. Cushing's disease\n2. Adrenal Cushing's syndrome\n3. Ectopic Cushing's syndrome\n4. Primary pigmented nodular adrenocortical disease (PPNAD)\n5. Transient pregnancy-induced Cushing's syndrome\n\nCushing's syndrome can be categorized into several types based on the underlying causes of excessive cortisol production. Cushing's disease is caused by a pituitary adenoma secreting ACTH, while adrenal Cushing's syndrome arises from adrenal tumors. Ectopic Cushing's syndrome is due to non-pituitary tumors producing ACTH. PPNAD is a genetic condition leading to nodular hyperplasia of the adrenal glands, and transient pregnancy-induced Cushing's syndrome occurs during pregnancy, typically resolving after delivery.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 85,
+      "relevance_score": 90,
+      "clarity_score": 95,
+      "conciseness_score": 90,
+      "overall_score": 89,
+      "feedback": "The answer accurately lists the types of Cushing Syndrome and provides correct explanations for each type. The descriptions are factually correct and relevant to the question. However, while the answer is mostly complete, it could be argued that it lacks mention of 'exogenous Cushing's syndrome,' which is a significant type caused by external sources of glucocorticoids. This omission affects the completeness score. The organization is clear, and the structure is logical, making it easy to follow. Overall, the answer is well-structured and concise, with minor areas for improvement in completeness.",
+      "strengths": [
+        "Accurate descriptions of each type of Cushing Syndrome",
+        "Clear and logical organization of information",
+        "Concise presentation of relevant facts"
+      ],
+      "weaknesses": [
+        "Omission of exogenous Cushing's syndrome",
+        "Could include more detail on each type for completeness"
+      ],
+      "improvements": "Consider adding exogenous Cushing's syndrome to the list and providing a brief explanation of it. Additionally, expanding on the implications or characteristics of each type could enhance completeness.",
+      "comparison_to_reference": "The answer is largely consistent with standard references on Cushing Syndrome types, but the omission of exogenous Cushing's syndrome is a notable gap compared to comprehensive medical literature."
+    },
+    "timestamp": "2026-02-11T11:39:28.353262"
+  },
+  {
+    "question": "Why do we only have L-amino acids and not D-amino acids?",
+    "question_type": "summary",
+    "candidate_answer": "The predominance of L-amino acids over D-amino acids in biological systems is primarily due to the chiral nature of amino acids and the evolutionary processes that favored L-forms. L-amino acids are incorporated into proteins through ribosomal translation, which is a highly specific and stereospecific process, thus naturally selecting for L-amino acids in protein synthesis. Additionally, D-amino acids do exist in nature, but their roles are limited and typically found in specific contexts, such as in certain peptides or bacterial cell walls, rather than as building blocks for proteins. This evolutionary preference has led to the universal presence of L-amino acids in all known life forms.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 85,
+      "relevance_score": 90,
+      "clarity_score": 80,
+      "conciseness_score": 85,
+      "overall_score": 86,
+      "feedback": "The candidate answer accurately describes the predominance of L-amino acids over D-amino acids and provides a reasonable explanation rooted in evolutionary biology and the specificity of protein synthesis. However, while it mentions the existence of D-amino acids in nature, it could elaborate more on their specific roles and contexts to enhance completeness. The answer is mostly clear, but some sentences could be structured better for improved readability. Overall, the answer is relevant and provides a solid summary of the topic.",
+      "strengths": [
+        "Accurate explanation of the predominance of L-amino acids.",
+        "Relevant mention of the evolutionary processes involved.",
+        "Good understanding of the role of ribosomal translation."
+      ],
+      "weaknesses": [
+        "Could provide more detail on the specific roles of D-amino acids.",
+        "Some sentences could be clearer and more concise."
+      ],
+      "improvements": "To improve the answer, it could include more specific examples of where D-amino acids are found and their functions. Additionally, restructuring some sentences for clarity and conciseness would enhance readability.",
+      "comparison_to_reference": "The answer aligns well with established scientific understanding, similar to reference answers that discuss the evolutionary preference for L-amino acids and the limited roles of D-amino acids. However, it could benefit from additional detail that is often included in comprehensive reference answers."
+    },
+    "timestamp": "2026-02-11T11:39:32.044727"
+  },
+  {
+    "question": "Please list the drugs that are used as HIV prophylaxis.",
+    "question_type": "list",
+    "candidate_answer": "1. Tenofovir/Emtricitabine\n2. Cabotegravir\n3. Lenacapavir",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 100,
+      "completeness_score": 80,
+      "relevance_score": 100,
+      "clarity_score": 100,
+      "conciseness_score": 100,
+      "overall_score": 92,
+      "feedback": "The answer lists three drugs used for HIV prophylaxis, all of which are accurate and relevant. However, it could have included additional common drugs such as PrEP (pre-exposure prophylaxis) options like Atripla or Descovy, which are also widely recognized for this purpose. The answer is well-structured, clear, and concise, but the omission of other significant options affects its completeness score.",
+      "strengths": [
+        "All listed drugs are correct and relevant.",
+        "The answer is clear and well-organized.",
+        "The response is concise and avoids unnecessary information."
+      ],
+      "weaknesses": [
+        "Missing some commonly used drugs for HIV prophylaxis.",
+        "Could have provided a brief explanation of the drugs listed."
+      ],
+      "improvements": "Consider including additional drugs commonly used for HIV prophylaxis, such as Atripla or Descovy, to enhance completeness. A brief description of each drug's use could also improve clarity and provide context.",
+      "comparison_to_reference": "Compared to reference answers, this response is accurate but lacks the breadth of information typically expected in comprehensive lists of HIV prophylaxis drugs."
+    },
+    "timestamp": "2026-02-11T11:39:35.540377"
+  },
+  {
+    "question": "Can fluoxetine be prescribed in children 8 years old and over?",
+    "question_type": "yesno",
+    "candidate_answer": "",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 0,
+      "completeness_score": 0,
+      "relevance_score": 0,
+      "clarity_score": 0,
+      "conciseness_score": 0,
+      "overall_score": 0,
+      "feedback": "The candidate answer is completely empty, providing no information regarding the prescription of fluoxetine in children aged 8 years and over. As a result, it fails to address the question at all. There is no yes or no answer provided, nor any explanation or context to support an answer. This lack of content leads to a score of zero across all criteria.",
+      "strengths": [],
+      "weaknesses": [
+        "No answer provided",
+        "No supporting information",
+        "Lack of clarity and structure"
+      ],
+      "improvements": "The candidate answer should include a clear yes or no response to the question about prescribing fluoxetine to children aged 8 and over, along with a brief explanation of the guidelines or considerations for such a prescription. This would enhance accuracy, completeness, and clarity.",
+      "comparison_to_reference": "There is no comparison to reference answers as the candidate answer does not provide any content to evaluate against."
+    },
+    "timestamp": "2026-02-11T11:39:38.638555"
+  },
+  {
+    "question": "What is the pathophysiology of allucinations in people with schizophrenia?",
+    "question_type": "summary",
+    "candidate_answer": "",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 0,
+      "completeness_score": 0,
+      "relevance_score": 0,
+      "clarity_score": 0,
+      "conciseness_score": 0,
+      "overall_score": 0,
+      "feedback": "The candidate answer is completely missing, which results in scores of zero across all criteria. There is no information provided to evaluate for accuracy, completeness, relevance, clarity, or conciseness. Therefore, it fails to address the question regarding the pathophysiology of hallucinations in schizophrenia. Without any content, it is impossible to assess the quality of the response or provide any constructive feedback.",
+      "strengths": [],
+      "weaknesses": [
+        "No content provided",
+        "No attempt to answer the question"
+      ],
+      "improvements": "The candidate should provide a detailed summary addressing the pathophysiology of hallucinations in schizophrenia, including relevant mechanisms, neurotransmitter involvement, and any significant findings from current research.",
+      "comparison_to_reference": "There is no comparison to reference answers as no answer was provided."
+    },
+    "timestamp": "2026-02-11T11:39:42.154725"
+  },
+  {
+    "question": "What is the estimated frequency of endometriosis?",
+    "question_type": "factoid",
+    "candidate_answer": "",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 0,
+      "completeness_score": 0,
+      "relevance_score": 0,
+      "clarity_score": 0,
+      "conciseness_score": 0,
+      "overall_score": 0,
+      "feedback": "The candidate answer is completely missing, which results in a score of 0 across all criteria. There is no information provided to assess accuracy, completeness, relevance, clarity, or conciseness. A factoid question requires a specific answer, and the absence of any response fails to meet the basic requirements of the question.",
+      "strengths": [],
+      "weaknesses": [
+        "No answer provided",
+        "Lack of relevant information",
+        "No clarity or structure"
+      ],
+      "improvements": "Provide a specific estimated frequency of endometriosis, supported by relevant literature or statistics. Ensure the answer is clear and concise while addressing the question directly.",
+      "comparison_to_reference": "There is no comparison to reference answers as no answer was provided."
+    },
+    "timestamp": "2026-02-11T11:39:45.454091"
+  },
+  {
+    "question": "Which are the most common causes of bacterial sepsis in children 2 to 16 years of age?",
+    "question_type": "list",
+    "candidate_answer": "",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 0,
+      "completeness_score": 0,
+      "relevance_score": 0,
+      "clarity_score": 0,
+      "conciseness_score": 0,
+      "overall_score": 0,
+      "feedback": "The candidate answer is completely empty, providing no information regarding the causes of bacterial sepsis in children aged 2 to 16 years. Therefore, it scores 0 across all criteria as there is no content to evaluate for accuracy, completeness, relevance, clarity, or conciseness.",
+      "strengths": [],
+      "weaknesses": [
+        "No information provided",
+        "Failure to address the question",
+        "Lack of any relevant content"
+      ],
+      "improvements": "The answer should include a list of the most common causes of bacterial sepsis in children aged 2 to 16 years, such as Streptococcus pneumoniae, Escherichia coli, and Staphylococcus aureus, among others. Each item should be factually correct and relevant to the age group specified.",
+      "comparison_to_reference": "There is no comparison to reference answers as no information was provided in the candidate answer."
+    },
+    "timestamp": "2026-02-11T11:39:48.476435"
+  },
+  {
+    "question": "What is the difference between Cushing Syndrome and Cushing Disease?",
+    "question_type": "factoid",
+    "candidate_answer": "Cushing syndrome, Cushing disease\n\nCushing syndrome refers to a condition characterized by excessive levels of cortisol in the blood, which can result from various causes including adrenal tumors, ectopic ACTH production, or pituitary adenomas. In contrast, Cushing disease specifically denotes the case of Cushing syndrome that is caused by a pituitary adenoma producing excess adrenocorticotropic hormone (ACTH), leading to increased cortisol production from the adrenal glands. Therefore, all cases of Cushing disease are Cushing syndrome, but not all cases of Cushing syndrome are Cushing disease.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 95,
+      "completeness_score": 90,
+      "relevance_score": 100,
+      "clarity_score": 90,
+      "conciseness_score": 85,
+      "overall_score": 91,
+      "feedback": "The candidate answer accurately describes the distinction between Cushing syndrome and Cushing disease, correctly noting that Cushing syndrome is a broader term encompassing various causes of elevated cortisol levels, while Cushing disease specifically refers to the pituitary adenoma-related form. The answer is factually correct and supported by biomedical knowledge. However, it could be slightly more concise by eliminating some redundancy in phrasing. Overall, the answer is clear and well-structured, making it easy to understand the differences between the two terms.",
+      "strengths": [
+        "Accurate distinction between Cushing syndrome and Cushing disease.",
+        "Clear explanation of the underlying causes of both conditions.",
+        "Well-structured response that logically presents the information."
+      ],
+      "weaknesses": [
+        "Could be more concise; some phrases are slightly repetitive.",
+        "The initial part of the answer could be better integrated into a full sentence."
+      ],
+      "improvements": "To improve conciseness, the answer could be rephrased to avoid redundancy, such as combining the definitions into a single, coherent statement. For example, instead of starting with 'Cushing syndrome, Cushing disease', it could begin with 'Cushing syndrome is a condition characterized by excessive cortisol levels, while Cushing disease specifically refers to the form caused by a pituitary adenoma.'",
+      "comparison_to_reference": "The answer aligns well with standard definitions found in biomedical literature, accurately reflecting the distinctions between the two conditions. It provides a comprehensive understanding similar to what would be expected in a reference answer."
+    },
+    "timestamp": "2026-02-11T11:39:52.967295"
+  },
+  {
+    "question": "What is the average diagnosis time for Cushing Syndrome?",
+    "question_type": "factoid",
+    "candidate_answer": "Cushing's syndrome\n\nThe average diagnosis time for Cushing's syndrome can vary significantly among patients due to the complexity of its symptoms and the need for multiple diagnostic tests. However, specific data on the average duration from symptom onset to diagnosis is not provided in the available documents. Diagnosis often involves a combination of clinical evaluation, biochemical tests, and imaging studies, which can prolong the timeline. Therefore, while a precise average time is not specified, it is generally recognized that patients may experience delays in diagnosis due to the subtlety of symptoms and the need for comprehensive testing.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 50,
+      "completeness_score": 40,
+      "relevance_score": 60,
+      "clarity_score": 70,
+      "conciseness_score": 50,
+      "overall_score": 54,
+      "feedback": "The candidate answer provides some relevant information regarding the complexity of diagnosing Cushing's syndrome but fails to provide a specific average diagnosis time, which is the core of the question. The answer acknowledges the variability in diagnosis time but does not give any numerical data or a range, which is critical for completeness. While the explanation is somewhat clear, it could be more structured to enhance clarity. The answer includes some relevant context about the diagnostic process, but this additional information detracts from the focus on the specific question asked. Overall, the answer lacks the necessary factual precision and completeness.",
+      "strengths": [
+        "Acknowledges variability in diagnosis time",
+        "Provides context about diagnostic complexity"
+      ],
+      "weaknesses": [
+        "Does not provide a specific average diagnosis time",
+        "Lacks clarity in addressing the question directly",
+        "Includes unnecessary details that do not answer the question"
+      ],
+      "improvements": "The answer should include specific data on the average diagnosis time for Cushing's syndrome, if available. If no specific data exists, it could mention a general range based on literature or studies. The structure should be improved to directly address the question first before providing additional context.",
+      "comparison_to_reference": "Compared to a reference answer that might provide a specific average time (e.g., 'The average diagnosis time for Cushing's syndrome is typically reported to be around 2-3 years'), this answer falls short as it does not provide any numerical value or reference, making it less informative and useful."
+    },
+    "timestamp": "2026-02-11T11:39:56.962098"
+  },
+  {
+    "question": "What are the common symptoms of Cushing Syndrome?",
+    "question_type": "list",
+    "candidate_answer": "1. Weight gain\n2. Fat redistribution (moon facies, buffalo hump)\n3. Hypertension\n4. Hyperglycemia\n5. Purple striae (skin changes)",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 100,
+      "completeness_score": 80,
+      "relevance_score": 100,
+      "clarity_score": 90,
+      "conciseness_score": 100,
+      "overall_score": 90,
+      "feedback": "The candidate answer accurately lists common symptoms of Cushing Syndrome, demonstrating a strong understanding of the condition. Each item in the list is relevant and factually correct. However, the answer could be considered incomplete as it does not mention other common symptoms such as fatigue, muscle weakness, and mood changes, which are also significant in Cushing Syndrome. The clarity of the list is good, but it could benefit from a brief introductory sentence to contextualize the symptoms. Overall, the answer is well-structured and concise.",
+      "strengths": [
+        "Accurate listing of symptoms",
+        "Clear and concise presentation"
+      ],
+      "weaknesses": [
+        "Missing some common symptoms",
+        "Lacks introductory context"
+      ],
+      "improvements": "Include additional common symptoms such as fatigue, muscle weakness, and mood changes. Consider adding a brief introductory sentence to provide context for the list.",
+      "comparison_to_reference": "Compared to reference answers, this candidate answer is strong in accuracy and clarity but falls short in completeness due to the omission of several common symptoms."
+    },
+    "timestamp": "2026-02-11T11:40:00.276605"
+  },
+  {
+    "question": "Does war increase suicide in affected populations?",
+    "question_type": "yesno",
+    "candidate_answer": "",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 0,
+      "completeness_score": 0,
+      "relevance_score": 0,
+      "clarity_score": 0,
+      "conciseness_score": 0,
+      "overall_score": 0,
+      "feedback": "The candidate answer is completely missing, which results in a score of 0 across all criteria. There is no yes/no response provided, nor any explanation or context to evaluate. Therefore, it fails to address the question regarding the relationship between war and suicide in affected populations. Without any content, it cannot be assessed for accuracy, completeness, relevance, clarity, or conciseness.",
+      "strengths": [],
+      "weaknesses": [
+        "No answer provided",
+        "Lack of explanation",
+        "Failure to address the question"
+      ],
+      "improvements": "The candidate should provide a clear yes or no answer to the question, along with a brief explanation supported by relevant evidence or literature. This should include statistics or studies that illustrate the relationship between war and suicide rates in affected populations.",
+      "comparison_to_reference": "There is no reference answer to compare against, as the candidate answer is entirely absent."
+    },
+    "timestamp": "2026-02-11T11:40:03.823997"
+  },
+  {
+    "question": "Do cancers ever become drug dependent?",
+    "question_type": "yesno",
+    "candidate_answer": "yes  \nCancers can become drug dependent, particularly through mechanisms of resistance that develop in response to chemotherapeutic agents. Tumors may adapt by altering their biology or by activating alternative survival pathways, thus necessitating ongoing treatment with these drugs to manage the disease effectively. This phenomenon is often seen in the context of targeted therapies and chemoresistance.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 80,
+      "overall_score": 86,
+      "feedback": "The candidate answer correctly states that cancers can become drug dependent, which aligns with current biomedical understanding. The explanation provided elaborates on mechanisms of drug dependence, such as resistance and adaptation, which is relevant to the question. However, while the answer is mostly complete, it could benefit from a more direct connection to the concept of drug dependence itself, rather than focusing primarily on resistance mechanisms. The clarity is good, but the answer could be slightly more concise by removing some repetitive phrases. Overall, the answer is strong but has room for improvement in terms of directness and brevity.",
+      "strengths": [
+        "Accurate yes/no response",
+        "Relevant explanation of drug dependence mechanisms",
+        "Good clarity in explanation"
+      ],
+      "weaknesses": [
+        "Could be more concise",
+        "Less direct connection to the concept of drug dependence"
+      ],
+      "improvements": "To improve, the answer could explicitly define 'drug dependence' in the context of cancer treatment and streamline the explanation to focus more directly on this concept rather than the broader mechanisms of resistance.",
+      "comparison_to_reference": "The answer aligns well with standard biomedical literature regarding drug dependence in cancers, though it could be enhanced by directly addressing the term 'drug dependence' more clearly."
+    },
+    "timestamp": "2026-02-11T11:40:07.271129"
+  },
+  {
+    "question": "Is there any crosstalk between ERK-2 kinase and Nanog transcription factor?",
+    "question_type": "yesno",
+    "candidate_answer": "yes  \nThere is crosstalk between ERK-2 kinase and the Nanog transcription factor. ERK activation leads to the elimination of Nanog in embryonic stem cells, which is essential for the transition from the na\u00efve pluripotent state to a formative state. This indicates that ERK signaling plays a significant role in regulating Nanog expression, affecting pluripotency in these cells.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 80,
+      "completeness_score": 70,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 80,
+      "overall_score": 81,
+      "feedback": "The answer correctly identifies that there is crosstalk between ERK-2 kinase and Nanog transcription factor, which is supported by relevant biological mechanisms. The explanation provided is mostly accurate but lacks specific references to studies or data that could strengthen the claim about ERK activation and its effects on Nanog. The answer is relevant and clear, but it could be more concise by removing some redundancy in phrasing. Overall, it effectively communicates the relationship but could benefit from more precise details.",
+      "strengths": [
+        "Accurate identification of crosstalk",
+        "Clear explanation of the biological significance"
+      ],
+      "weaknesses": [
+        "Lacks specific references or data to support claims",
+        "Could be more concise"
+      ],
+      "improvements": "Include specific studies or data that demonstrate the relationship between ERK-2 and Nanog. Aim for a more concise explanation by reducing redundancy.",
+      "comparison_to_reference": "The answer aligns well with existing literature on ERK signaling and Nanog, but it does not provide the depth of information that might be found in a reference answer, which could include specific pathways or experimental evidence."
+    },
+    "timestamp": "2026-02-11T11:40:10.678367"
+  },
+  {
+    "question": "What is the best non-invasive method to diagnose endometriosis?",
+    "question_type": "factoid",
+    "candidate_answer": "3D ultrasound\n\nThe best non-invasive method to diagnose endometriosis is 3D ultrasound. Recent advancements in imaging technology have established that 3D ultrasound is a valuable tool for assessing various gynecological disorders, including endometriosis. This technique allows for detailed visualization of the pelvic anatomy, improving the detection of endometriotic lesions compared to traditional 2D imaging methods.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 90,
+      "overall_score": 86,
+      "feedback": "The candidate answer correctly identifies 3D ultrasound as a non-invasive method for diagnosing endometriosis, which is supported by recent advancements in imaging technology. However, the answer could benefit from mentioning that while 3D ultrasound is valuable, it is not universally considered the 'best' method, as other non-invasive techniques like MRI are also highly regarded. This omission affects the completeness score. The answer is relevant and mostly clear, but could be structured slightly better for clarity. Overall, it is a strong response with minor areas for improvement.",
+      "strengths": [
+        "Accurate identification of 3D ultrasound as a diagnostic tool",
+        "Clear explanation of the advantages of 3D ultrasound over 2D imaging"
+      ],
+      "weaknesses": [
+        "Lacks mention of other non-invasive methods like MRI",
+        "Could improve structure for better clarity"
+      ],
+      "improvements": "Include a comparison with other non-invasive methods such as MRI to enhance completeness. Additionally, consider rephrasing for better flow and clarity.",
+      "comparison_to_reference": "Compared to reference answers, this response is accurate but lacks the depth and breadth that might be expected in a comprehensive answer. Reference answers may include multiple methods or a more nuanced discussion of the diagnostic landscape."
+    },
+    "timestamp": "2026-02-11T11:40:15.190286"
+  },
+  {
+    "question": "How important are CIRBP and Non-Homologous End Joining in protecting human \ncells against mutations that could lead to cancer?",
+    "question_type": "summary",
+    "candidate_answer": "CIRBP (Cold-Inducible RNA-Binding Protein) and Non-Homologous End Joining (NHEJ) are crucial for maintaining genomic stability and protecting human cells from mutations that can lead to cancer. CIRBP plays a role in cellular responses to stress, including DNA damage, by regulating gene expression and protein synthesis, which are vital for repairing damaged DNA. NHEJ, on the other hand, is a primary pathway for repairing double-strand breaks in DNA, and its efficiency is essential for preventing genomic instability. Together, these mechanisms help prevent the accumulation of mutations that can contribute to cancer development.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 85,
+      "relevance_score": 90,
+      "clarity_score": 80,
+      "conciseness_score": 85,
+      "overall_score": 86,
+      "feedback": "The candidate answer provides accurate information regarding the roles of CIRBP and Non-Homologous End Joining (NHEJ) in protecting human cells against mutations. CIRBP's role in stress response and DNA repair is correctly described, as is NHEJ's function in repairing double-strand breaks. However, while the answer is mostly complete, it could benefit from a more explicit connection between these mechanisms and their direct impact on cancer prevention. The clarity is generally good, but the structure could be improved for better flow. Overall, the answer is strong but could be enhanced with a few more details and a clearer structure.",
+      "strengths": [
+        "Accurate description of CIRBP and NHEJ roles",
+        "Relevant information provided"
+      ],
+      "weaknesses": [
+        "Could improve clarity and structure",
+        "Lacks explicit connection to cancer prevention"
+      ],
+      "improvements": "Enhance clarity by improving the flow of the answer and explicitly linking the roles of CIRBP and NHEJ to cancer prevention. Adding specific examples or studies could strengthen the completeness.",
+      "comparison_to_reference": "Compared to a reference answer, this response is accurate and relevant but lacks some depth in explaining the direct implications of CIRBP and NHEJ on cancer prevention, which may be present in a more comprehensive reference."
+    },
+    "timestamp": "2026-02-11T11:40:18.918387"
+  },
+  {
+    "question": "Which are the countries most affected by leprosy?",
+    "question_type": "list",
+    "candidate_answer": "1. India  \n2. Brazil  \n3. Indonesia  \n4. Nigeria  \n5. Democratic Republic of the Congo  \n\nLeprosy remains endemic in several countries, particularly in regions with limited healthcare access. India accounts for the majority of leprosy cases globally, followed by Brazil and Indonesia, which also report significant numbers. Other countries like Nigeria and the Democratic Republic of the Congo have high prevalence rates, contributing to the ongoing challenges in controlling this infectious disease.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 80,
+      "overall_score": 85,
+      "feedback": "The answer accurately lists the countries most affected by leprosy, with India, Brazil, and Indonesia being the top three, which aligns with current biomedical knowledge. However, while the list is mostly complete, it could benefit from mentioning additional countries that are also significantly affected, such as Madagascar and Mozambique. The explanation following the list provides relevant context about the disease's prevalence and healthcare access, enhancing the answer's completeness and relevance. The organization is clear, but the answer could be slightly more concise by reducing redundancy in the explanation. Overall, the answer is well-structured and informative.",
+      "strengths": [
+        "Accurate listing of affected countries",
+        "Clear explanation of the context regarding leprosy prevalence"
+      ],
+      "weaknesses": [
+        "Missing some additional countries with high prevalence",
+        "Slight redundancy in the explanation"
+      ],
+      "improvements": "Consider including more countries that are significantly affected by leprosy to enhance completeness. Additionally, streamline the explanation to avoid redundancy and improve conciseness.",
+      "comparison_to_reference": "The answer aligns well with reference information regarding leprosy prevalence, though it could be improved by including a more comprehensive list of affected countries."
+    },
+    "timestamp": "2026-02-11T11:40:22.479142"
+  },
+  {
+    "question": "Which tests are commonly used to diagnose Cushing Syndrome and Cushing Disease?",
+    "question_type": "list",
+    "candidate_answer": "1. 24-hour urinary-free cortisol test  \n2. Dexamethasone suppression test  \n3. Serum cortisol level measurement  \n4. Inferior petrosal sinus sampling (IPSS)  \n5. Corticotropin-releasing hormone (CRH) stimulation test  ",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 100,
+      "completeness_score": 100,
+      "relevance_score": 100,
+      "clarity_score": 90,
+      "conciseness_score": 100,
+      "overall_score": 98,
+      "feedback": "The candidate answer provides a comprehensive list of tests commonly used to diagnose Cushing Syndrome and Cushing Disease. All items listed are accurate and relevant to the question. The clarity is slightly reduced due to the lack of a brief introductory sentence or context for the list, which could enhance understanding. However, the list itself is clear and well-structured.",
+      "strengths": [
+        "All listed tests are accurate and relevant to the diagnosis of Cushing Syndrome and Cushing Disease.",
+        "The answer is concise and avoids unnecessary information."
+      ],
+      "weaknesses": [
+        "Lacks an introductory statement that could provide context for the list."
+      ],
+      "improvements": "Consider adding a brief introductory sentence to provide context for the list of tests, which would enhance clarity.",
+      "comparison_to_reference": "The answer aligns well with standard references on the diagnosis of Cushing Syndrome and Cushing Disease, listing all major diagnostic tests typically recognized in clinical practice."
+    },
+    "timestamp": "2026-02-11T11:40:25.300765"
+  },
+  {
+    "question": "Which factors control the successful introduction of the sperm into the egg and \ncould be used as targets for birth control pills?",
+    "question_type": "list",
+    "candidate_answer": "1. Sperm motility  \n2. Uterine and fallopian tube contractility  \n3. Ciliary movement of lining cells  \n4. Sperm surface protein modifications  \n5. Sperm DNA integrity  ",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 90,
+      "overall_score": 86,
+      "feedback": "The candidate answer provides a list of factors that could influence the successful introduction of sperm into the egg, which are mostly accurate and relevant. However, while the individual items are generally correct, the list could benefit from additional context or explanation regarding how these factors specifically relate to potential targets for birth control pills. The clarity of the list is good, but a brief introductory statement or conclusion would enhance understanding. Overall, the answer is strong but lacks some depth in completeness regarding the implications of these factors for birth control.",
+      "strengths": [
+        "Accurate identification of relevant factors",
+        "Clear and concise list format"
+      ],
+      "weaknesses": [
+        "Lacks depth in explaining how these factors relate to birth control",
+        "Could include more comprehensive factors or mechanisms"
+      ],
+      "improvements": "Consider adding a brief explanation of how each factor could be targeted for birth control, or include additional factors that are known to influence fertilization and could be relevant for contraceptive development.",
+      "comparison_to_reference": "The answer aligns well with expected factors influencing sperm introduction to the egg, but a reference answer would likely include more detail on the implications of these factors for birth control, which is a critical aspect of the question."
+    },
+    "timestamp": "2026-02-11T11:40:29.122676"
+  },
+  {
+    "question": "What disease is treated with belzutifan?",
+    "question_type": "factoid",
+    "candidate_answer": "clear\nbelzutifan\n\nBelzutifan is a drug used primarily for the treatment of von Hippel-Lindau (VHL) disease, a genetic disorder characterized by the formation of tumors and cysts in various parts of the body. The drug acts as a hypoxia-inducible factor (HIF) inhibitor, which helps manage the symptoms and complications associated with VHL by reducing the growth of tumors induced by HIF pathways.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 80,
+      "overall_score": 85,
+      "feedback": "The answer correctly identifies belzutifan as a treatment for von Hippel-Lindau (VHL) disease, which is accurate and relevant. However, while the explanation of the drug's mechanism of action as a hypoxia-inducible factor (HIF) inhibitor is informative, it may not be strictly necessary for a factoid question that primarily asks for the disease treated. This slightly affects the conciseness score. The structure is generally clear, but the initial 'clear' appears to be an error or irrelevant addition, impacting clarity. Overall, the answer is strong but could be improved by removing unnecessary elements.",
+      "strengths": [
+        "Accurate identification of the disease treated by belzutifan",
+        "Relevant explanation of the drug's mechanism of action"
+      ],
+      "weaknesses": [
+        "The initial word 'clear' is irrelevant",
+        "Could be more concise by omitting detailed mechanism explanation"
+      ],
+      "improvements": "Remove the initial 'clear' and consider simplifying the explanation to focus solely on the disease treated, unless additional context is explicitly requested.",
+      "comparison_to_reference": "The answer aligns well with reference answers that identify VHL disease as the condition treated by belzutifan, but it includes additional details that may not be necessary for a straightforward factoid response."
+    },
+    "timestamp": "2026-02-11T11:40:32.469320"
+  },
+  {
+    "question": "What is the role of valproic acid for treatment of glioblastoma?",
+    "question_type": "summary",
+    "candidate_answer": "Valproic acid (VPA), primarily known for its use in treating epilepsy and mood disorders, has shown potential therapeutic roles in glioblastoma treatment. As a histone deacetylase (HDAC) inhibitor, VPA may enhance the expression of proteins involved in cell survival and apoptosis, suggesting a mechanism by which it could inhibit tumor growth or induce cell death in glioblastoma cells. Additionally, its ability to modulate cellular signaling pathways may provide a complementary strategy when used alongside conventional therapies, although further research is needed to fully elucidate its effectiveness and mechanisms in glioblastoma treatment.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 85,
+      "relevance_score": 90,
+      "clarity_score": 80,
+      "conciseness_score": 85,
+      "overall_score": 86,
+      "feedback": "The candidate answer accurately describes the role of valproic acid (VPA) as a histone deacetylase (HDAC) inhibitor and its potential therapeutic effects in glioblastoma treatment. However, while it mentions the modulation of cellular signaling pathways, it could have provided more specific examples or details regarding these pathways or the types of conventional therapies it might complement. The answer is mostly clear and coherent, but there are areas where it could be more concise. The structure is logical, but some sentences could be streamlined for better clarity.",
+      "strengths": [
+        "Accurate description of VPA's role as an HDAC inhibitor.",
+        "Relevant mention of its potential effects on tumor growth and cell death."
+      ],
+      "weaknesses": [
+        "Lacks specific examples of cellular signaling pathways affected by VPA.",
+        "Could be more concise in some areas."
+      ],
+      "improvements": "To improve the answer, it could include specific examples of the cellular signaling pathways that VPA modulates and clarify how these interactions enhance its therapeutic potential in glioblastoma. Additionally, reducing redundancy in the explanation could enhance conciseness.",
+      "comparison_to_reference": "Compared to a reference answer, this response is strong in accuracy and relevance but could benefit from additional detail and specificity, particularly regarding the mechanisms of action and potential combination therapies."
+    },
+    "timestamp": "2026-02-11T11:40:36.172506"
+  },
+  {
+    "question": "Please list the function of endosomal sorting complex required for transport (ESCRT), a multicomplex machinery comprising proteins that are conserved from bacteria to humans, in cellular processes.",
+    "question_type": "list",
+    "candidate_answer": "1. Cargo sorting for degradation in lysosomes\n2. Regulation of membrane protein levels\n3. Endosomal trafficking of ubiquitinated proteins\n4. Formation of multivesicular bodies\n5. Involvement in retroviral budding",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 100,
+      "completeness_score": 100,
+      "relevance_score": 100,
+      "clarity_score": 90,
+      "conciseness_score": 100,
+      "overall_score": 98,
+      "feedback": "The candidate answer accurately lists the functions of the ESCRT complex, covering key aspects such as cargo sorting, regulation of membrane protein levels, endosomal trafficking, multivesicular body formation, and involvement in retroviral budding. Each item is factually correct and relevant to the question. The list is well-structured, although a slight improvement in clarity could be achieved by providing brief explanations for each function, which would enhance understanding for readers unfamiliar with the topic. Overall, the answer is concise and directly addresses the question.",
+      "strengths": [
+        "All listed functions are accurate and relevant.",
+        "The answer is concise and directly addresses the question."
+      ],
+      "weaknesses": [
+        "Could benefit from brief explanations of each function for clarity."
+      ],
+      "improvements": "Consider adding brief descriptions or explanations for each listed function to enhance clarity and understanding.",
+      "comparison_to_reference": "The answer aligns well with established knowledge regarding the functions of the ESCRT complex and is comparable to reference answers that typically include similar functions."
+    },
+    "timestamp": "2026-02-11T11:40:39.517303"
+  },
+  {
+    "question": "Which IDH inhibitors can be used for treatment of astrocytoma, IDH mutant?",
+    "question_type": "list",
+    "candidate_answer": "1. Ivosidenib\n2. Enasidenib",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 100,
+      "completeness_score": 80,
+      "relevance_score": 100,
+      "clarity_score": 100,
+      "conciseness_score": 100,
+      "overall_score": 92,
+      "feedback": "The candidate answer accurately lists two IDH inhibitors, Ivosidenib and Enasidenib, which are relevant for the treatment of astrocytoma with IDH mutations. Both drugs are indeed used for this purpose, reflecting a high level of accuracy. However, the completeness score is slightly lower because there may be additional IDH inhibitors that could be relevant, such as other investigational drugs or those in clinical trials. The answer is clear, concise, and well-structured, fulfilling the requirements of a list question effectively.",
+      "strengths": [
+        "Accurate identification of IDH inhibitors",
+        "Clear and concise presentation"
+      ],
+      "weaknesses": [
+        "Potential omission of other relevant IDH inhibitors"
+      ],
+      "improvements": "Consider including additional IDH inhibitors or mentioning ongoing clinical trials to enhance completeness.",
+      "comparison_to_reference": "The answer aligns well with reference answers, which typically include Ivosidenib and Enasidenib as the main IDH inhibitors for treating IDH mutant astrocytomas. However, reference answers may also mention other investigational options, which could improve the completeness of the response."
+    },
+    "timestamp": "2026-02-11T11:40:43.815168"
+  },
+  {
+    "question": "What are the uses for faecal microbiota transplantation (FMT) in children under 19 years of age?",
+    "question_type": "list",
+    "candidate_answer": "1. Recurrent Clostridium difficile infection\n2. Inflammatory bowel diseases\n3. Metabolic disorders\n4. Support during haematopoietic stem cell transplantation (HSCT)\n5. Gastrointestinal infections",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 80,
+      "completeness_score": 70,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 90,
+      "overall_score": 82,
+      "feedback": "The candidate answer provides a list of uses for faecal microbiota transplantation (FMT) in children under 19 years of age. The majority of the listed uses are accurate and relevant to the question. However, the inclusion of 'metabolic disorders' is somewhat vague and lacks specificity, as FMT is not widely recognized for treating metabolic disorders in children. Additionally, while the answer is clear and concise, it could benefit from a more structured presentation, perhaps by categorizing the uses into more defined groups. Overall, the answer is mostly accurate and relevant but lacks completeness regarding the most recognized uses of FMT in pediatric populations.",
+      "strengths": [
+        "Accurate identification of recurrent Clostridium difficile infection as a primary use",
+        "Clear and concise presentation of the list"
+      ],
+      "weaknesses": [
+        "Inclusion of 'metabolic disorders' which is not a well-established use",
+        "Lack of completeness in covering all major recognized uses for FMT in children"
+      ],
+      "improvements": "The answer could be improved by providing more specific and widely accepted uses of FMT in children, such as mentioning its role in treating antibiotic-associated diarrhea or its investigational use in autism spectrum disorders. Additionally, categorizing the uses could enhance clarity and organization.",
+      "comparison_to_reference": "Compared to reference answers, the candidate answer aligns well with established uses such as recurrent Clostridium difficile infection and inflammatory bowel diseases but misses some key applications like antibiotic-associated diarrhea and autism spectrum disorders, which are often discussed in the context of FMT in pediatric patients."
+    },
+    "timestamp": "2026-02-11T11:40:48.190686"
+  },
+  {
+    "question": "How is cortisol secreation regulated in the human body?",
+    "question_type": "summary",
+    "candidate_answer": "Cortisol secretion in the human body is primarily regulated by the hypothalamic-pituitary-adrenal (HPA) axis. The process begins with the release of corticotropin-releasing hormone (CRH) from the hypothalamus, which stimulates the anterior pituitary gland to secrete adrenocorticotropic hormone (ACTH). ACTH then prompts the adrenal cortex to produce and release cortisol. This regulation follows a diurnal rhythm, with cortisol levels peaking in the early morning and gradually declining throughout the day. Additionally, factors such as stress and illness can influence cortisol levels, leading to alterations in HPA axis function.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 95,
+      "completeness_score": 90,
+      "relevance_score": 100,
+      "clarity_score": 90,
+      "conciseness_score": 85,
+      "overall_score": 92,
+      "feedback": "The candidate answer provides an accurate overview of cortisol secretion regulation through the HPA axis, detailing the roles of CRH, ACTH, and the adrenal cortex. It also correctly mentions the diurnal rhythm of cortisol levels and the influence of stress and illness. However, while the answer is mostly complete, it could benefit from a brief mention of feedback mechanisms that regulate the HPA axis, which would enhance completeness. The clarity is good, but minor improvements in structure could enhance readability. The answer is concise but could be slightly more so by removing redundant phrases.",
+      "strengths": [
+        "Accurate description of the HPA axis and its components.",
+        "Clear mention of the diurnal rhythm of cortisol levels.",
+        "Relevant information regarding the influence of stress and illness."
+      ],
+      "weaknesses": [
+        "Lacks mention of feedback mechanisms in cortisol regulation.",
+        "Could be slightly more concise in phrasing."
+      ],
+      "improvements": "Include a brief explanation of the negative feedback loop involving cortisol that regulates the HPA axis. Additionally, consider rephrasing to eliminate any redundancy for improved conciseness.",
+      "comparison_to_reference": "The answer aligns well with standard biomedical literature regarding cortisol regulation. It is factually correct and covers the essential aspects, similar to reference answers found in authoritative sources. However, the addition of feedback mechanisms would bring it closer to a comprehensive reference answer."
+    },
+    "timestamp": "2026-02-11T11:40:52.134604"
+  },
+  {
+    "question": "How often is leukocytosis present in patients with Cushing Disease?",
+    "question_type": "factoid",
+    "candidate_answer": "leukocytosis\n\nLeukocytosis is often present in patients with Cushing's disease, with studies indicating that it occurs in approximately 30-50% of cases. The presence of leukocytosis is attributed to the effects of excess glucocorticoids, which can lead to increased white blood cell production and altered distribution of leukocytes in the body.",
+    "reference_answers": [],
+    "evaluation": {
+      "accuracy_score": 90,
+      "completeness_score": 80,
+      "relevance_score": 90,
+      "clarity_score": 85,
+      "conciseness_score": 80,
+      "overall_score": 85,
+      "feedback": "The answer provides a generally accurate statement regarding the prevalence of leukocytosis in patients with Cushing's disease, citing a range of 30-50%. This is supported by existing literature. However, the answer could be considered incomplete as it does not explicitly state that leukocytosis is a common finding in Cushing's disease, which could enhance clarity. The answer is relevant and well-structured, but the initial word 'leukocytosis' at the beginning is unnecessary and does not contribute to the clarity of the response. Overall, the answer is clear and mostly concise, but slight improvements in structure and completeness could enhance the overall quality.",
+      "strengths": [
+        "Accurate prevalence range provided",
+        "Clear explanation of the mechanism behind leukocytosis in Cushing's disease"
+      ],
+      "weaknesses": [
+        "Initial word 'leukocytosis' is unnecessary",
+        "Could explicitly state that leukocytosis is a common finding"
+      ],
+      "improvements": "Remove the initial word 'leukocytosis' and consider rephrasing to explicitly state that leukocytosis is a common finding in Cushing's disease. Additionally, providing a brief context about Cushing's disease could enhance completeness.",
+      "comparison_to_reference": "Compared to reference answers, this response is accurate and relevant, but it lacks some explicitness in stating the commonality of leukocytosis in Cushing's disease, which could be emphasized more in a reference answer."
+    },
+    "timestamp": "2026-02-11T11:40:56.264273"
+  }
+]

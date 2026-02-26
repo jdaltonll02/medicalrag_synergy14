@@ -21,6 +21,7 @@ import yaml
 from tqdm import tqdm
 
 from src.pipeline.med_rag import MedicalRAGPipeline
+from src.core.synergy_formatter import SnippetExtractor
 
 # ---------------------------------------------------------------------
 # Logging
@@ -185,17 +186,34 @@ def run_pipeline(
         if idx % 10 == 0:
             logger.info(f"Processing question {idx}/{len(questions)}")
 
-        output = pipeline.process_query(query)
+        output = pipeline.process_query(query, question_type=qtype)
+        
+        # Get documents with full details
+        final_docs = output.get("final_documents", [])
+        
+        # Extract snippets using the Synergy formatter
+        # Limit to top 10 documents as per BioASQ regulations
+        top_docs = final_docs[:10]
+        
+        # Limit to top 10 documents as per BioASQ regulations
+        top_docs = final_docs[:10]
+        
+        snippets = SnippetExtractor.extract_snippets(
+            query=query,
+            documents=top_docs,
+            max_snippets=10
+        )
 
         results.append({
             "id": qid,
+            "body": query,
             "type": qtype,
-            "query": query,
+            "answer_ready": q.get("answerReady", False),
             "answer": output.get("answer"),
             "documents": [
-                d["doc_id"] for d in output.get("final_documents", [])
+                d["doc_id"] for d in top_docs
             ],
-            "snippets": output.get("snippets", [])
+            "snippets": snippets
         })
 
     return results
@@ -209,15 +227,100 @@ def save_results(results: List[Dict[str, Any]], output_path: Path):
     submission = {"questions": []}
 
     for r in results:
-        submission["questions"].append({
+        answer = r.get("answer", "")
+        qtype = r.get("type", "")
+        answer_ready = r.get("answer_ready", False)
+        
+        question_entry = {
             "id": r["id"],
+            "body": r.get("body", ""),
+            "type": qtype,
             "documents": r["documents"],
-            "snippets": r["snippets"],
-            "exact_answer": r["answer"]
-            if r["type"] in {"factoid", "list", "yesno"} else None,
-            "ideal_answer": r["answer"]
-            if r["type"] == "summary" else None
-        })
+            "snippets": r["snippets"]
+        }
+        
+        # Generate fallback answer if answer is empty
+        if not answer:
+            # Generate a minimal valid answer based on question type
+            if qtype == "yesno":
+                answer = "Unable to determine from available evidence"
+            elif qtype == "factoid":
+                answer = "Information not available"
+            elif qtype == "list":
+                answer = "No specific items identified"
+            else:  # summary
+                answer = "Insufficient evidence to provide a comprehensive answer"
+            answer_ready = True  # Force answer generation
+        
+# Limit ideal answer to 200 words as per BioASQ regulations
+        words = answer.split()
+        if len(words) > 200:
+            ideal_answer = " ".join(words[:200])
+        else:
+            ideal_answer = answer
+        
+        if qtype == "yesno":
+            # BioASQ: must be "yes" or "no" (no empty string allowed)
+            answer_lower = answer.lower()
+            if "yes" in answer_lower[:50] and "no" not in answer_lower[:50]:
+                exact_ans = "yes"
+            elif "no" in answer_lower[:50]:
+                exact_ans = "no"
+            else:
+                # Default: if "unable", "insufficient", or "not available", return "no"
+                if any(word in answer_lower for word in ["unable", "insufficient", "not available", "unknown"]):
+                    exact_ans = "no"
+                else:
+                    exact_ans = "yes"
+            question_entry["exact_answer"] = exact_ans
+            question_entry["ideal_answer"] = ideal_answer
+            
+        elif qtype == "factoid":
+            # BioASQ: List of up to 5 entities, format: [["entity1"], ["entity2"], ...]
+            first_sent = answer.split(".")[0].strip()
+            
+            # Try to extract multiple entities separated by commas/semicolons
+            entities = []
+            for sep in [",", ";", " and ", " or "]:
+                if sep in first_sent:
+                    entities = [e.strip() for e in first_sent.split(sep) if e.strip()]
+                    break
+            
+            if not entities or entities == ['']:
+                entities = [first_sent] if first_sent else ["Information not available"]
+            
+            # Limit to 5 entities and wrap each in list
+            question_entry["exact_answer"] = [[e[:100]] for e in entities[:5] if e.strip()]
+            if not question_entry["exact_answer"]:
+                question_entry["exact_answer"] = [["Information not available"]]
+            question_entry["ideal_answer"] = ideal_answer
+            
+        elif qtype == "list":
+            # BioASQ: Single list of up to 100 entries, max 100 chars each
+            # Format: [["item1"], ["item2"], ...]
+            lines = [line.strip() for line in answer.split("\n") if line.strip()]
+            items = []
+            
+            for line in lines:
+                # Check if line starts with numbering or bullet
+                if line and (line[0].isdigit() or line[0] in "-*•"):
+                    # Remove leading numbers, dots, dashes, bullets
+                    item = line.lstrip("0123456789.-*• ").strip()
+                else:
+                    item = line
+                
+                if item and len(items) < 100:
+                    items.append([item[:100]])  # Max 100 chars per item
+            
+            # Always include exact_answer for list, even if empty (BioASQ requirement)
+            question_entry["exact_answer"] = items if items else [["No specific items identified"]]
+            question_entry["ideal_answer"] = ideal_answer
+        
+        else:  # summary
+            # BioASQ: Summary questions only have ideal_answer (no exact_answer)
+            question_entry["ideal_answer"] = ideal_answer
+        
+        submission["questions"].append(question_entry)
 
     with open(output_path, "w") as f:
         json.dump(submission, f, indent=2)
@@ -244,7 +347,7 @@ def main():
         / f"testset_round_{args.round}.json"
     )
 
-    pubmed_path = args.dataset_root / "pubmed_round2_corpus.jsonl"
+    pubmed_path = args.dataset_root / "pubmed_round3_corpus.jsonl"
 
     questions = load_bioasq_testset(testset_path)
 

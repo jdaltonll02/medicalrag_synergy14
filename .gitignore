@@ -51,6 +51,7 @@ runs/
 # Logs
 *.log
 logs/
+logs2/
 
 # Model files (too large for git)
 *.bin

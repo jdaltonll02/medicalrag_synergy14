@@ -182,7 +182,8 @@ class OpenAIClient:
         self,
         query: str,
         context_documents: List[Dict[str, Any]],
-        system_prompt: str
+        system_prompt: str,
+        question_type: Optional[str] = None
     ) -> str:
         """
         Generate response with retrieved context
@@ -191,6 +192,7 @@ class OpenAIClient:
             query: User query
             context_documents: Retrieved documents with citations
             system_prompt: System prompt
+            question_type: Type of question (yesno, factoid, list, summary)
         
         Returns:
             Generated answer
@@ -213,7 +215,19 @@ class OpenAIClient:
                 "relevance_score": relevance_val
             }
 
-        user_part = f"User Prompt: Answer the following question: {query}"
+        # Add question type guidance if provided
+        type_guidance = ""
+        if question_type:
+            if question_type == "yesno":
+                type_guidance = "\n\nThis is a YES/NO question. Start your answer with 'Yes' or 'No', followed by a brief explanation."
+            elif question_type == "factoid":
+                type_guidance = "\n\nThis is a FACTOID question. Start with the specific entity/answer (gene, drug, disease, etc.), then provide supporting explanation."
+            elif question_type == "list":
+                type_guidance = "\n\nThis is a LIST question. Provide a numbered list of items, each on a new line. Format: 1. Item one\n2. Item two\n3. Item three"
+            elif question_type == "summary":
+                type_guidance = "\n\nThis is a SUMMARY question. Provide a comprehensive paragraph (2-3 sentences) summarizing the key information."
+
+        user_part = f"User Prompt: Answer the following question: {query}{type_guidance}"
         context_part = "Context Prompt: Here are the documents:\n" + json.dumps(docs_obj, ensure_ascii=False, indent=2)
         full_prompt = user_part + "\n\n" + context_part
 

@@ -2,22 +2,26 @@
 """
 sample_corpus.py
 ----------------
-Sample 200K documents from the full PubMed corpus based on BioASQ Synergy round snapshots
+Sample 400k documents from the full PubMed corpus based on BioASQ Synergy round snapshots
 
 Sampling strategy:
 - Uses PubMed snapshot dates to assign documents to rounds
 - Round 1: Documents published <= 2026-01-09
 - Round 2: Documents published between 2026-01-09 and 2026-01-22
+- Round 3: Documents published between 2026-01-22 and 2026-02-08
+- Round 4: Documents published between 2026-02-08 and 2025-02-19
 - Fetches publication dates from PubMed for accurate round assignment
 
 Usage:
     python scripts/sample_corpus.py \
         --input /data/user_data/jgibson2/bioask_pubmed_dataset/json/pubmed_corpus.jsonl \
-        --output /data/user_data/jgibson2/bioask_pubmed_dataset/json/pubmed_corpus_200k.jsonl \
+        --output /data/user_data/jgibson2/bioask_pubmed_dataset/json/pubmed_corpus_400k.jsonl \
         --sample-size 200000 \
         --round1-date 2026-01-09 \
         --round2-date 2026-01-22 \
-        --email your.email@example.com
+        --round3-date 2026-02-08 \
+        --round4-date 2025-02-19 \
+        --email jgibson2@andrew.cmu.edu
 """
 
 import argparse
@@ -96,8 +100,10 @@ def assign_to_rounds(
     pmids: List[str],
     pub_dates: Dict[str, Optional[str]],
     round1_date: str,
-    round2_date: str
-) -> Tuple[List[str], List[str]]:
+    round2_date: str,
+    round3_date: str,
+    round4_date: str
+) -> Tuple[List[str], List[str], List[str]]:
     """
     Assign PMIDs to rounds based on publication dates
     
@@ -106,86 +112,100 @@ def assign_to_rounds(
         pub_dates: Dict mapping PMID -> pub_date
         round1_date: Round 1 snapshot date (YYYY-MM-DD)
         round2_date: Round 2 snapshot date (YYYY-MM-DD)
+        round3_date: Round 3 snapshot date (YYYY-MM-DD)
+        round4_date: Round 4 snapshot date (YYYY-MM-DD)
     
     Returns:
-        Tuple of (round1_pmids, round2_pmids)
+        Tuple of (round1_pmids, round2_pmids, round3_pmids, round4_pmids)
     """
-    
     round1_cutoff = parse_date(round1_date)
     round2_cutoff = parse_date(round2_date)
-    
+    round3_cutoff = parse_date(round3_date)
+    round4_cutoff = parse_date(round4_date)
     round1_pmids = []
     round2_pmids = []
+    round3_pmids = []
+    round4_pmids = []
     unassigned = []
-    
     for pmid in pmids:
         pub_date_str = pub_dates.get(pmid)
-        
         if not pub_date_str:
-            # If date unavailable, randomly assign for balance
             unassigned.append(pmid)
             continue
-        
         try:
             pub_date = parse_date(pub_date_str)
             if not pub_date:
                 unassigned.append(pmid)
                 continue
-            
-            # Assign based on publication date
             if pub_date <= round1_cutoff:
                 round1_pmids.append(pmid)
             elif pub_date <= round2_cutoff:
                 round2_pmids.append(pmid)
+            elif pub_date <= round3_cutoff:
+                round3_pmids.append(pmid)
+            elif pub_date <= round4_cutoff:
+                round4_pmids.append(pmid)
             else:
-                # Published after round 2 cutoff
-                round2_pmids.append(pmid)
+                round4_pmids.append(pmid)
         except Exception as e:
             logger.warning(f"Error parsing date for {pmid}: {e}")
             unassigned.append(pmid)
-    
-    # Balance unassigned between rounds
     if unassigned:
         random.shuffle(unassigned)
-        split = len(unassigned) // 2
-        round1_pmids.extend(unassigned[:split])
-        round2_pmids.extend(unassigned[split:])
+        split1 = len(unassigned) // 4
+        split2 = 2 * len(unassigned) // 4
+        split3 = 3 * len(unassigned) // 4
+        round1_pmids.extend(unassigned[:split1])
+        round2_pmids.extend(unassigned[split1:split2])
+        round3_pmids.extend(unassigned[split2:split3])
+        round4_pmids.extend(unassigned[split3:])
         logger.info(f"Assigned {len(unassigned)} documents with missing dates")
-    
-    return round1_pmids, round2_pmids
+    return round1_pmids, round2_pmids, round3_pmids, round4_pmids
 
 
 def sample_corpus(
     input_path: str,
     output_path: str,
-    sample_size: int = 200000,
+    sample_size: int = 400000,
     round1_size: int = 100000,
+    round2_size: int = 100000,
+    round3_size: int = 100000,
+    round4_size: int = 100000,
     round1_date: str = "2026-01-09",
     round2_date: str = "2026-01-22",
+    round3_date: str = "2026-02-08",
+    round4_date: str = "2025-02-19",
     email: Optional[str] = None,
     api_key: Optional[str] = None
-) -> Tuple[int, int, int, int]:
+) -> Tuple[int, int, int, int, int, int]:
     """
     Sample documents from corpus based on BioASQ Synergy round snapshots
     
     Args:
         input_path: Path to input JSONL corpus
         output_path: Path to output JSONL corpus
-        sample_size: Total documents to sample (default 200K)
+        sample_size: Total documents to sample (default 400k)
         round1_size: Documents for round 1 (default 100K)
         round1_date: Round 1 snapshot date (YYYY-MM-DD)
         round2_date: Round 2 snapshot date (YYYY-MM-DD)
+        round3_date: Round 3 snapshot date (YYYY-MM-DD)
+        round4_date: Round 4 snapshot date (YYYY-MM-DD)
         email: Email for PubMed API
         api_key: Optional NCBI API key
     
     Returns:
-        Tuple of (total_sampled, round1_count, round2_count, documents_written)
+        Tuple of (total_sampled, round1_count, round2_count, round3_count, round4_count, documents_written)
     """
     
     logger.info("=== BioASQ Synergy Corpus Sampling ===")
     logger.info(f"Round 1 snapshot date: {round1_date}")
     logger.info(f"Round 2 snapshot date: {round2_date}")
-    logger.info(f"Target sample sizes: {round1_size} round 1 + {sample_size - round1_size} round 2")
+    logger.info(f"Round 3 snapshot date: {round3_date}")
+    logger.info(f"Round 4 snapshot date: {round4_date}")
+    logger.info(
+        "Target sample sizes: "
+        f"{round1_size} round 1 + {round2_size} round 2 + {round3_size} round 3 + {round4_size} round 4"
+    )
     logger.info("")
     
     # Initialize PubMed fetcher
@@ -240,15 +260,18 @@ def sample_corpus(
     
     # Assign to rounds based on publication dates
     logger.info("Assigning documents to rounds based on publication dates...")
-    round1_pmids, round2_pmids = assign_to_rounds(
+    round1_pmids, round2_pmids, round3_pmids, round4_pmids = assign_to_rounds(
         sampled_pmids,
         pub_dates,
         round1_date,
-        round2_date
+        round2_date,
+        round3_date,
+        round4_date
     )
-    
     logger.info(f"Round 1 documents: {len(round1_pmids):,}")
     logger.info(f"Round 2 documents: {len(round2_pmids):,}")
+    logger.info(f"Round 3 documents: {len(round3_pmids):,}")
+    logger.info(f"Round 4 documents: {len(round4_pmids):,}")
     logger.info("")
     
     # Write sampled documents
@@ -257,24 +280,33 @@ def sample_corpus(
     output_path_obj.parent.mkdir(parents=True, exist_ok=True)
     
     round1_set = set(round1_pmids)
+    round2_set = set(round2_pmids)
+    round3_set = set(round3_pmids)
+    round4_set = set(round4_pmids)
     docs_written = 0
-    
     # Create a map of PMID -> doc for quick lookup
     pmid_to_doc = {doc['pmid']: doc for doc in sampled_docs}
-    
     with open(output_path, 'w') as outfile:
         for pmid in sampled_pmids:
             if pmid in pmid_to_doc:
                 doc = pmid_to_doc[pmid]
                 # Add round assignment based on publication date
-                doc['snapshot_round'] = 1 if pmid in round1_set else 2
+                if pmid in round1_set:
+                    doc['snapshot_round'] = 1
+                elif pmid in round2_set:
+                    doc['snapshot_round'] = 2
+                elif pmid in round3_set:
+                    doc['snapshot_round'] = 3
+                elif pmid in round4_set:
+                    doc['snapshot_round'] = 4
+                else:
+                    doc['snapshot_round'] = -1  # Should not happen
                 outfile.write(json.dumps(doc, ensure_ascii=False) + '\n')
                 docs_written += 1
     
     logger.info(f"Successfully wrote {docs_written} documents to {output_path}")
     logger.info("")
-    
-    return len(sampled_pmids), len(round1_pmids), len(round2_pmids), docs_written
+    return len(sampled_pmids), len(round1_pmids), len(round2_pmids), len(round3_pmids), len(round4_pmids), docs_written
 
 
 def main():
@@ -294,14 +326,20 @@ def main():
     parser.add_argument(
         "--sample-size",
         type=int,
-        default=200000,
-        help="Total documents to sample (default 200000)"
+        default=300000,
+        help="Total documents to sample (default 300000)"
     )
     parser.add_argument(
         "--round1-size",
         type=int,
         default=100000,
         help="Documents to sample for round 1 (default 100000)"
+    )
+    parser.add_argument(
+        "--round2-size",
+        type=int,
+        default=100000,
+        help="Documents to sample for round 2 (default 100000)"
     )
     parser.add_argument(
         "--round1-date",
@@ -312,6 +350,11 @@ def main():
         "--round2-date",
         default="2026-01-22",
         help="Round 2 snapshot date (YYYY-MM-DD, default 2026-01-22)"
+    )
+    parser.add_argument(
+        "--round3-date",
+        default="2026-02-08",
+        help="Round 3 snapshot date (YYYY-MM-DD, default 2026-02-08)"
     )
     parser.add_argument(
         "--email",
@@ -337,13 +380,15 @@ def main():
     logger.info("")
     
     try:
-        sampled, round1, round2, written = sample_corpus(
+        sampled, round1, round2, round3, written = sample_corpus(
             args.input,
             args.output,
             args.sample_size,
             args.round1_size,
+            args.round2_size,
             args.round1_date,
             args.round2_date,
+            args.round3_date,
             args.email,
             args.api_key
         )
@@ -351,6 +396,7 @@ def main():
         logger.info(f"Documents sampled: {sampled:,}")
         logger.info(f"  Round 1 (≤ {args.round1_date}): {round1:,}")
         logger.info(f"  Round 2 ({args.round1_date} < date ≤ {args.round2_date}): {round2:,}")
+        logger.info(f"  Round 3 ({args.round2_date} < date ≤ {args.round3_date}): {round3:,}")
         logger.info(f"Documents written: {written:,}")
         logger.info(f"Output file: {args.output}")
         

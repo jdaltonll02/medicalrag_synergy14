@@ -84,6 +84,7 @@ class SnippetExtractor:
             # Try abstract first
             abstract = doc.get("abstract", "")
             title = doc.get("title", "")
+            snippet_info = None  # Initialize to None to avoid UnboundLocalError
             
             if abstract:
                 snippet_info = SnippetExtractor.find_snippet(abstract, query_terms)

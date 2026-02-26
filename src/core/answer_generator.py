@@ -118,7 +118,21 @@ class AnswerGenerator:
         
         # Use LLM to generate answer
         try:
-            system_prompt = "Generate a concise paragraph-length answer to the biomedical question based on the provided documents."
+            q_type = question.get('type', 'factoid')
+            
+            if q_type == 'factoid':
+                system_prompt = """You are a biomedical expert. Answer factoid questions with the specific entity (gene, drug, disease, etc.) first, followed by a brief explanation.
+Format: Start with the main answer entity, then provide 1-2 sentences of context."""
+            elif q_type == 'list':
+                system_prompt = """You are a biomedical expert. Answer list questions with a numbered list.
+Format:
+1. First item
+2. Second item
+3. Third item
+(etc.)
+Follow the list with a brief 1-sentence summary if needed."""
+            else:
+                system_prompt = "Generate a concise paragraph-length answer to the biomedical question based on the provided documents."
             
             context = "\n".join([
                 f"Document {i+1} ({doc.get('doc_id')}): {doc.get('abstract', '')[:300]}"
@@ -130,7 +144,7 @@ class AnswerGenerator:
 Retrieved documents:
 {context}
 
-Generate a concise ideal answer (1-2 sentences):"""
+Generate a concise answer (1-3 sentences):"""
             
             answer = llm_client.generate(
                 prompt=prompt,
@@ -171,7 +185,9 @@ class YesNoAnswerGenerator:
             return ""
         
         try:
-            system_prompt = "You are a biomedical QA system. Answer yes/no questions based on retrieved documents. Respond with only 'yes' or 'no'."
+            system_prompt = """You are a biomedical expert answering yes/no questions.
+Based on the evidence provided, answer with ONLY 'yes' or 'no' as the first word.
+Do NOT include any explanation, just the word 'yes' or 'no'."""
             
             context = "\n".join([
                 f"- {doc.get('abstract', '')[:200]}"
@@ -183,7 +199,7 @@ class YesNoAnswerGenerator:
 Evidence:
 {context}
 
-Answer (yes/no only):"""
+Answer with ONLY 'yes' or 'no':"""
             
             answer = llm_client.generate(
                 prompt=prompt,
@@ -231,7 +247,8 @@ class SummaryAnswerGenerator:
             return " ".join(abstracts) if abstracts else ""
         
         try:
-            system_prompt = "You are a biomedical expert. Generate a comprehensive summary paragraph answering the question."
+            system_prompt = """You are a biomedical expert. Generate a comprehensive, well-structured summary paragraph.
+Provide key information in 2-4 sentences. Be concise but complete."""
             
             context = "\n".join([
                 f"Document {i+1}: {doc.get('abstract', '')[:300]}"
@@ -243,7 +260,7 @@ class SummaryAnswerGenerator:
 Relevant documents:
 {context}
 
-Generate a comprehensive summary (2-3 sentences):"""
+Generate a comprehensive summary paragraph (2-4 sentences):"""
             
             answer = llm_client.generate(
                 prompt=prompt,

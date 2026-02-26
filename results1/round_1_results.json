@@ -15,7 +15,7 @@
         "28386850"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Glucocorticoid withdrawal syndrome can occur after surgical remission of Cushing Syndrome, presenting various symptoms. Common symptoms include fatigue, weakness, dizziness, nausea, loss of appetite, and abdominal pain. Additionally, patients may experience mood changes, such as depression or irritability, and a general sense of malaise. These symptoms arise due to the body's adjustment to the sudden decrease in glucocorticoids, which were previously supplied by exogenous steroid treatment. Close monitoring and potential glucocorticoid replacement therapy may be necessary during the withdrawal period to manage these symptoms effectively.",
       "ideal_answer": null
     },
     {
@@ -33,7 +33,7 @@
         "21137039"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The documents do not provide a specific number of members of the serine/threonine kinase family present in the human proteome. Therefore, I cannot provide an exact answer to the question.",
       "ideal_answer": null
     },
     {
@@ -51,7 +51,7 @@
         "18979189"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Scleral buckle is used primarily to treat retinal detachment. It works by changing the shape of the eye wall from concave to convex, which alters the vector forces caused by epiretinal membranes, thereby helping to reattach the retina to the underlying tissue. This surgical procedure aims to prevent further detachment by pulling the retina back toward the retinal pigment epithelium.",
       "ideal_answer": null
     },
     {
@@ -69,7 +69,7 @@
         "27020712"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The most common viral hemorrhagic fevers include:\n\n1. Ebola Virus Disease\n2. Marburg Virus Disease\n3. Lassa Fever\n4. Crimean-Congo Hemorrhagic Fever\n5. Yellow Fever\n\nThese diseases are characterized by bleeding and can lead to high mortality rates, often associated with outbreaks in specific geographic regions.",
       "ideal_answer": null
     },
     {
@@ -87,7 +87,7 @@
         "23941207"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The kinases that take part in the same pathway as Pi4KIIalpha include:\n\n1. Akt\n2. Raf\n3. MEK (MAP/ERK kinase)\n4. ERK (extracellular signal-regulated kinase)\n5. PI3K (phosphatidylinositol 3-kinase)\n\nThese kinases are involved in various signaling cascades related to cell survival, growth, and differentiation, particularly in the context of the PI3K/Akt and MAPK pathways.",
       "ideal_answer": null
     },
     {
@@ -106,7 +106,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "Chimeric Antigen Receptor (CAR) T cells are genetically engineered T cells designed to recognize and attack specific cancer cells. The process involves collecting a patient's own T cells, modifying them to express a CAR that targets tumor-associated antigens, and then reinfusing these modified cells back into the patient. CAR T cells have shown significant efficacy against hematologic malignancies, such as acute lymphoblastic leukemia and diffuse large B-cell lymphoma. However, their application in solid tumors faces challenges due to the tumor microenvironment and potential adverse effects. Enhanced designs and strategies are being explored to improve their persistence and effectiveness in various cancers."
     },
     {
       "id": "6952a96b4afd1e2b04000029",
@@ -123,7 +123,7 @@
         "28052712"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The growth factor that has been shown to affect GABAergic neurogenesis in the prenatal human brain is brain-derived neurotrophic factor (BDNF).",
       "ideal_answer": null
     },
     {
@@ -141,7 +141,7 @@
         "23874726"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Yes, extracellular vesicles (EVs) can be used for therapeutic purposes in various pathogenetic situations. They play a role in cell-to-cell communication and can deliver bioactive cargo, including proteins and nucleic acids, which can influence recipient cells. Research is ongoing to explore their potential in diagnostics and therapies, including their use as drug delivery systems and biomarker sources for diseases. This versatility highlights the potential for EVs in addressing a range of pathological conditions.",
       "ideal_answer": null
     },
     {
@@ -159,7 +159,7 @@
         "39721752"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "No. Dual checkpoint inhibition with ipilimumab (ipi) and nivolumab (nivo) has not been shown to improve progression-free survival in newly diagnosed glioblastoma according to current research.",
       "ideal_answer": null
     },
     {
@@ -177,7 +177,7 @@
         "34097280"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Drosophila melanogaster shows homology with Homo sapiens primarily through conserved biological pathways, particularly the insulin signaling pathway. This pathway regulates various physiological functions, including metabolism and growth, in both species. Additionally, many molecular mechanisms, including genetic and developmental processes, exhibit similarities, reflecting their common evolutionary ancestry.",
       "ideal_answer": null
     },
     {
@@ -196,7 +196,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "The environment of the womb significantly modifies the development of the embryo through several mechanisms. Firstly, the uterine environment is crucial for the survival and growth of the fertilized egg, which relies entirely on the mother for nutrients and support during the early stages of development. Factors such as maternal nutrition, hormonal levels, and the presence of a healthy microbiome influence the embryo's metabolic and physiological conditions. Changes in maternal factors, such as weight gain and metabolic adaptations, can lead to alterations in gene expression that may impact the embryo's development and later health outcomes. Moreover, the placenta plays a vital role in mediating nutrient and oxygen transfer, and any disruption in placental blood flow or vascular development can adversely affect fetal growth. Overall, the interplay between maternal health, environmental factors, and embryonic development establishes the foundation for the offspring's phenotype and health throughout life."
     },
     {
       "id": "695289c94afd1e2b04000011",
@@ -214,7 +214,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "Yes. Differences in phenotype can occur between embryos with the same genetic information if the maternal environment differs during each pregnancy. Factors such as maternal health, nutritional status, and hormonal levels can influence embryonic development and ultimately affect phenotypic outcomes. This concept is supported by research indicating that embryos are sensitive to environmental changes, which can lead to variations in developmental pathways and gene expression."
     },
     {
       "id": "6940eaa74afd1e2b04000007",
@@ -232,7 +232,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "Cortisol plays a crucial role in the human body as a primary glucocorticoid hormone, primarily involved in the stress response. It is produced by the adrenal glands and is vital for various physiological processes, including regulating metabolism, immune response, and maintaining homeostasis. Cortisol helps to mobilize energy by increasing glucose availability, influences blood pressure, and modulates inflammation. It also plays a role in the body's circadian rhythm, with levels typically peaking in the morning and gradually declining throughout the day. Additionally, prolonged elevated levels of cortisol can lead to adverse effects, such as cognitive impairments and increased risk for chronic conditions, including metabolic syndrome and cardiovascular diseases. Overall, cortisol is essential for managing stress and responding to environmental challenges while also being linked to various health outcomes when dysregulated."
     },
     {
       "id": "6940ea834afd1e2b04000006",
@@ -249,7 +249,7 @@
         "2512782"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "No, Cushing Syndrome is not typically hereditary. It is primarily caused by factors such as tumors or conditions that lead to excessive cortisol production, rather than being passed down genetically. While there may be rare cases with genetic predispositions, it is generally not considered a hereditary condition.",
       "ideal_answer": null
     },
     {
@@ -268,7 +268,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "Sexual activity is correlated with various aspects of cellular aging, particularly in older adults. Engaging in sexual activity has been associated with physical and psychological benefits, which may positively influence overall quality of life. Research indicates that sexual function is moderately correlated with sexuality and that older adults who remain sexually active tend to experience better emotional well-being and quality of life. Age-related physiological changes do not preclude meaningful sexual relationships, and many of these changes can be addressed through medical interventions. Thus, maintaining sexual activity in later life may contribute to healthier aging, although more research is needed to conclusively determine the extent of this correlation."
     },
     {
       "id": "695bd9654afd1e2b04000031",
@@ -286,7 +286,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "The best treatment for trauma and depression in pre-teen children typically involves Trauma-Focused Cognitive Behavioral Therapy (TF-CBT), which is effective in addressing complex trauma and associated symptoms. This therapeutic approach helps children process their trauma, develop coping strategies, and improve emotional regulation. Additionally, early intervention is crucial to prevent the development of chronic mental health issues. Supportive measures, such as family involvement and addressing any pre-existing mental health conditions, also play a significant role in the treatment process. Overall, a comprehensive, tailored approach that includes both psychological therapies and family support is recommended for optimal outcomes."
     },
     {
       "id": "6952ad1f4afd1e2b0400002a",
@@ -303,7 +303,7 @@
         "38456626"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Mechanotransducers are specialized molecules or structures within cells that convert mechanical stimuli into biochemical signals. In relation to ion channels, mechanotransducers play a crucial role by allowing cells to sense mechanical forces such as tension or pressure. Mechanosensitive ion channels, like PIEZO channels, act as key components in this process, detecting changes in mechanical conditions and facilitating the flow of ions across the cell membrane. This ion flow can trigger various cellular responses, including changes in cell signaling and gene expression, thus linking mechanical forces to physiological functions and adaptations in the organism.",
       "ideal_answer": null
     },
     {
@@ -321,7 +321,7 @@
         "7997135"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Yes, the formation of the Barr body is stochastic and is correlated with the silencing of mutated X-chromosomes when extensive mutations are present.",
       "ideal_answer": null
     },
     {
@@ -339,7 +339,7 @@
         "38032818"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The degeneration of the Y chromosome in Homo sapiens is primarily attributed to several key factors: \n\n1. **Genomic Instability**: The Y chromosome has a high degree of structural complexity, including long palindromes and repetitive sequences, which contribute to instability and difficulty in proper recombination during meiosis.\n\n2. **Loss of Genes**: Over evolutionary time, the Y chromosome has lost many of its genes, particularly those that were once homologous to genes on the X chromosome. This loss has diminished its functional capacity and led to the accumulation of non-functional sequences, or pseudogenes.\n\n3. **Reduced Selection Pressure**: The Y chromosome experiences a lack of recombination (particularly in its non-recombining region), which may reduce the effectiveness of natural selection in eliminating deleterious mutations.\n\n4. **Microdeletions**: Studies have shown that microdeletions in the Y chromosome are common, especially in infertile males, indicating that loss of genetic material can directly impact fertility and contribute to degeneration.\n\n5. **Evolutionary Drift**: As the Y chromosome diverges from the X chromosome, it may undergo changes that are not subject to the same selective pressures, leading to further degeneration over time. \n\nThese factors collectively contribute to the ongoing degeneration of the Y chromosome in humans.",
       "ideal_answer": null
     },
     {
@@ -357,7 +357,7 @@
         "3034758"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Yes, Cushing Syndrome is present in dogs.",
       "ideal_answer": null
     },
     {
@@ -375,7 +375,7 @@
         "18723689"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "No, there are no nucleosomes detected in the human serum.",
       "ideal_answer": null
     },
     {
@@ -393,7 +393,7 @@
         "32175016"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Lapatinib targets the epidermal growth factor receptor (EGFR) family of receptor tyrosine kinases, specifically inhibiting the human epidermal growth factor receptor 2 (HER2/ERBB2) and EGFR pathways. This dual inhibition is utilized in the treatment of certain types of breast cancer, particularly those that are HER2-positive.",
       "ideal_answer": null
     },
     {
@@ -412,7 +412,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "Brigatinib is a selective tyrosine kinase inhibitor primarily used in the treatment of anaplastic lymphoma kinase (ALK)-positive non-small cell lung cancer (NSCLC). Its mechanism of action involves the inhibition of ALK and, to a lesser extent, other kinases such as insulin receptor substrate 1 (IRS1) and epidermal growth factor receptor (EGFR). By blocking these pathways, brigatinib disrupts the signaling that promotes cancer cell proliferation and survival. Additionally, brigatinib has been shown to overcome resistance mutations in ALK, providing a therapeutic advantage over earlier generation ALK inhibitors."
     },
     {
       "id": "6952a8a84afd1e2b04000028",
@@ -430,7 +430,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "The connection between the epidermal growth factor receptor (EGFR) and fear is not explicitly documented in the provided literature. However, EGFR plays a critical role in various biological processes, including cell proliferation, survival, and differentiation, which can be indirectly linked to emotional and physiological responses, including fear. Dysregulation of EGFR signaling is often associated with cancer progression and may influence behavioral responses through mechanisms involving stress and anxiety. Furthermore, the interplay between growth factor signaling and neurobiological processes suggests potential pathways by which EGFR could affect fear responses. Overall, while the direct relationship between EGFR and fear is not well-established, there may be underlying biological connections worth exploring further in future research."
     },
     {
       "id": "695291464afd1e2b04000024",
@@ -448,7 +448,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "Lipid droplets (LDs) play a significant role in handling misfolded proteins in cells by serving as storage organelles and participating in protein quality control mechanisms. They can sequester damaged proteins, preventing aggregation and toxicity. LDs also interact with molecular chaperones, which assist in the refolding or degradation of misfolded proteins. This dynamic process helps maintain cellular homeostasis by regulating protein levels and facilitating the removal of aggregates, thus protecting cells from the detrimental effects of protein misfolding and aggregation."
     },
     {
       "id": "69528fd84afd1e2b04000016",
@@ -465,7 +465,7 @@
         "9652109"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "No, there are no proline kinases detected in the human proteome based on the provided documents.",
       "ideal_answer": null
     },
     {
@@ -483,7 +483,7 @@
         "33623515"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "No, Dotatate PET MRI is not specifically indicated for the diagnosis of meningioma.",
       "ideal_answer": null
     },
     {
@@ -502,7 +502,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "Maternal malnourishment can significantly impact the sex determination of the embryo. Evidence indicates that severe placental dysfunction, more common in male pregnancies, can lead to fetal growth restriction and higher in-utero loss rates for male fetuses. Additionally, maternal nutritional status, particularly related to micronutrient deficiencies, affects embryonic gene expression linked to overall health and development. Maternal undernutrition during gestation has been shown to disrupt nutrient transport to the fetus and regulate factors like myostatin, potentially influencing fetal phenotype and health outcomes. Consequently, maternal health and nutrition play critical roles in determining embryonic sex and viability."
     },
     {
       "id": "6936c5c0f9d177840e000005",
@@ -519,7 +519,7 @@
         "35101471"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The drug tested in the ABBV-637 trial is not explicitly mentioned in the provided documents.",
       "ideal_answer": null
     },
     {
@@ -538,7 +538,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "Calcium ions (Ca2+) are stored in the endoplasmic reticulum (ER) primarily by the action of the sarco/endoplasmic reticulum Ca2+-ATPase (SERCA), which actively transports Ca2+ from the cytoplasm into the ER lumen. This process is essential for maintaining cellular calcium homeostasis. The ER can release Ca2+ into the cytosol through channels such as inositol trisphosphate receptors (IP3Rs), which are activated by signaling molecules like inositol trisphosphate (IP3). The interplay between Ca2+ release and uptake allows for the regulation of intracellular calcium levels, which are crucial for various cellular functions, including muscle contraction, neurotransmitter release, and other signaling pathways."
     },
     {
       "id": "695290754afd1e2b0400001d",
@@ -556,7 +556,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "Single-cell RNA sequencing (scRNA-seq) plays a crucial role in addressing the heterogeneity of cancer cells within a tumor by enabling the analysis of gene expression profiles at the individual cell level. This method allows researchers to uncover the diverse cellular compositions and functional differences among tumor cells that traditional bulk sequencing cannot detect. By revealing variations in gene expression, scRNA-seq helps identify distinct subpopulations of cancer cells, including those responsible for tumor progression and resistance to therapies. This enhanced understanding of cellular diversity is essential for precision medicine, as it informs targeted treatment strategies tailored to specific cancer cell profiles, ultimately improving diagnosis and therapeutic outcomes in cancer management."
     },
     {
       "id": "6940eaf44afd1e2b0400000b",
@@ -573,7 +573,7 @@
         "6252234"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The symptoms of Cushing Syndrome may take a significant amount of time to resolve after treatment, often ranging from several weeks to months. The exact duration can vary based on the individual patient, the specific treatment received (such as surgery or radiation), and how well they respond to the treatment. Some patients may experience a gradual improvement in symptoms, while others might notice a more rapid resolution. It's important for patients to have ongoing follow-up with their healthcare provider to monitor their recovery and manage any lingering effects.",
       "ideal_answer": null
     },
     {
@@ -591,7 +591,7 @@
         "24730272"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "No, cetuximab has not been shown to improve the prognosis of patients with glioblastoma. While it has been investigated in various contexts, including other cancers, the available evidence does not support a significant benefit in terms of survival or clinical outcomes for glioblastoma patients.",
       "ideal_answer": null
     },
     {
@@ -609,7 +609,7 @@
         "31191534"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Nasel vaccines have been developed for viruses that primarily affect the respiratory system, particularly targeting the nasal passages and lungs. These vaccines are designed to elicit immune responses at the mucosal surfaces, which are the initial points of entry for many respiratory viruses.",
       "ideal_answer": null
     },
     {
@@ -628,7 +628,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "Cushing syndrome can be treated through several approaches depending on the underlying cause. The primary treatment options include surgical removal of the tumor responsible for excessive cortisol production, commonly through transsphenoidal surgery for pituitary adenomas. If surgery is not feasible or effective, pharmacological treatments may be employed, such as the use of drugs like ketoconazole or metyrapone to inhibit cortisol production. Radiation therapy may also be considered in certain cases, particularly when surgery is not an option. Additionally, lifestyle modifications and management of comorbid conditions are essential components of treatment."
     },
     {
       "id": "6936c616f9d177840e000007",
@@ -646,7 +646,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "The ketogenic diet has been explored as a potential adjunctive treatment for glioblastoma due to its ability to alter metabolism in tumor cells. This diet is characterized by low carbohydrate intake, which may deprive cancer cells of glucose\u2014a primary energy source\u2014thereby inhibiting their growth. Some studies suggest that the ketogenic diet could enhance the efficacy of standard therapies, like chemotherapy and radiation, by making glioblastoma cells more susceptible to treatment. Additionally, it may help in managing symptoms and improving the overall quality of life for patients. However, more clinical research is needed to establish its effectiveness and optimal implementation in glioblastoma treatment protocols."
     },
     {
       "id": "695bdadb4afd1e2b04000034",
@@ -664,7 +664,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "The relationship between endometriosis and mental health is significant, as women suffering from endometriosis often experience negative impacts on their psychological well-being. Studies indicate that endometriosis is associated with chronic pain, infertility, and other distressing symptoms that can lead to anxiety, depression, and a reduced quality of life. Women with endometriosis report moderate levels of illness acceptance and experience daily pain, which further complicates their mental health. Additionally, social and emotional issues stemming from the illness can exacerbate mental health challenges. Addressing both the physical and psychological aspects of endometriosis is critical in improving the overall well-being of affected women."
     },
     {
       "id": "695bdb514afd1e2b04000035",
@@ -681,7 +681,7 @@
         "32801026"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Yes. Women are often underdiagnosed with alcohol-related disorders due to various factors including stigma, lack of awareness among healthcare providers, and differing presentation of symptoms compared to men.",
       "ideal_answer": null
     },
     {
@@ -699,7 +699,7 @@
         "34582315"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Yes, vaccines are a type of prophylaxis.",
       "ideal_answer": null
     },
     {
@@ -717,7 +717,7 @@
         "31166899"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Cushing syndrome can be classified into several types based on its etiology:\n\n1. **Cushing's Disease** - This is caused by a pituitary adenoma that secretes excess adrenocorticotropic hormone (ACTH), leading to increased cortisol production from the adrenal glands.\n2. **Adrenal Cushing's Syndrome** - This occurs due to an adrenal tumor (adenoma or carcinoma) that directly produces excess cortisol.\n3. **Ectopic ACTH Syndrome** - In this type, ACTH is produced by non-pituitary tumors, often of neuroendocrine origin, which leads to adrenal stimulation and excess cortisol production.\n4. **Iatrogenic Cushing's Syndrome** - This results from the administration of glucocorticoids (steroids) for other medical conditions, causing secondary adrenal suppression and excess cortisol effects.\n5. **Pre-Cushing's Syndrome** - A term used for conditions that may not yet meet full criteria for Cushing's syndrome but exhibit some hormonal abnormalities suggestive of the syndrome. \n\nThese classifications help guide diagnosis and treatment strategies for patients with Cushing syndrome.",
       "ideal_answer": null
     },
     {
@@ -736,7 +736,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "The reason we predominantly have L-amino acids in biological systems rather than D-amino acids is primarily due to the evolutionary processes and biochemical pathways that favor L-isomers. L-amino acids are the building blocks of proteins and are utilized in protein synthesis due to their compatibility with the structure of ribosomes and the enzymes that facilitate translation. The selection for L-amino acids may also be linked to the inherent chirality of biological molecules and the biochemical interactions that evolved to favor these orientations. Over time, this has led to a biochemical system that is largely based on L-amino acids, making them the standard in living organisms. D-amino acids, while present in some specific contexts (such as in certain peptides or bacterial cell walls), are not used in the same ubiquitous way as L-amino acids in protein synthesis."
     },
     {
       "id": "69529f094afd1e2b04000027",
@@ -753,7 +753,7 @@
         "8435532"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The drugs used for HIV prophylaxis include:\n\n1. Tenofovir disoproxil fumarate (TDF)\n2. Emtricitabine (FTC)\n3. Abacavir\n4. Lamivudine\n5. Dolutegravir\n\nThese antiretroviral medications are part of preexposure prophylaxis (PrEP) strategies to reduce the risk of HIV infection in high-risk populations.",
       "ideal_answer": null
     },
     {
@@ -771,7 +771,7 @@
         "11069442"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Yes. Fluoxetine can be prescribed in children aged 8 years and over, as it is often used to treat depression and anxiety disorders in this age group.",
       "ideal_answer": null
     },
     {
@@ -789,7 +789,7 @@
         "26546517"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The number of members of the tyrosine kinase family group present in the human proteome is not specified in the provided documents. Therefore, the exact answer cannot be determined from the available information.",
       "ideal_answer": null
     },
     {
@@ -808,7 +808,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "The pathophysiology of hallucinations in people with schizophrenia is complex and involves several neurobiological mechanisms. It is primarily associated with dysregulation of neurotransmitters, particularly dopamine. Hyperactivity in dopaminergic pathways, especially in the mesolimbic system, contributes to the positive symptoms of schizophrenia, including hallucinations. Additionally, there are abnormalities in other neurotransmitter systems, such as glutamate and gamma-aminobutyric acid (GABA), which may further influence perceptual disturbances. Neuroanatomical changes, including alterations in brain structure and connectivity, have also been implicated in the development of hallucinations. Overall, a combination of genetic, environmental, and neurodevelopmental factors plays a significant role in the pathogenesis of hallucinations in schizophrenia."
     },
     {
       "id": "695bdaa54afd1e2b04000033",
@@ -825,7 +825,7 @@
         "39721153"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The estimated frequency of endometriosis is approximately 10% of all women of fertile age. Additionally, up to 25% of women with endometriosis may require assisted reproductive technology (ART) to conceive.",
       "ideal_answer": null
     },
     {
@@ -843,7 +843,7 @@
         "15885539"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The most common causes of bacterial sepsis in children aged 2 to 16 years typically include infections caused by Streptococcus pneumoniae, Neisseria meningitidis, Staphylococcus aureus, Escherichia coli, and group A Streptococcus. These pathogens can lead to serious systemic infections, and early identification and treatment are crucial for positive outcomes.",
       "ideal_answer": null
     },
     {
@@ -861,7 +861,7 @@
         "33749819"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Cushing Syndrome and Cushing Disease are related but distinct entities. Cushing Syndrome refers to the clinical condition characterized by excessive cortisol levels in the body, which can result from various causes, including adrenal tumors, pituitary adenomas, or ectopic ACTH production. In contrast, Cushing Disease specifically refers to the form of Cushing Syndrome that is caused by a pituitary adenoma secreting adrenocorticotropic hormone (ACTH), leading to increased cortisol production by the adrenal glands. Thus, all cases of Cushing Disease are Cushing Syndrome, but not all Cushing Syndromes are Cushing Disease.",
       "ideal_answer": null
     },
     {
@@ -879,7 +879,7 @@
         "41503047"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The average diagnosis time for Cushing Syndrome is not explicitly stated in the provided documents. Therefore, a specific average diagnosis time cannot be determined based on the available information.",
       "ideal_answer": null
     },
     {
@@ -897,7 +897,7 @@
         "8193975"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The common symptoms of Cushing Syndrome include obesity, hirsutism, osteoporosis, hypertension, and mood changes. Patients may also experience facial rounding, easy bruising, and skin changes such as purple striae. These symptoms arise due to excess cortisol production and can vary among individuals.",
       "ideal_answer": null
     },
     {
@@ -915,7 +915,7 @@
         "29349806"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Yes. War can increase suicide rates in affected populations due to the psychological trauma, social disruption, and other stressors associated with conflict.",
       "ideal_answer": null
     },
     {
@@ -933,7 +933,7 @@
         "23074489"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Yes, cancers can become drug dependent. This phenomenon occurs when cancer cells adapt to therapeutic agents, leading to resistance and necessitating prolonged or altered treatment strategies. As cancer cells often hyperactivate various adaptive responses to survive, they can become reliant on specific drugs, making them more challenging to treat.",
       "ideal_answer": null
     },
     {
@@ -951,7 +951,7 @@
         "31513343"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Yes. There is crosstalk between ERK-2 kinase and the Nanog transcription factor, as ERK can phosphorylate various substrates and influence transcription factors involved in pluripotency, including Nanog.",
       "ideal_answer": null
     },
     {
@@ -970,7 +970,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "CIRBP (cold-inducible RNA-binding protein) and Non-Homologous End Joining (NHEJ) play critical roles in protecting human cells against mutations that could lead to cancer. CIRBP is involved in the regulation of gene expression and cellular stress responses, which can influence DNA repair mechanisms. NHEJ is a primary pathway for repairing double-strand breaks in DNA, essential for maintaining genomic stability. Deficiencies in either of these processes can lead to increased genomic instability and a higher predisposition to cancer. Effective DNA repair mechanisms, including NHEJ, are crucial for preventing mutations and preserving the integrity of the genome, thus reducing cancer risks."
     },
     {
       "id": "695bd8f44afd1e2b0400002f",
@@ -987,7 +987,7 @@
         "7334779"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The countries most affected by leprosy include India, Brazil, Indonesia, Nigeria, and the Democratic Republic of the Congo. These countries have reported significant prevalence rates of the disease, despite global efforts for its elimination. In particular, India accounts for a large proportion of the world's leprosy cases, while Brazil and Indonesia also show high endemicity.",
       "ideal_answer": null
     },
     {
@@ -1005,7 +1005,7 @@
         "5483322"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Common tests used to diagnose Cushing Syndrome and Cushing Disease include:\n\n1. Late-night salivary cortisol test\n2. Dexamethasone suppression test\n3. Urinary free cortisol test\n4. Plasma ACTH level measurement\n5. Imaging studies (such as CT or MRI) to identify adrenal tumors or pituitary adenomas\n\nThese tests help evaluate cortisol production and assess whether the source of excess cortisol is adrenal, pituitary, or ectopic.",
       "ideal_answer": null
     },
     {
@@ -1023,7 +1023,7 @@
         "11932769"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Factors that control the successful introduction of sperm into the egg include sperm motility, the presence of specific sperm proteins such as phospholipase C zeta (PLC\u03b6) for oocyte activation, and the functionality of sperm mitochondria. Sperm ion channels and their regulation, as well as the interactions between sperm and oocyte factors, are also critical in this process. These elements can be targeted for developing new birth control pills by focusing on inhibiting sperm function or disrupting the signaling pathways necessary for fertilization.",
       "ideal_answer": null
     },
     {
@@ -1041,7 +1041,7 @@
         "40077855"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Belzutifan is used to treat von Hippel-Lindau disease.",
       "ideal_answer": null
     },
     {
@@ -1060,7 +1060,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "Valproic acid (VPA) is primarily known as an antiepileptic and mood-stabilizing drug, but it has also been explored for its potential role in treating glioblastoma. Research indicates that VPA may have effects on glioblastoma through mechanisms such as inducing apoptosis in cancer cells and altering cellular signaling pathways involved in tumor progression. However, its use in glioblastoma treatment is still under investigation, as challenges including effective delivery across the blood-brain barrier and the drug's potential side effects need to be addressed. Overall, while VPA shows promise in preclinical studies, further clinical trials are necessary to establish its efficacy and safety in glioblastoma treatment."
     },
     {
       "id": "6952903e4afd1e2b0400001b",
@@ -1077,7 +1077,7 @@
         "24675420"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The endosomal sorting complex required for transport (ESCRT) plays a crucial role in several cellular processes, primarily involved in the multivesicular body (MVB) sorting pathway. Its functions include:\n\n1. **Cargo Sorting**: ESCRT is essential for the sorting of ubiquitinated proteins into MVBs, which then transport these proteins to lysosomes for degradation.\n2. **Membrane Remodelling**: It facilitates the invagination of the endosomal membrane, leading to the formation of internal vesicles within the MVBs.\n3. **Vesicle Formation**: ESCRT machinery is required for the budding of vesicles that transport various cargo, including receptors and other proteins, either for degradation or recycling.\n4. **Cellular Response**: It plays a role in cellular responses to environmental changes, influencing processes such as cytokinesis, polarization, and migration.\n5. **Interplay with Ubiquitin System**: ESCRT functions in conjunction with the ubiquitin system to ensure proper sorting of cargo, indicating its significance in maintaining cellular homeostasis.\n\nOverall, ESCRT is integral to the regulation of endosomal trafficking and the degradation of cellular components.",
       "ideal_answer": null
     },
     {
@@ -1095,7 +1095,7 @@
         "26848407"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "The IDH inhibitors that can be used for the treatment of astrocytoma with IDH mutations include:\n\n1. Ivosidenib (AG-120)\n2. Enasidenib (IDH305)\n3. Olutasidenib (FT-2102)\n\nThese inhibitors specifically target the mutated forms of isocitrate dehydrogenase (IDH1 and IDH2), which are commonly associated with certain types of gliomas, including astrocytomas.",
       "ideal_answer": null
     },
     {
@@ -1114,7 +1114,7 @@
       ],
       "snippets": [],
       "exact_answer": null,
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}"
+      "ideal_answer": "Cortisol secretion in the human body is primarily regulated by the hypothalamic-pituitary-adrenal (HPA) axis. The process begins when the hypothalamus releases corticotropin-releasing hormone (CRH), which stimulates the anterior pituitary to produce adrenocorticotropic hormone (ACTH). ACTH then acts on the adrenal cortex to stimulate the secretion of glucocorticoids, including cortisol. This secretion occurs in a rhythmic pattern, with both circadian and ultradian rhythms influencing cortisol levels. Negative feedback mechanisms, where elevated cortisol levels inhibit further release of CRH and ACTH, are crucial for maintaining homeostasis and preventing excessive cortisol production. Additionally, factors like stress and environmental cues can modulate HPA axis activity, leading to increased cortisol secretion during acute stress responses. Overall, the regulation of cortisol is a complex interplay of hormonal signals, feedback loops, and external stimuli."
     },
     {
       "id": "6940eafe4afd1e2b0400000c",
@@ -1131,7 +1131,7 @@
         "31543864"
       ],
       "snippets": [],
-      "exact_answer": "Error generating response: Error code: 401 - {'error': {'message': 'Authentication Error, Invalid proxy server token passed. Received API Key = sk-...u20A, Key Hash (Token) =017a38641a4b3df1d222b67e6f97e352df6b95a01eea6462c87585bace7a0c0b. Unable to find token in cache or `LiteLLM_VerificationTokenTable`', 'type': 'token_not_found_in_db', 'param': 'key', 'code': '401'}}",
+      "exact_answer": "Leukocytosis is not explicitly mentioned in relation to Cushing Disease within the provided documents. Therefore, it is unclear how often leukocytosis occurs in patients with Cushing Disease based on these sources.",
       "ideal_answer": null
     }
   ]
