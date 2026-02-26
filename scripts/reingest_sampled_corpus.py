@@ -2,7 +2,7 @@
 """
 reingest_sampled_corpus.py
 --------------------------
-Reingest sampled 200K document corpus into Elasticsearch
+Reingest sampled 400K document corpus into Elasticsearch
 
 This script:
 1. Deletes the existing index (optional)
@@ -12,8 +12,8 @@ This script:
 Usage:
     python scripts/reingest_sampled_corpus.py \
         --config configs/pipeline_config.yaml \
-        --corpus /data/user_data/jgibson2/bioask_pubmed_dataset/json/pubmed_corpus_200k.jsonl \
-        --snapshot-date 2026-02-04 \
+        --corpus /data/user_data/jgibson2/bioask_pubmed_dataset/json/pubmed_corpus_400k.jsonl \
+        --snapshot-date 2026-02-19 \
         --delete-existing
 """
 

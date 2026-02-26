@@ -6,8 +6,8 @@
 #SBATCH --mem=16GB
 #SBATCH --qos=cpu_qos
 #SBATCH --time=90:00
-#SBATCH --output=/home/jgibson2/projects/medrag/logs2/process_bioasq_round3_%j.log
-#SBATCH --error=/home/jgibson2/projects/medrag/logs2/process_bioasq_round3_%j.err
+#SBATCH --output=/home/jgibson2/projects/medrag/logs2/process_bioasq_round4_%j.log
+#SBATCH --error=/home/jgibson2/projects/medrag/logs2/process_bioasq_round4_%j.err
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=${EMAIL:-jgibson2@andrew.cmu.edu}
 
@@ -17,18 +17,21 @@ set -e
 PROJECT_DIR="/home/jgibson2/projects/medrag"
 CONFIG_FILE="configs/pipeline_config.yaml"
 INPUT_CORPUS="/data/user_data/jgibson2/bioask_pubmed_dataset/json/pubmed_corpus.jsonl"
-OUTPUT_CORPUS="/data/user_data/jgibson2/bioask_pubmed_dataset/json/pubmed_round3_corpus.jsonl"
-SAMPLE_SIZE=300000
+OUTPUT_CORPUS="/data/user_data/jgibson2/bioask_pubmed_dataset/json/pubmed_round4_corpus.jsonl"
+SAMPLE_SIZE=400000
 ROUND1_SIZE=100000
 ROUND2_SIZE=100000
+ROUND3_SIZE=100000
+ROUND4_SIZE=100000
 ROUND1_DATE="2026-01-09"
 ROUND2_DATE="2026-01-22"
 ROUND3_DATE="2026-02-08"
+ROUND4_DATE="2026-02-19"
 EMAIL="${1:-${EMAIL:-jgibson2@andrew.cmu.edu}}"
 
 # Setup
 echo "=========================================="
-echo "BioASQ Synergy Corpus Setup (Round 3)"
+echo "BioASQ Synergy Corpus Setup (Round 4)"
 echo "SLURM Job ID: $SLURM_JOB_ID"
 echo "=========================================="
 echo ""
@@ -37,8 +40,8 @@ echo ""
 if [ -z "$EMAIL" ]; then
   echo "ERROR: Email not specified!"
   echo ""
-  echo "Usage: sbatch --export=EMAIL=jgibson2@andrew.cmu.edu process_300_docs.slurm"
-  echo "   or: sbatch process_300_docs.slurm jgibson2@andrew.cmu.edu"
+  echo "Usage: sbatch --export=EMAIL=jgibson2@andrew.cmu.edu process_400k_docs.slurm"
+  echo "   or: sbatch process_400k_docs.slurm jgibson2@andrew.cmu.edu"
   echo ""
   exit 1
 fi
@@ -99,11 +102,13 @@ curl -s http://127.0.0.1:9200 >/dev/null || {
 }
 
 # Run the setup
-echo "Starting 300K corpus setup..."
+echo "Starting 400K corpus setup..."
 echo "(This will take approximately 60-80 minutes)"
 echo ""
 
 start_time=$(date +%s)
+
+export EMAIL="jgibson2@andrew.cmu.edu"
 
 python3 scripts/sample_corpus.py \
   --input "$INPUT_CORPUS" \
@@ -111,9 +116,8 @@ python3 scripts/sample_corpus.py \
   --sample-size "$SAMPLE_SIZE" \
   --round1-size "$ROUND1_SIZE" \
   --round2-size "$ROUND2_SIZE" \
-  --round1-date "$ROUND1_DATE" \
-  --round2-date "$ROUND2_DATE" \
-  --round3-date "$ROUND3_DATE" \
+  --round3-size "$ROUND3_SIZE" \
+  --round4-size "$ROUND4_SIZE" \
   --email "$EMAIL"
 
 python3 scripts/delete_index.py \
@@ -144,7 +148,7 @@ if [ $setup_exit_code -eq 0 ]; then
     echo "  3. Start pipeline on the sampled corpus"
 else
     echo "✗ Setup failed with exit code $setup_exit_code"
-    echo "Check logs/slurm/process_bioasq_round3_${SLURM_JOB_ID}.err for details"
+    echo "Check logs/slurm/process_bioasq_round4_${SLURM_JOB_ID}.err for details"
 fi
 echo "=========================================="
 echo ""

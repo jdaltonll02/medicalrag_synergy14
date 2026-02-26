@@ -1,7 +1,7 @@
 bioasq:
   cache_pubmed: true
-  data_dir: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/test_data
-  pubmed_cache_dir: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/pubmed_cache
+  data_dir: /data/user_data/jgibson2/bioask_pubmed_dataset/round4_data/test_data
+  pubmed_cache_dir: /data/user_data/jgibson2/bioask_pubmed_dataset/round4_data/pubmed_cache
   pubmed_email: jgibson2@andrew.cmu.edu
   question_types:
   - yesno
@@ -21,11 +21,11 @@ bm25:
   k1: 2.0
   min_score: 0.1
 data:
-  docs_path: /data/user_data/jgibson2/bioask_pubmed_dataset/json/pubmed_round3_corpus.jsonl
-  embeddings_manifest: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/runs/embeddings_manifest.json
-  embeddings_path: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/runs/embeddings.npy
-  results_path: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/runs/results.jsonl
-  run_manifest: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/runs/run_manifest.json
+  docs_path: /data/user_data/jgibson2/bioask_pubmed_dataset/json/pubmed_round4_corpus.jsonl
+  embeddings_manifest: /data/user_data/jgibson2/bioask_pubmed_dataset/round4_data/runs/embeddings_manifest.json
+  embeddings_path: /data/user_data/jgibson2/bioask_pubmed_dataset/round4_data/runs/embeddings.npy
+  results_path: /data/user_data/jgibson2/bioask_pubmed_dataset/round4_data/runs/results.jsonl
+  run_manifest: /data/user_data/jgibson2/bioask_pubmed_dataset/round4_data/runs/run_manifest.json
 encoder:
   backend: medcpt
   batch_size: 32
@@ -60,7 +60,7 @@ evaluation:
 faiss:
   index_type: IndexFlatIP
   nprobe: 32
-  save_path: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/runs/faiss.index
+  save_path: /data/user_data/jgibson2/bioask_pubmed_dataset/round4_data/runs/faiss.index
 fallback:
   use_elasticsearch: false
   use_faiss_only: true
@@ -123,7 +123,7 @@ llm:
 logging:
   format: json
   level: INFO
-  output_dir: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/runs/logs
+  output_dir: /data/user_data/jgibson2/bioask_pubmed_dataset/round4_data/runs/logs
 mmr:
   lambda_param: 0.7
   recency_weight: 0.3

@@ -211,7 +211,7 @@ def sample_corpus(
     # Initialize PubMed fetcher
     if not email:
         logger.error("Email is required for PubMed API access")
-        return 0, 0, 0, 0
+        return 0, 0, 0, 0, 0, 0
     
     fetcher = PubMedFetcher(email=email, api_key=api_key)
     
@@ -311,7 +311,7 @@ def sample_corpus(
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Sample 200K documents from PubMed corpus using BioASQ Synergy snapshot dates"
+        description="Sample 400K documents from PubMed corpus using BioASQ Synergy snapshot dates"
     )
     parser.add_argument(
         "--input",
@@ -321,13 +321,13 @@ def main():
     parser.add_argument(
         "--output",
         required=True,
-        help="Path to output JSONL corpus (sampled 200K)"
+        help="Path to output JSONL corpus (sampled 400K)"
     )
     parser.add_argument(
         "--sample-size",
         type=int,
-        default=300000,
-        help="Total documents to sample (default 300000)"
+        default=400000,
+        help="Total documents to sample (default 400000)"
     )
     parser.add_argument(
         "--round1-size",
@@ -340,6 +340,18 @@ def main():
         type=int,
         default=100000,
         help="Documents to sample for round 2 (default 100000)"
+    )
+    parser.add_argument(
+        "--round3-size",
+        type=int,
+        default=100000,
+        help="Documents to sample for round 3 (default 100000)"
+    )
+    parser.add_argument(
+        "--round4-size",
+        type=int,
+        default=100000,
+        help="Documents to sample for round 4 (default 100000)"
     )
     parser.add_argument(
         "--round1-date",
@@ -355,6 +367,11 @@ def main():
         "--round3-date",
         default="2026-02-08",
         help="Round 3 snapshot date (YYYY-MM-DD, default 2026-02-08)"
+    )
+    parser.add_argument(
+        "--round4-date",
+        default="2026-02-19",
+        help="Round 4 snapshot date (YYYY-MM-DD, default 2026-02-19)"
     )
     parser.add_argument(
         "--email",
@@ -380,23 +397,27 @@ def main():
     logger.info("")
     
     try:
-        sampled, round1, round2, round3, written = sample_corpus(
-            args.input,
-            args.output,
-            args.sample_size,
-            args.round1_size,
-            args.round2_size,
-            args.round1_date,
-            args.round2_date,
-            args.round3_date,
-            args.email,
-            args.api_key
+        sampled, round1, round2, round3, round4, written = sample_corpus(
+            input_path=args.input,
+            output_path=args.output,
+            sample_size=args.sample_size,
+            round1_size=args.round1_size,
+            round2_size=args.round2_size,
+            round3_size=args.round3_size,
+            round4_size=args.round4_size,
+            round1_date=args.round1_date,
+            round2_date=args.round2_date,
+            round3_date=args.round3_date,
+            round4_date=args.round4_date,
+            email=args.email,
+            api_key=args.api_key
         )
         logger.info(f"\n=== Sampling Complete ===")
         logger.info(f"Documents sampled: {sampled:,}")
         logger.info(f"  Round 1 (≤ {args.round1_date}): {round1:,}")
         logger.info(f"  Round 2 ({args.round1_date} < date ≤ {args.round2_date}): {round2:,}")
         logger.info(f"  Round 3 ({args.round2_date} < date ≤ {args.round3_date}): {round3:,}")
+        logger.info(f"  Round 4 ({args.round3_date} < date ≤ {args.round4_date}): {round4:,}")
         logger.info(f"Documents written: {written:,}")
         logger.info(f"Output file: {args.output}")
         
