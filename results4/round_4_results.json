@@ -171,7 +171,7 @@
           "endSection": "abstract"
         }
       ],
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
     },
     {
       "id": "69528a024afd1e2b04000013",
@@ -184,8 +184,8 @@
         "32555458",
         "2833073",
         "35596435",
-        "38927711",
         "15188412",
+        "38927711",
         "19241012",
         "19274099"
       ],
@@ -340,7 +340,6 @@
       "type": "factoid",
       "documents": [
         "26555211",
-        "25784106",
         "15085976",
         "4068597",
         "34592117",
@@ -348,17 +347,10 @@
         "12842668",
         "29520006",
         "1393814",
-        "7976837"
+        "7976837",
+        "15508255"
       ],
       "snippets": [
-        {
-          "text": "Pneumatic retinopexy is less costly to perform than scleral buckling and pars plana vitrectomy and avoids many of the complications associated with these procedures.",
-          "offsetInBeginSection": 468,
-          "offsetInEndSection": 633,
-          "document": "25784106",
-          "beginSection": "abstract",
-          "endSection": "abstract"
-        },
         {
           "text": "Polyurethane sponge was used for scleral buckling in 165 patients suffering from retinal detachment.",
           "offsetInBeginSection": 0,
@@ -398,14 +390,25 @@
           "document": "7976837",
           "beginSection": "abstract",
           "endSection": "abstract"
+        },
+        {
+          "text": "22 patients (23 eyes) were treated by argon laser (German Opton Meditek 40 E, 0.2w power, 100-500 um spot, 0.1-0.2 second exposure and grade II reaction) and or scleral cryotherapy (-60 to approximately -80 degrees C, 5 second duration per time, repe...",
+          "offsetInBeginSection": 110,
+          "offsetInEndSection": 363,
+          "document": "15508255",
+          "beginSection": "abstract",
+          "endSection": "abstract"
         }
       ],
       "exact_answer": [
         [
-          "Error generating response: Error code: 401 - {'error': {'message': 'litellm"
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ],
+        [
+          "Try again in 5 seconds"
         ]
       ],
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
     },
     {
       "id": "695289334afd1e2b0400000f",
@@ -698,7 +701,7 @@
         }
       ],
       "exact_answer": "yes",
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
     },
     {
       "id": "6940ea534afd1e2b04000003",
@@ -1479,7 +1482,7 @@
         }
       ],
       "exact_answer": "yes",
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
     },
     {
       "id": "695290364afd1e2b0400001a",
@@ -1928,7 +1931,7 @@
         }
       ],
       "exact_answer": "yes",
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
     },
     {
       "id": "6940ea404afd1e2b04000002",
@@ -2368,7 +2371,7 @@
         }
       ],
       "exact_answer": "yes",
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
     },
     {
       "id": "6952a8a84afd1e2b04000028",
@@ -2616,16 +2619,16 @@
       "body": "Which tests are commonly used to diagnose Cushing Syndrome and Cushing Disease?",
       "type": "list",
       "documents": [
-        "35872832",
+        "27976885",
         "28005257",
+        "18214917",
+        "17343448",
+        "27827865",
+        "35872832",
         "35808120",
         "39402967",
         "33058356",
-        "41264037",
-        "35745461",
-        "11996589",
-        "27976885",
-        "18214917"
+        "41264037"
       ],
       "snippets": [
         {
@@ -2789,10 +2792,10 @@
       ],
       "exact_answer": [
         [
-          "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: Azu"
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
         ]
       ],
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
     },
     {
       "id": "6936c5eef9d177840e000006",
@@ -2886,13 +2889,10 @@
       ],
       "exact_answer": [
         [
-          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
-        ],
-        [
-          "Try again in 5 seconds"
+          "Error generating response: Error code: 401 - {'error': {'message': 'litellm"
         ]
       ],
-      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
     },
     {
       "id": "695289e94afd1e2b04000012",
@@ -3014,10 +3014,13 @@
       ],
       "exact_answer": [
         [
-          "Error generating response: Error code: 401 - {'error': {'message': 'litellm"
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ],
+        [
+          "Try again in 5 seconds"
         ]
       ],
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
     },
     {
       "id": "6936c55cf9d177840e000003",
@@ -3300,10 +3303,13 @@
       ],
       "exact_answer": [
         [
-          "Error generating response: Error code: 401 - {'error': {'message': 'litellm"
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ],
+        [
+          "Try again in 5 seconds"
         ]
       ],
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
     },
     {
       "id": "6936c584f9d177840e000004",
@@ -3316,8 +3322,8 @@
         "37433817",
         "9839625",
         "28960403",
-        "21312096",
         "27225028",
+        "21312096",
         "40221458",
         "30125556"
       ],
@@ -3339,18 +3345,18 @@
           "endSection": "abstract"
         },
         {
-          "text": "Patients with glioblastoma are treated by radiotherapy in combination with temozolamid.",
-          "offsetInBeginSection": 0,
-          "offsetInEndSection": 87,
-          "document": "21312096",
-          "beginSection": "abstract",
-          "endSection": "abstract"
-        },
-        {
           "text": "With the Precision Medicine Initiative being announced in the President's State of the Union Address in 2016, GBM immunotherapy provides a useful platform for changing the landscape in treating patients with difficult disease.",
           "offsetInBeginSection": 391,
           "offsetInEndSection": 617,
           "document": "27225028",
+          "beginSection": "abstract",
+          "endSection": "abstract"
+        },
+        {
+          "text": "Patients with glioblastoma are treated by radiotherapy in combination with temozolamid.",
+          "offsetInBeginSection": 0,
+          "offsetInEndSection": 87,
+          "document": "21312096",
           "beginSection": "abstract",
           "endSection": "abstract"
         },
@@ -3372,7 +3378,7 @@
         }
       ],
       "exact_answer": "yes",
-      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
     },
     {
       "id": "6936c53bf9d177840e000002",
@@ -3434,10 +3440,10 @@
       ],
       "exact_answer": [
         [
-          "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: Azu"
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
         ]
       ],
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
     },
     {
       "id": "6593d1b806a2ea257c000017",
@@ -3539,10 +3545,10 @@
       ],
       "exact_answer": [
         [
-          "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: Azu"
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
         ]
       ],
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
     },
     {
       "id": "6940eab84afd1e2b04000008",
@@ -3626,7 +3632,7 @@
           "endSection": "abstract"
         }
       ],
-      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
     },
     {
       "id": "6940eafe4afd1e2b0400000c",
@@ -3728,10 +3734,13 @@
       ],
       "exact_answer": [
         [
-          "Error generating response: Error code: 401 - {'error': {'message': 'litellm"
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ],
+        [
+          "Try again in 5 seconds"
         ]
       ],
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
     },
     {
       "id": "695291704afd1e2b04000025",
@@ -3833,10 +3842,13 @@
       ],
       "exact_answer": [
         [
-          "Error generating response: Error code: 401 - {'error': {'message': 'litellm"
+          "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for sel"
+        ],
+        [
+          "Try again in 5 seconds"
         ]
       ],
-      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
+      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
     },
     {
       "id": "6940eadc4afd1e2b0400000a",
@@ -3920,7 +3932,7 @@
           "endSection": "abstract"
         }
       ],
-      "ideal_answer": "Error generating response: Error code: 429 - {'error': {'message': \"No deployments available for selected model, Try again in 5 seconds. Passed model=gpt-4o-2024-08-06. pre-call-checks=False, cooldown_list=['c9cd81ab-6a1e-4cb3-86f4-f7617878e177']\", 'type': 'None', 'param': 'None', 'code': '429'}}"
+      "ideal_answer": "Error generating response: Error code: 401 - {'error': {'message': 'litellm.AuthenticationError: AzureException AuthenticationError - Access denied due to invalid subscription key or wrong API endpoint. Make sure to provide a valid key for an active subscription and use a correct regional API endpoint for your resource.. Received Model Group=gpt-4o-2024-08-06\\nAvailable Model Group Fallbacks=None', 'type': None, 'param': None, 'code': '401'}}"
     }
   ]
 }

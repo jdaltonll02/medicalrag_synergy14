@@ -14,7 +14,7 @@ class OpenAIClient:
     
     def __init__(
         self,
-        model: str = "gpt-4",
+        model: str = "gpt-4o-mini-2024-07-18",
         api_key: Optional[str] = None,
         base_url: Optional[str] = None,
         project_id: Optional[str] = None,
