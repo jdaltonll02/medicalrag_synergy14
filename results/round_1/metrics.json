@@ -1,0 +1,19 @@
+{
+  "yesno_accuracy": 0.0,
+  "yesno_f1_yes": 0.0,
+  "yesno_f1_no": 0.0,
+  "yesno_macro_f1": 0.0,
+  "factoid_strict_accuracy": 0.0,
+  "factoid_lenient_accuracy": 0.0,
+  "factoid_mrr": 0.0,
+  "avg_recall@5": 0.5833333333333333,
+  "avg_recall@10": 0.7083333333333333,
+  "avg_recall@20": 0.8333333333333333,
+  "avg_mrr": 0.625,
+  "avg_precision@5": 0.4,
+  "avg_precision@10": 0.25,
+  "avg_precision@20": 0.15000000000000002,
+  "avg_f1@5": 0.4722222222222222,
+  "avg_f1@10": 0.36813186813186805,
+  "avg_f1@20": 0.2536231884057971
+}
