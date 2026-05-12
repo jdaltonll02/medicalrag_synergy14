@@ -263,10 +263,10 @@ This project is best understood as a modular biomedical QA platform optimized fo
 If you need to change behavior, start with the config and the orchestration classes under `src/pipeline/`. If you need to operate the system, start with the runner scripts under `scripts/` and the setup documents under `documentation/`.
 
 ## Author
-- Professor Eric Nyberg
-  Professor, Language Technology Institute
+- Professor Eric Nyberg,
+  Professor, Language Technology Institute,
   Carnegie Mellon University
 
-- John Dalton Gibson
-  MSECE Student, Department of ECE
+- John Dalton Gibson,
+  MSECE Student, Department of ECE,
   Carnegie Mellon University
