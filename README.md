@@ -38,6 +38,46 @@ The core pipeline is centered on MedCPT-based dense retrieval plus BM25 sparse r
 - `src/retrieval/hybrid_medcpt_retriever.py` merges FAISS and BM25 retrieval results.
 - `src/pipeline/synergy_pipeline.py` wraps round processing, feedback loading, and submission formatting.
 
+### Diagram
+
+```mermaid
+flowchart TD
+  subgraph Scripts
+    R[run_bioasq_pipeline.py]
+  end
+
+  subgraph Core
+    Ldr[BioASQDataLoader]
+    PM[PubMedFetcher]
+  end
+
+  subgraph Pipeline
+    P[MedicalRAGPipeline]
+    NER[NERService - spaCy/HF]
+    ENC[MedCPTEncoder]
+    FAISS[FAISSIndex]
+    ES[Elasticsearch/BM25Retriever]
+    HY[HybridRetriever]
+    RER[CrossEncoderReranker]
+    MMR[MMR + Recency]
+    LLM[LLM - OpenAI/Stub]
+  end
+
+  subgraph Outputs
+    PR[predictions.json]
+    MT[metrics.json]
+  end
+
+  R --> Ldr --> PM --> D[Documents]
+  R -->|config.yaml| P
+  P --> NER
+  P --> ENC --> FAISS
+  D --> ES
+  P --> HY
+  HY --> RER --> MMR --> LLM --> PR
+  R -->|evaluate| MT
+```
+
 ### Component flow
 
 ```text
@@ -262,7 +302,7 @@ This project is best understood as a modular biomedical QA platform optimized fo
 
 If you need to change behavior, start with the config and the orchestration classes under `src/pipeline/`. If you need to operate the system, start with the runner scripts under `scripts/` and the setup documents under `documentation/`.
 
-## Author
+## Authors
 - Professor Eric Nyberg,
   Professor, Language Technology Institute,
   Carnegie Mellon University
