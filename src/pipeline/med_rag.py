@@ -61,6 +61,7 @@ class MedicalRAGPipeline:
         else:
             self.encoder = MedCPTEncoder(
                 model_name=encoder_config.get("model", "ncbi/MedCPT-Query-Encoder"),
+                article_model_name=encoder_config.get("article_model", "ncbi/MedCPT-Article-Encoder"),
                 device=encoder_config.get("device", "auto")
             )
         
@@ -71,19 +72,28 @@ class MedicalRAGPipeline:
             embedding_dim=encoder_config.get("embedding_dim", 768)
         )
         
-        # BM25 Retriever
-        bm25_config = self.config.get("bm25", {})
-        self.bm25_retriever = BM25Retriever(
-            host=bm25_config.get("elasticsearch_host", "localhost"),
-            port=bm25_config.get("elasticsearch_port", 9200),
-            index_name=bm25_config.get("index_name", "medical_docs_2")
-        )
-        
+        # BM25 Retriever — skip entirely when Elasticsearch is disabled
+        _fallback = self.config.get("fallback", {})
+        _use_es = not _fallback.get("use_faiss_only", False) and _fallback.get("use_elasticsearch", True)
+        if _use_es:
+            bm25_config = self.config.get("bm25", {})
+            self.bm25_retriever = BM25Retriever(
+                host=bm25_config.get("elasticsearch_host", "localhost"),
+                port=bm25_config.get("elasticsearch_port", 9200),
+                index_name=bm25_config.get("index_name", "medical_docs_2")
+            )
+        else:
+            logging.getLogger(__name__).info(
+                "Elasticsearch disabled (use_faiss_only=true); skipping BM25Retriever init"
+            )
+            self.bm25_retriever = None
+
         # Hybrid Retriever
+        retrieval_config = self.config.get("retrieval", {})
         self.hybrid_retriever = HybridRetriever(
             faiss_index=self.faiss_index,
             bm25_retriever=self.bm25_retriever,
-            alpha=0.5
+            alpha=retrieval_config.get("alpha", 0.5)
         )
         
         # Reranker
@@ -131,28 +141,18 @@ class MedicalRAGPipeline:
         index_fallback: bool = True
     ):
         """Build indices for dense (FAISS) and sparse (BM25) retrieval"""
-        import sys
-        import logging
         logger = logging.getLogger(__name__)
-        sys.stderr.write(f"[STDERR index_documents] ENTRY with {len(documents)} docs\n")
-        sys.stderr.flush()
         if not documents:
             return
         # Keep an in-memory store to enrich retrieval results later
         if reset_index or not hasattr(self, "_doc_store"):
             self._doc_store = []
         self._doc_store.extend(documents)
-        # Encode abstracts for FAISS
-        sys.stderr.write(f"[STDERR] About to extract abstracts from {len(documents)} docs\n")
-        sys.stderr.flush()
+        # Encode abstracts for FAISS using article encoder
         abstracts = [doc.get("abstract", "") for doc in documents]
-        sys.stderr.write(f"[STDERR] About to encode {len(abstracts)} abstracts\n")
-        sys.stderr.flush()
-        logger.info(f"[INDEX] Encoding {len(documents)} documents...")
+        logger.info(f"Encoding {len(documents)} documents...")
         embeddings = self.encoder.encode(abstracts)
-        sys.stderr.write(f"[STDERR] Encoding complete, got {len(embeddings)} embeddings\n")
-        sys.stderr.flush()
-        logger.info(f"[INDEX] Adding {len(embeddings)} vectors to FAISS...")
+        logger.info(f"Adding {len(embeddings)} vectors to FAISS...")
         self.faiss_index.add_vectors(embeddings)
         # Provide FAISS with external doc_id mapping aligned to insertion order
         try:
@@ -165,15 +165,19 @@ class MedicalRAGPipeline:
             pass
         # Index documents into Elasticsearch
         try:
-            # Reset ES index to avoid stale docs from previous runs
-            if reset_index:
-                try:
-                    self.bm25_retriever.reset_index()
-                except Exception:
-                    pass
-            logger.info(f"[INDEX] Indexing {len(documents)} documents into Elasticsearch...")
-            self.bm25_retriever.index_documents(documents, index_fallback=index_fallback)
-            logger.info(f"[INDEX] Batch complete.")
+            fallback_config = self.config.get("fallback", {})
+            use_elasticsearch = not fallback_config.get("use_faiss_only", False) and fallback_config.get("use_elasticsearch", True)
+            if not use_elasticsearch:
+                logger.info("Skipping BM25/Elasticsearch indexing (fallback.use_faiss_only=true or use_elasticsearch=false)")
+            else:
+                if reset_index:
+                    try:
+                        self.bm25_retriever.reset_index()
+                    except Exception:
+                        pass
+                logger.info(f"Indexing {len(documents)} documents into Elasticsearch...")
+                self.bm25_retriever.index_documents(documents, index_fallback=index_fallback)
+                logger.info("BM25 indexing complete.")
         except Exception as e:
             logger.warning(f"BM25 indexing failed: {e}")
     
@@ -269,15 +273,18 @@ class MedicalRAGPipeline:
         # 6. Apply MMR for diversity
         if use_mmr and len(reranked_docs) > 0:
             mmr_config = self.config.get("mmr", {})
+            temporal_config = self.config.get("temporal", {})
+            effective_recency_boost = recency_boost and temporal_config.get("enabled", True)
+            decay_rate = temporal_config.get("recency_decay", 0.1)
             doc_embeddings = self.encoder.encode(
                 [doc.get("abstract", "") for doc in reranked_docs]
             )
-            
+
             # Compute recency scores if needed
             recency_scores = None
-            if recency_boost:
+            if effective_recency_boost:
                 pub_dates = [doc.get("pub_date", "2000-01-01") for doc in reranked_docs]
-                recency_scores = compute_recency_scores(pub_dates)
+                recency_scores = compute_recency_scores(pub_dates, decay_rate=decay_rate)
             
             selected_indices = compute_mmr(
                 query_embedding=query_embedding,
@@ -285,7 +292,7 @@ class MedicalRAGPipeline:
                 lambda_param=mmr_config.get("lambda_param", 0.7),
                 top_k=top_k,
                 recency_scores=recency_scores,
-                recency_weight=mmr_config.get("recency_weight", 0.3) if recency_boost else 0.0
+                recency_weight=mmr_config.get("recency_weight", 0.3) if effective_recency_boost else 0.0
             )
             
             final_docs = [reranked_docs[i] for i in selected_indices]
@@ -295,7 +302,17 @@ class MedicalRAGPipeline:
         # 7. Generate answer with LLM
         llm_config = self.config.get("llm", {})
         system_prompt = llm_config.get("system_prompt", "You are a medical AI assistant.")
-        
+
+        # Enrich final_docs with title/abstract before LLM call (needed in skip-indexing mode
+        # where FAISS returns row indices but corpus text is fetched lazily via _corpus_lookup)
+        corpus_lookup = getattr(self, "_corpus_lookup", None)
+        if corpus_lookup is not None:
+            for doc in final_docs:
+                if not doc.get("abstract"):
+                    row = doc.get("index")
+                    if isinstance(row, int):
+                        doc["title"], doc["abstract"] = corpus_lookup.get(row)
+
         # Use provided question_type or try to detect from query
         if question_type is None:
             query_lower = query_text.lower()

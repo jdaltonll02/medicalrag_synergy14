@@ -76,12 +76,12 @@ def build_encoder(config):
     enc_cfg = config.get("encoder", {})
     backend = enc_cfg.get("backend", "medcpt").lower()
     model_name = enc_cfg.get("model", "ncbi/MedCPT-Query-Encoder")
+    article_model_name = enc_cfg.get("article_model", "ncbi/MedCPT-Article-Encoder")
     device = enc_cfg.get("device", "auto")
     if backend == "biobert" and BioBERTEncoder is not None:
         return BioBERTEncoder(model_name=model_name, device=device)
     if MedCPTEncoder is not None:
-        return MedCPTEncoder(model_name=model_name, device=device)
-    # Fallback: no encoders available
+        return MedCPTEncoder(model_name=model_name, article_model_name=article_model_name, device=device)
     return None
 
 def batch_encode_to_memmap(docs_path: str, config: dict, output_path: Path) -> int:
@@ -115,16 +115,14 @@ def batch_encode_to_memmap(docs_path: str, config: dict, output_path: Path) -> i
     i = 0
     buf_ids = []
     buf_texts = []
+    all_doc_ids = []
     for doc in tqdm(stream_documents(docs_path), total=total, desc="Encoding"):
         # Prefer abstract; fallback to text/title
         abstract = (doc.get("abstract") or doc.get("text") or "").strip()
-        if not abstract:
-            # write zeros for empty abstracts to keep alignment
-            buf_ids.append(doc.get("doc_id"))
-            buf_texts.append("")
-        else:
-            buf_ids.append(doc.get("doc_id"))
-            buf_texts.append(abstract)
+        doc_id = doc.get("doc_id") or doc.get("pmid")
+        buf_ids.append(doc_id)
+        buf_texts.append(abstract if abstract else "")
+        all_doc_ids.append(doc_id)
 
         # Flush batch
         if len(buf_texts) >= batch_size:
@@ -141,41 +139,81 @@ def batch_encode_to_memmap(docs_path: str, config: dict, output_path: Path) -> i
         i += len(emb)
 
     del mm  # flush to disk
+
+    # Save doc_ids so FAISS positions map back to PMIDs
+    doc_ids_path = output_path.parent / "doc_ids.json"
+    with open(doc_ids_path, "w") as f:
+        json.dump(all_doc_ids, f)
+
     return i
 
 
 def main():
     parser = argparse.ArgumentParser(description="Encode documents for RAG pipeline")
-    parser.add_argument("--config", required=True, help="Path to config YAML")
+    parser.add_argument("--config", default="configs/fullpipeline.yaml",
+                        help="Path to config YAML (default: configs/fullpipeline.yaml)")
     parser.add_argument("--output-dir", required=True, help="Output directory for embeddings")
+    parser.add_argument("--batch-size", type=int, default=None,
+                        help="Encoding batch size (overrides config; use 128-256 on A100)")
+    parser.add_argument("--tmp-dir", default=None,
+                        help="Fast local scratch dir for intermediate write (e.g. $TMPDIR). "
+                             "Embeddings are written here first, then moved to --output-dir.")
     args = parser.parse_args()
 
     # Load configuration
     config = load_config(args.config)
-    
+
+    # CLI batch-size overrides config
+    if args.batch_size is not None:
+        config.setdefault("encoder", {})["batch_size"] = args.batch_size
+
     # Source docs path
     docs_path = config["data"]["docs_path"]
     print(f"Preparing to encode documents from {docs_path}...")
 
-    # Create output directory
+    # Determine write target: fast local scratch if provided, else final output dir
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Encode directly to .npy memmap on disk (GPU-ready, batched)
-    embeddings_path = output_dir / "embeddings.npy"
-    print(f"Encoding with {config['encoder']['model']} (device={config['encoder'].get('device','auto')})...")
+    if args.tmp_dir:
+        write_dir = Path(args.tmp_dir)
+        write_dir.mkdir(parents=True, exist_ok=True)
+        print(f"Writing intermediates to fast scratch: {write_dir}")
+    else:
+        write_dir = output_dir
+
+    embeddings_path = write_dir / "embeddings.npy"
+    print(f"Encoding with {config['encoder']['model']} "
+          f"(device={config['encoder'].get('device','auto')}, "
+          f"batch_size={config['encoder'].get('batch_size', 32)})...")
     n_docs = batch_encode_to_memmap(docs_path, config, embeddings_path)
-    print(f"Saved embeddings to {embeddings_path} (n_docs={n_docs})")
+    print(f"Encoded {n_docs} documents")
+
+    # Move from scratch to final output dir if needed
+    if args.tmp_dir:
+        import shutil
+        for fname in ("embeddings.npy", "doc_ids.json"):
+            src = write_dir / fname
+            dst = output_dir / fname
+            if src.exists():
+                print(f"Moving {src} → {dst}")
+                shutil.move(str(src), str(dst))
+        embeddings_path = output_dir / "embeddings.npy"
+
+    print(f"Saved embeddings to {output_dir / 'embeddings.npy'} (n_docs={n_docs})")
+    print(f"Saved doc_ids to   {output_dir / 'doc_ids.json'}")
 
     # Create manifest
     manifest = {
         "git_sha": get_git_sha(),
         "encoder": config["encoder"]["model"],
+        "article_encoder": config["encoder"].get("article_model", ""),
         "embedding_dim": config["encoder"]["embedding_dim"],
+        "batch_size": config["encoder"].get("batch_size", 32),
         "num_documents": n_docs,
         "created_at": datetime.utcnow().isoformat() + "Z",
         "data_sha256": compute_file_sha256(docs_path),
-        "embeddings_sha256": compute_file_sha256(embeddings_path)
+        "embeddings_sha256": compute_file_sha256(str(output_dir / "embeddings.npy"))
     }
 
     manifest_path = output_dir / "embeddings_manifest.json"

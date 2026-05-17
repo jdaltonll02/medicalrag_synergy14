@@ -110,7 +110,7 @@ class AnswerGenerator:
         Returns:
             Ideal answer text
         """
-        if llm_client is None or not llm_client.client:
+        if llm_client is None or not (hasattr(llm_client, "client") and llm_client.client):
             # Fallback: generate from abstracts
             abstracts = [doc.get("abstract", "")[:200] for doc in retrieved_documents[:3]]
             abstracts = [a for a in abstracts if a]
@@ -181,7 +181,7 @@ class YesNoAnswerGenerator:
         Returns:
             "yes", "no", or ""
         """
-        if llm_client is None or not llm_client.client:
+        if llm_client is None or not (hasattr(llm_client, "client") and llm_client.client):
             return ""
         
         try:
@@ -240,7 +240,7 @@ class SummaryAnswerGenerator:
         Returns:
             Summary text
         """
-        if llm_client is None or not llm_client.client:
+        if llm_client is None or not (hasattr(llm_client, "client") and llm_client.client):
             # Fallback: combine abstracts
             abstracts = [doc.get("abstract", "") for doc in retrieved_documents[:3]]
             abstracts = [a for a in abstracts if a]

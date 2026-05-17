@@ -83,19 +83,12 @@ class HybridMedCPTRetriever:
             if max_dense > 0:
                 combined[did]["dense_score"] = combined[did]["dense_score"] / max_dense
         
-        # Fix sparse normalization: ensure max_sparse is calculated correctly
         sparse_vals = [v["sparse_score"] for v in combined.values()]
         max_sparse = max(sparse_vals) if sparse_vals and max(sparse_vals) > 0 else 1.0
-        
-        # Debug logging
-        import sys
-        print(f"BM25 normalization max_sparse={max_sparse:.4f}", file=sys.stderr)
-        
+
         for did in combined:
             if max_sparse > 0:
                 combined[did]["sparse_score"] = combined[did]["sparse_score"] / max_sparse
-            # Log normalized scores
-            print(f"doc_id={did} bm25_norm={combined[did]['sparse_score']:.4f} dense_norm={combined[did]['dense_score']:.4f}", file=sys.stderr)
 
         # Combine
         for did in combined:

@@ -6,69 +6,102 @@ import numpy as np
 from typing import List, Union
 
 
+import logging as _logging
+_encoder_logger = _logging.getLogger(__name__)
+
+
 class MedCPTEncoder:
-    """MedCPT encoder for medical domain embeddings"""
-    
-    def __init__(self, model_name: str = "ncbi/MedCPT-Query-Encoder", device: str = "auto"):
+    """MedCPT encoder for medical domain embeddings.
+
+    Uses asymmetric encoding: ncbi/MedCPT-Query-Encoder for queries and
+    ncbi/MedCPT-Article-Encoder for documents, matching MedCPT's training setup.
+    """
+
+    def __init__(
+        self,
+        model_name: str = "ncbi/MedCPT-Query-Encoder",
+        article_model_name: str = "ncbi/MedCPT-Article-Encoder",
+        device: str = "auto",
+    ):
         """
         Initialize MedCPT encoder
-        
+
         Args:
-            model_name: HuggingFace model name
-            device: Device for inference (cpu/cuda)
+            model_name: Query encoder HuggingFace model name
+            article_model_name: Article encoder HuggingFace model name
+            device: Device for inference (cpu/cuda/auto)
         """
-        import sys
         self.model_name = model_name
-        # Resolve device: 'auto' -> cuda if available else cpu
+        self.article_model_name = article_model_name
+
         if device == "auto":
             try:
                 import torch
-                cuda_available = torch.cuda.is_available()
-                sys.stderr.write(f"[ENCODER] torch.cuda.is_available() = {cuda_available}\n")
-                if cuda_available:
-                    sys.stderr.write(f"[ENCODER] CUDA device count: {torch.cuda.device_count()}\n")
-                    sys.stderr.write(f"[ENCODER] CUDA device name: {torch.cuda.get_device_name(0)}\n")
-                sys.stderr.flush()
-                self.device = "cuda" if cuda_available else "cpu"
-            except Exception as e:
-                sys.stderr.write(f"[ENCODER] Error checking CUDA: {e}\n")
-                sys.stderr.flush()
+                self.device = "cuda" if torch.cuda.is_available() else "cpu"
+            except Exception:
                 self.device = "cpu"
         else:
+            # Honour the requested device, but verify CUDA is actually usable
+            if device == "cuda":
+                try:
+                    import torch
+                    if not torch.cuda.is_available():
+                        _encoder_logger.warning(
+                            "device='cuda' requested but CUDA is unavailable; falling back to CPU"
+                        )
+                        device = "cpu"
+                except Exception:
+                    device = "cpu"
             self.device = device
-        sys.stderr.write(f"[ENCODER] Using device: {self.device}\n")
-        sys.stderr.flush()
+
+        _encoder_logger.info(f"MedCPT encoder using device: {self.device}")
+
         self.model = None
         self.tokenizer = None
+        self.article_model = None
+        self.article_tokenizer = None
         self._load_model()
-    
+
     def _load_model(self):
-        """Load MedCPT model and tokenizer"""
-        import sys
-        sys.stderr.write(f"[ENCODER] Loading MedCPT model: {self.model_name} on {self.device}\\n")
-        sys.stderr.flush()
+        """Load query and article MedCPT models."""
         try:
-            from transformers import AutoTokenizer, AutoModel
             import torch
-            
-            sys.stderr.write(f"[ENCODER] Loading tokenizer...\\n")
-            sys.stderr.flush()
+            from transformers import AutoTokenizer, AutoModel
+
+            # Benchmark mode: let cuDNN pick fastest convolution algorithm for fixed input sizes
+            if self.device == "cuda":
+                torch.backends.cudnn.benchmark = True
+
             self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-            sys.stderr.write(f"[ENCODER] Loading model...\\n")
-            sys.stderr.flush()
             self.model = AutoModel.from_pretrained(self.model_name)
-            sys.stderr.write(f"[ENCODER] Moving model to {self.device}...\n")
-            sys.stderr.flush()
+            if self.device == "cuda":
+                self.model = self.model.half()  # fp16 halves memory, ~2× throughput
             self.model.to(self.device)
             self.model.eval()
-            sys.stderr.write(f"[ENCODER] Model loaded successfully\n")
-            sys.stderr.flush()
+            _encoder_logger.info(f"Loaded query encoder: {self.model_name}")
         except Exception as e:
-            sys.stderr.write(f"[ENCODER] ERROR loading model: {e}\n")
-            sys.stderr.flush()
-            print(f"Warning: Could not load MedCPT model: {e}")
-            print("Using placeholder encoder")
+            _encoder_logger.warning(f"Could not load query encoder '{self.model_name}': {e}")
             self.model = None
+
+        # Load article encoder; fall back to query encoder if unavailable
+        try:
+            import torch
+            from transformers import AutoTokenizer, AutoModel
+
+            self.article_tokenizer = AutoTokenizer.from_pretrained(self.article_model_name)
+            self.article_model = AutoModel.from_pretrained(self.article_model_name)
+            if self.device == "cuda":
+                self.article_model = self.article_model.half()
+            self.article_model.to(self.device)
+            self.article_model.eval()
+            _encoder_logger.info(f"Loaded article encoder: {self.article_model_name}")
+        except Exception as e:
+            _encoder_logger.warning(
+                f"Could not load article encoder '{self.article_model_name}': {e}. "
+                "Falling back to query encoder for documents."
+            )
+            self.article_model = None
+            self.article_tokenizer = None
     
     def encode(
         self,
@@ -77,87 +110,96 @@ class MedCPTEncoder:
         normalize: bool = True
     ) -> np.ndarray:
         """
-        Encode texts into embeddings
-        
+        Encode document texts using the article encoder.
+
         Args:
             texts: Single text or list of texts
             batch_size: Batch size for encoding
-            normalize: Whether to normalize embeddings
-        
+            normalize: Whether to L2-normalize embeddings
+
         Returns:
             Embeddings array of shape (n_texts, embedding_dim)
         """
-        import sys
-        sys.stderr.write(f"[ENCODER.encode] Called with {len(texts) if isinstance(texts, list) else 1} texts\n")
-        sys.stderr.flush()
-        
         if isinstance(texts, str):
             texts = [texts]
-        
-        if self.model is None:
-            # Placeholder: return random embeddings
-            embedding_dim = 768
-            embeddings = np.random.randn(len(texts), embedding_dim).astype(np.float32)
+
+        # Use article encoder if available, otherwise fall back to query encoder
+        model = self.article_model if self.article_model is not None else self.model
+        tokenizer = self.article_tokenizer if self.article_tokenizer is not None else self.tokenizer
+
+        if model is None:
+            embeddings = np.random.randn(len(texts), 768).astype(np.float32)
         else:
-            sys.stderr.write(f"[ENCODER.encode] Calling _encode_batch\n")
-            sys.stderr.flush()
-            embeddings = self._encode_batch(texts, batch_size)
-            sys.stderr.write(f"[ENCODER.encode] _encode_batch returned {embeddings.shape}\n")
-            sys.stderr.flush()
-        
+            embeddings = self._encode_batch(texts, batch_size, model=model, tokenizer=tokenizer)
+
         if normalize:
             norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
             embeddings = embeddings / (norms + 1e-8)
-        
-        sys.stderr.write(f"[ENCODER.encode] Returning embeddings shape {embeddings.shape}\n")
-        sys.stderr.flush()
+
         return embeddings
     
-    def _encode_batch(self, texts: List[str], batch_size: int) -> np.ndarray:
-        """Encode texts in batches"""
+    def _encode_batch(self, texts: List[str], batch_size: int, model=None, tokenizer=None) -> np.ndarray:
+        """Encode texts in batches using the given model and tokenizer."""
         import torch
-        import logging
-        logger = logging.getLogger(__name__)
-        
+
+        if model is None:
+            model = self.model
+        if tokenizer is None:
+            tokenizer = self.tokenizer
+
+        use_amp = self.device == "cuda"
         all_embeddings = []
         num_batches = (len(texts) + batch_size - 1) // batch_size
-        
+
         for i in range(0, len(texts), batch_size):
             batch_texts = texts[i:i + batch_size]
             batch_num = i // batch_size + 1
-            
+
             if batch_num % 50 == 0 or batch_num == num_batches:
-                logger.info(f"[ENCODER] Processing batch {batch_num}/{num_batches} ({len(all_embeddings) * batch_size}/{len(texts)} texts)")
-            
-            # Tokenize
-            inputs = self.tokenizer(
+                _encoder_logger.info(
+                    f"Encoding batch {batch_num}/{num_batches} "
+                    f"({min(i + batch_size, len(texts))}/{len(texts)} texts)"
+                )
+
+            inputs = tokenizer(
                 batch_texts,
                 padding=True,
                 truncation=True,
                 max_length=512,
                 return_tensors="pt"
             ).to(self.device)
-            
-            # Encode
-            with torch.no_grad():
-                outputs = self.model(**inputs)
-                # Use CLS token embedding
-                embeddings = outputs.last_hidden_state[:, 0, :].cpu().numpy()
-            
+
+            with torch.inference_mode():
+                if use_amp:
+                    with torch.cuda.amp.autocast():
+                        outputs = model(**inputs)
+                else:
+                    outputs = model(**inputs)
+                # Cast to float32 before moving to CPU — avoids numpy fp16 issues
+                embeddings = outputs.last_hidden_state[:, 0, :].float().cpu().numpy()
+
             all_embeddings.append(embeddings)
-        
+
         return np.vstack(all_embeddings)
     
     def encode_query(self, query: str, normalize: bool = True) -> np.ndarray:
         """
-        Encode a single query
-        
+        Encode a single query using the query encoder.
+
         Args:
             query: Query text
-            normalize: Whether to normalize embedding
-        
+            normalize: Whether to L2-normalize embedding
+
         Returns:
             Query embedding (1D array)
         """
-        embeddings = self.encode([query], normalize=normalize)
+        if self.model is None:
+            return np.random.randn(768).astype(np.float32)
+
+        embeddings = self._encode_batch([query], batch_size=1, model=self.model, tokenizer=self.tokenizer)
+
+        if normalize:
+            norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
+            embeddings = embeddings / (norms + 1e-8)
+
         return embeddings[0]

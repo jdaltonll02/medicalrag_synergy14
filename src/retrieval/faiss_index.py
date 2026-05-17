@@ -82,17 +82,7 @@ class FAISSIndex:
         norm = np.linalg.norm(query_vector)
         query_vector = query_vector / (norm + 1e-8)
         
-        # Search
         scores, indices = self.index.search(query_vector.astype(np.float32), top_k)
-        # Debug logging: FAISS search details
-        try:
-            print(f"FAISS ntotal={self.index.ntotal} top_k={top_k}")
-            # Show top-5 results
-            for i in range(min(5, len(scores[0]))):
-                print(f"FAISS result i={i} idx={indices[0][i]} score={scores[0][i]:.4f}")
-        except Exception:
-            pass
-        
         return scores[0], indices[0]
 
     def set_doc_ids(self, doc_ids: List[str]):

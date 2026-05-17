@@ -32,6 +32,7 @@ encoder:
   device: cuda
   embedding_dim: 768
   model: ncbi/MedCPT-Query-Encoder
+  article_model: ncbi/MedCPT-Article-Encoder
 evaluation:
   llm_judge:
     aspects:
@@ -62,8 +63,8 @@ faiss:
   nprobe: 32
   save_path: /data/user_data/jgibson2/bioask_pubmed_dataset/round3_data/runs/faiss.index
 fallback:
-  use_elasticsearch: false
-  use_faiss_only: true
+  use_elasticsearch: true
+  use_faiss_only: false
 
 # LLM Configuration
 # Provider options: "openai", "gemini", "stub"
@@ -152,6 +153,7 @@ reranker:
   model: pritamdeka/S-PubMedBert-MS-MARCO
   top_k: 20
 retrieval:
+  alpha: 0.5
   top_k_dense: 100
   top_k_final: 50
   top_k_sparse: 100
