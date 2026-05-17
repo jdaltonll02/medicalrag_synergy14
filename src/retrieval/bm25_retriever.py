@@ -101,11 +101,15 @@ class BM25Retriever:
         self._connect()
     
     def _connect(self):
-        """Connect to Elasticsearch"""
+        """Connect to Elasticsearch with a short timeout so unavailability fails fast."""
         try:
-            self.es = Elasticsearch([f"http://{self.host}:{self.port}"])
-            # Test connection
-            if not self.es.ping():
+            self.es = Elasticsearch(
+                [f"http://{self.host}:{self.port}"],
+                request_timeout=60,
+                max_retries=1,
+                retry_on_timeout=False,
+            )
+            if not self.es.ping(request_timeout=5):
                 print(f"Warning: Could not connect to Elasticsearch at {self.host}:{self.port}")
                 self.es = None
         except Exception as e:

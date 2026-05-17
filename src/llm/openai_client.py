@@ -18,8 +18,8 @@ class OpenAIClient:
         api_key: Optional[str] = None,
         base_url: Optional[str] = None,
         project_id: Optional[str] = None,
-        temperature: float = 0.7,
-        max_tokens: int = 1024,
+        temperature: float = 0.0,
+        max_tokens: int = 4096,
         prompt_for_key: bool = True,
         use_keyring: bool = True,
         save_to_keyring: bool = False,
@@ -84,60 +84,20 @@ class OpenAIClient:
 
     def _initialize_client(self, *_, **__):
         from openai import OpenAI
-        import sys
 
-        # Get API key from environment, fall back to keyring if enabled
         if not self.api_key:
             self.api_key = os.getenv("OPENAI_API_KEY")
-        
         if not self.api_key:
             raise RuntimeError("OPENAI_API_KEY environment variable not set")
 
-        # Get base URL from environment (for CMU AI Gateway or custom endpoints)
-        base_url = os.getenv("OPENAI_BASE_URL")
-        project_id = os.getenv("OPENAI_PROJECT_ID")
+        base_url = self.base_url or os.getenv("OPENAI_BASE_URL") or None
 
-        # Handle CMU AI Gateway URL normalization
-        # CMU gateway: https://ai-gateway.andrew.cmu.edu/chat -> needs /v1 appended
-        if base_url and "ai-gateway.andrew.cmu.edu" in base_url:
-            # Remove any trailing slashes and /chat suffix
-            base_url = base_url.rstrip("/")
-            if base_url.endswith("/chat"):
-                base_url = base_url[:-5]  # Remove "/chat"
-            # Append /v1 for OpenAI compatibility
-            if not base_url.endswith("/v1"):
-                base_url = base_url + "/v1"
-            sys.stderr.write(f"[OPENAI] Detected CMU AI Gateway, normalized URL: {base_url}\n")
-            sys.stderr.flush()
-
-        sys.stderr.write(f"[OPENAI] Initializing with:\n")
-        sys.stderr.write(f"  - Model: {self.model}\n")
-        sys.stderr.write(f"  - Base URL: {base_url or 'default (api.openai.com)'}\n")
-        sys.stderr.write(f"  - Project ID: {project_id or 'none'}\n")
-        sys.stderr.flush()
-
-        # Initialize OpenAI client
         try:
-            if base_url and project_id:
-                self.client = OpenAI(
-                    api_key=self.api_key,
-                    base_url=base_url,
-                    project=project_id
-                )
-            elif base_url:
-                self.client = OpenAI(
-                    api_key=self.api_key,
-                    base_url=base_url
-                )
-            elif project_id:
-                self.client = OpenAI(
-                    api_key=self.api_key,
-                    project=project_id
-                )
-            else:
-                self.client = OpenAI(api_key=self.api_key)
-            
-            sys.stderr.write("[OPENAI] Client initialized successfully\n")
+            self.client = OpenAI(
+                api_key=self.api_key,
+                base_url=base_url,
+            )
+            sys.stderr.write(f"[OPENAI] Client initialized (model={self.model}, base_url={base_url or 'default'})\n")
             sys.stderr.flush()
         except Exception as e:
             sys.stderr.write(f"[OPENAI] Failed to initialize: {e}\n")
@@ -146,11 +106,11 @@ class OpenAIClient:
 
     
     def generate(
-    self,
-    prompt: str,
-    system_prompt: Optional[str] = None,
-    temperature: Optional[float] = None,
-    max_tokens: Optional[int] = None
+        self,
+        prompt: str,
+        system_prompt: Optional[str] = None,
+        temperature: Optional[float] = None,
+        max_tokens: Optional[int] = None
     ) -> str:
         """
         Generate response from LLM using chat completions API.
@@ -172,7 +132,7 @@ class OpenAIClient:
                 max_tokens=max_tokens or self.max_tokens
             )
             # Extract generated text
-            return response.choices[0].message.content
+            return response.choices[0].message.content or ""
 
         except Exception as e:
             return f"Error generating response: {e}"
@@ -221,9 +181,18 @@ class OpenAIClient:
             if question_type == "yesno":
                 type_guidance = "\n\nThis is a YES/NO question. Start your answer with 'Yes' or 'No', followed by a brief explanation."
             elif question_type == "factoid":
-                type_guidance = "\n\nThis is a FACTOID question. Start with the specific entity/answer (gene, drug, disease, etc.), then provide supporting explanation."
+                type_guidance = (
+                    "\n\nThis is a FACTOID question. You MUST name a specific entity (gene, drug, disease, protein, number, etc.) as your answer. "
+                    "Do NOT say 'information not available' or 'cannot be determined'. "
+                    "Extract the best answer from the provided documents and state it directly at the start of your response."
+                )
             elif question_type == "list":
-                type_guidance = "\n\nThis is a LIST question. Provide a numbered list of items, each on a new line. Format: 1. Item one\n2. Item two\n3. Item three"
+                type_guidance = (
+                    "\n\nThis is a LIST question. You MUST respond with ONLY a numbered list — no introduction, no conclusion, no prose. "
+                    "Each line must be a single short entity name (drug, gene, disease, protein, etc.). "
+                    "Format EXACTLY as:\n1. First item\n2. Second item\n3. Third item\n"
+                    "Use the documents and your biomedical knowledge. Always provide a list — never leave it empty."
+                )
             elif question_type == "summary":
                 type_guidance = "\n\nThis is a SUMMARY question. Provide a comprehensive paragraph (2-3 sentences) summarizing the key information."
 

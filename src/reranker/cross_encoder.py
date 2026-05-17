@@ -35,6 +35,13 @@ class CrossEncoderReranker:
                     dev = "cuda" if torch.cuda.is_available() else "cpu"
                 except Exception:
                     dev = "cpu"
+            elif dev == "cuda":
+                try:
+                    import torch
+                    if not torch.cuda.is_available():
+                        dev = "cpu"
+                except Exception:
+                    dev = "cpu"
             self.model = CrossEncoder(self.model_name, device=dev)
             # Enforce safe max sequence length to prevent positional embedding overflow
             try:

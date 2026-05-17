@@ -46,15 +46,16 @@ class SnippetExtractor:
             current_offset += len(sentence) + 1  # +1 for space
         
         if best_match and best_score > 0:
-            # Truncate to reasonable length
+            # Record the original end offset before any truncation
+            original_end = best_start + len(best_match)
             max_len = 250
             if len(best_match) > max_len:
                 best_match = best_match[:max_len] + "..."
-            
+
             return {
                 "text": best_match,
                 "offsetInBeginSection": best_start,
-                "offsetInEndSection": best_start + len(best_match)
+                "offsetInEndSection": original_end
             }
         
         return None

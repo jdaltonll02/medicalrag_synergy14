@@ -34,15 +34,11 @@ def normalize_text(text: str) -> str:
 
 def normalize_medical_query(query: str) -> str:
     """
-    Normalize medical query with special handling for medical terms
-    Preserves medical abbreviations and terminology
+    Normalize medical query with special handling for medical terms.
+    Preserves hyphens in terms like COVID-19 and IL-6.
     """
-    # Basic normalization
     query = normalize_text(query)
-    
-    # Preserve common medical abbreviations (e.g., COVID-19, HIV, etc.)
-    # This is a simplified version; expand as needed
-    
+    query = remove_punctuation(query, preserve_medical=True)
     return query
 
 

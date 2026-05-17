@@ -14,7 +14,6 @@ from pathlib import Path
 # Add project root to path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
-from src.core.bioasq_loader import BioASQLoader
 from src.pipeline.synergy_pipeline import SynergyPipeline, SynergyEvaluator
 from src.llm.openai_client import OpenAIClient
 from src.llm.stub_llm import StubLLM
@@ -38,14 +37,26 @@ def setup_llm(config: dict, use_stub: bool = False):
     if use_stub or os.getenv("LLM_PROVIDER") == "stub":
         logger.info("Using Stub LLM for testing")
         return StubLLM()
-    
+
     llm_config = config.get("llm", {})
-    
-    # Check for API key
+    provider = llm_config.get("provider", "openai")
+
+    if provider == "gemini":
+        from src.llm.gemini_client import GeminiClient
+        logger.info("Initializing Gemini client")
+        return GeminiClient(
+            model=llm_config.get("model", "gemini-2.0-flash"),
+            api_key=llm_config.get("api_key"),
+            project_id=llm_config.get("project_id"),
+            temperature=llm_config.get("temperature", 0.7),
+            max_tokens=llm_config.get("max_tokens", 1024)
+        )
+
+    # OpenAI (default)
     if "OPENAI_API_KEY" not in os.environ:
         logger.warning("OPENAI_API_KEY not set, using Stub LLM")
         return StubLLM()
-    
+
     logger.info("Initializing OpenAI client")
     return OpenAIClient(
         model=llm_config.get("model", "gpt-4"),
@@ -102,9 +113,18 @@ def main():
     questions = testset.get("questions", [])
     logger.info(f"Loaded {len(questions)} questions")
     
-    # Load documents
-    loader = BioASQLoader(config)
-    documents = loader.prepare_documents(questions, args.email)
+    # Load pre-built document corpus from configured path
+    docs_path = config.get("data", {}).get("docs_path") or args.data_dir
+    documents = []
+    if docs_path and Path(docs_path).exists():
+        logger.info(f"Loading corpus from {docs_path}")
+        with open(docs_path, "r") as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    documents.append(json.loads(line))
+    else:
+        logger.warning(f"No corpus found at {docs_path!r}; continuing with empty corpus")
     logger.info(f"Loaded {len(documents)} documents")
     
     # Setup LLM

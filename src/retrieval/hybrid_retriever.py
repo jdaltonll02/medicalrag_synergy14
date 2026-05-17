@@ -58,13 +58,16 @@ class HybridRetriever:
         dense_scores, dense_indices = self.faiss_index.search(query_embedding, top_k_dense)
         
         # Sparse retrieval (BM25)
-        sparse_results = self.bm25_retriever.search(
-            query,
-            top_k_sparse,
-            entities=entities,
-            entity_boost=entity_boost,
-            max_entities=max_entities,
-        )
+        if self.bm25_retriever is not None:
+            sparse_results = self.bm25_retriever.search(
+                query,
+                top_k_sparse,
+                entities=entities,
+                entity_boost=entity_boost,
+                max_entities=max_entities,
+            )
+        else:
+            sparse_results = []
         
         # Combine results
         combined_scores = {}
@@ -92,10 +95,13 @@ class HybridRetriever:
                 combined_scores[doc_id] = {
                     "dense_score": 0.0,
                     "sparse_score": result["score"],
-                    "index": None
+                    "index": None,
+                    "source": result.get("source")
                 }
             else:
                 combined_scores[doc_id]["sparse_score"] = result["score"]
+                if combined_scores[doc_id].get("source") is None:
+                    combined_scores[doc_id]["source"] = result.get("source")
         
         # Normalize and combine scores
         # Normalize dense scores to 0-1
@@ -111,14 +117,6 @@ class HybridRetriever:
             max_sparse = max(sparse_values) if max(sparse_values) > 0 else 1.0
             for doc_id in combined_scores:
                 combined_scores[doc_id]["sparse_score"] /= max_sparse
-            # Debug logging: show normalization factor and a few normalized scores
-            try:
-                print(f"BM25 normalization max_sparse={max_sparse:.4f}")
-                sample = list(combined_scores.items())[:5]
-                for did, val in sample:
-                    print(f"doc_id={did} bm25_norm={val['sparse_score']:.4f} dense_norm={val['dense_score']:.4f}")
-            except Exception:
-                pass
         
         # Compute combined scores
         for doc_id in combined_scores:
@@ -133,17 +131,6 @@ class HybridRetriever:
             reverse=True
         )[:top_k_final]
 
-        # Debug logging: show top-5 combined scores
-        try:
-            head = sorted_results[:5]
-            for did, s in head:
-                print(
-                    f"combined doc_id={did} combined={s['combined_score']:.4f} "
-                    f"dense={s['dense_score']:.4f} sparse={s['sparse_score']:.4f}"
-                )
-        except Exception:
-            pass
-        
         # Format results
         results = []
         for doc_id, scores in sorted_results:
@@ -152,7 +139,8 @@ class HybridRetriever:
                 "score": scores["combined_score"],
                 "dense_score": scores["dense_score"],
                 "sparse_score": scores["sparse_score"],
-                "index": scores["index"]
+                "index": scores["index"],
+                "source": scores.get("source")
             })
         
         return results

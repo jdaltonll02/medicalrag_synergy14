@@ -9,6 +9,7 @@ from pathlib import Path
 
 from src.core.synergy_formatter import SynergyFormatter, SnippetExtractor, FeedbackLoader
 from src.core.answer_generator import AnswerGenerator, YesNoAnswerGenerator, SummaryAnswerGenerator
+from src.core.normalizer import normalize_medical_query
 
 
 logger = logging.getLogger(__name__)
@@ -64,17 +65,24 @@ class SynergyPipeline:
         questions = testset.get("questions", [])
         logger.info(f"Loaded {len(questions)} questions")
         
-        # Load feedback if available
+        # Load feedback if available; build exclusion sets per question
         golden_snippets = {}
         golden_docs = {}
         golden_answers = {}
-        
+        excluded_docs: dict = {}   # question_id -> set of doc_ids already seen
+
         if feedback_path and Path(feedback_path).exists():
             logger.info(f"Loading feedback from {feedback_path}")
             feedback = FeedbackLoader.load_feedback(feedback_path)
             golden_snippets = FeedbackLoader.extract_golden_snippets(feedback)
             golden_docs = FeedbackLoader.extract_golden_documents(feedback)
             golden_answers = FeedbackLoader.extract_golden_answers(feedback)
+            # All documents in the feedback (golden or not) must not be resubmitted
+            for fbq in feedback.get("questions", []):
+                q_id = fbq.get("id")
+                seen = {str(d.get("id")) for d in fbq.get("documents", [])}
+                if seen:
+                    excluded_docs[q_id] = seen
             logger.info(f"Loaded feedback for {len(golden_docs)} questions")
         
         # Process each question
@@ -86,9 +94,14 @@ class SynergyPipeline:
             q_id = question.get("id")
             logger.info(f"Processing question {i+1}/{len(questions)}: {q_id}")
             
-            # Retrieve documents
+            # Retrieve documents, then exclude any already seen in feedback
             query = question.get("body", "")
             retrieved_docs = self._retrieve_documents(query)
+            if q_id in excluded_docs:
+                retrieved_docs = [
+                    d for d in retrieved_docs
+                    if str(d.get("doc_id")) not in excluded_docs[q_id]
+                ]
             
             # For non-answer-ready questions, skip answer generation
             # For answer-ready questions, generate answers
@@ -156,25 +169,69 @@ class SynergyPipeline:
             }
         }
     
-    def _retrieve_documents(self, query: str, top_k: int = 50) -> List[Dict[str, Any]]:
-        """Retrieve relevant documents for query"""
+    def _retrieve_documents(self, query: str, top_k: Optional[int] = None) -> List[Dict[str, Any]]:
+        """Retrieve and enrich relevant documents for a query."""
         if self.retrieval_pipeline is None:
             return []
-        
+
+        retrieval_cfg = self.config.get("retrieval", {})
+        if top_k is None:
+            top_k = retrieval_cfg.get("top_k_final", 50)
+
         try:
-            # Get query embedding
-            query_embedding = self.retrieval_pipeline.encoder.encode([query])[0]
-            
-            # Hybrid retrieval
-            documents = self.retrieval_pipeline.hybrid_retriever.retrieve(
-                query=query,
+            normalized = normalize_medical_query(query)
+
+            # Extract NER entities for entity-boosted BM25
+            entities = []
+            if hasattr(self.retrieval_pipeline, "ner"):
+                try:
+                    entities = self.retrieval_pipeline.ner.extract_entities(normalized)
+                except Exception:
+                    pass
+
+            # Encode query with the dedicated query encoder
+            query_embedding = self.retrieval_pipeline.encoder.encode_query(normalized)
+
+            raw_docs = self.retrieval_pipeline.hybrid_retriever.retrieve(
+                query=normalized,
                 query_embedding=query_embedding,
-                top_k_dense=100,
-                top_k_sparse=100,
-                top_k_final=top_k
+                top_k_dense=retrieval_cfg.get("top_k_dense", 100),
+                top_k_sparse=retrieval_cfg.get("top_k_sparse", 100),
+                top_k_final=top_k,
+                entities=entities,
+                entity_boost=retrieval_cfg.get("bm25_entity_boost", 2.0),
+                max_entities=retrieval_cfg.get("bm25_max_entities", 5),
             )
-            
-            return documents
+
+            # Enrich with title/abstract from BM25 source or in-memory doc store
+            enriched = []
+            for item in raw_docs:
+                doc = {
+                    "doc_id": item.get("doc_id"),
+                    "score": item.get("score"),
+                    "dense_score": item.get("dense_score"),
+                    "sparse_score": item.get("sparse_score"),
+                    "index": item.get("index"),
+                }
+                src = item.get("source")
+                if src and isinstance(src, dict):
+                    doc["title"] = src.get("title", "")
+                    doc["abstract"] = src.get("abstract", "")
+                    doc["pub_date"] = src.get("pub_date")
+                else:
+                    idx = doc.get("index")
+                    if (
+                        isinstance(idx, int)
+                        and hasattr(self.retrieval_pipeline, "_doc_store")
+                        and 0 <= idx < len(self.retrieval_pipeline._doc_store)
+                    ):
+                        store_doc = self.retrieval_pipeline._doc_store[idx]
+                        doc["title"] = store_doc.get("title", "")
+                        doc["abstract"] = store_doc.get("abstract", "")
+                        doc["pub_date"] = store_doc.get("pub_date")
+                enriched.append(doc)
+
+            return enriched
         except Exception as e:
             logger.error(f"Error retrieving documents: {e}")
             return []
@@ -250,12 +307,12 @@ class SynergyEvaluator:
         recall = true_positives / (true_positives + false_negatives) if (true_positives + false_negatives) > 0 else 0
         f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
         
-        # MRR: Mean Reciprocal Rank
+        # MRR: reciprocal rank of the first relevant document
         mrr = 0.0
         for i, doc in enumerate(submitted_docs):
             if str(doc) in golden_set:
-                mrr += 1.0 / (i + 1)
-        mrr = mrr / len(golden_set) if golden_set else 0
+                mrr = 1.0 / (i + 1)
+                break
         
         return {"precision": precision, "recall": recall, "f1": f1, "mrr": mrr}
     
